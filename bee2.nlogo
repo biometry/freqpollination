@@ -1,3 +1,8 @@
+; Projekt für die MaSterthesis von Helen Czioska
+
+
+
+
 breed [ bees bee]
 breed [flowers flower]
 
