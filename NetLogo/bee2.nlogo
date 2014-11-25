@@ -1,33 +1,38 @@
-; Projekt für die MaSterthesis von Helen Czioska
+; Masterthesis
+; Helen Czioska
 
 
 
-
-breed [ bees bee]
-breed [flowers flower]
-
+breed [bees bee]
 
 bees-own [ 
-  memory ; the bee has a memory for the reward to check for flower constancy
-  sight ; how far can the bee see on the grid? 
-  choice ;flower-constancy, which flower is preferred? Changes with distance (flight count) and bad reward
-  flight-count ; flight-steps to find a flower
-  flowers-visited ; counter how many flowers this be already visited
-  visited-flowers ; memory which floweres were already visited, memory is 10
-  change-prob
+  reward-memory   ;string - the bee has a memory for the reward to check for flower constancy
+  array           ;Array - how far can the bee see on the grid? 
+  choice          ;boolean - flower-constancy, which flower is preferred? Changes with distance (flight count) and bad reward
+  flight-count    ;integer - flight-steps to find a flower
+  flowers-visited ;integer - counter how many flowers this be already visited
+  flower-memory   ;string - memory which floweres were already visited, memory is 10
+  change-prob     ;float - propability to change the preferred flower type. Increases with low reward
+  spec-last-visit ;boolean - remembers the species from lsat visit
+  change-count1   ;integer - how often does this pollinator switch preferences?
+  change-count2   ;integer - how often does this pollinator switch preferences?
   ]
 
 
 patches-own [ 
-  species ; defined species, does not change
-  reward ; reward to offer the pollinator, decreses with every visit and is slowly restored
-  visit-count ; counter how often this flower was visited
+  species       ;boolean - defined species, does not change
+  reward        ;integer - reward to offer the pollinator, decreses with every visit and is slowly restored
+  visit-count   ;integer - counter how often this flower was visited
+  pollination-count ;integer - counter for every successfull pollination
   ]
+
 
 globals[
 species-list
-mistake-chance
 ]
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 to setup
   clear-all
@@ -40,130 +45,168 @@ to setup
    ask patches [ifelse random-float 100 > flower_cover
      [set pcolor green]
      [ifelse random-float 100 < frequency 
-      [set species 1 set pcolor 47 set reward random 11] 
-      [set species 2 set pcolor 17 set reward random 11]
+      [set species 1 set pcolor 47 set reward 10 ] 
+      [set species 2 set pcolor 17 set reward 10 ]
      ] 
      ]
    
+   set species-list n-values number_species [? + 1]
    
-   
-  set species-list n-values number_species [? + 1]
-  
-  
-      
   create-bees number_bees 
   [ ;set shape "bee"
     set shape "circle" set color 104 
-    setxy random-xcor random-ycor ; unterschied zu "Sprout" ?
-    set memory n-values 4 [random 11]
+    setxy random-xcor random-ycor 
+    set reward-memory (list)
     set flight-count 0
     set flowers-visited 0
     set choice one-of species-list
-    set visited-flowers (list)
+    set flower-memory (list)
     ]
-
 
   reset-ticks
   
 end
 
 
-to go
- 
-ask bees [
-  
- 
-ifelse ([choice] of self = species) ; see, if the bee is on a flower of choice and then either search for one ore visit
-      
-      [visit] 
-      [move]     
-      
-      
-]
-
-ask patches [if (reward < 10) [set reward reward * 1.0001]]
-
-tick     
-
-end
-
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
   
-  ; bee looks for specific flower (--> memory, constancy) in given sight radius
+  ; bee looks for specific flower (--> memory, constancy) in given view (cone-radius)
   ; bee moves towards nearest of the chosen flower type
   ; if there is no such type in the radius, bee moves randomly forward
-  ; how can I ensure that the same flower is not visited twice??
-  ; [random-normal 0 stdev-angle fd 1] for correlated random walk 
+  ; [random-normal 0 stdev-angle fd 1] for correlated random walk --> [random-nomral mean standarddeviation] (see Kareiva & Shinesada 1983, Bartumeus 2005, Codling 2008)
 
 to move
-  
-     set mistake-chance random-float 1
-     ifelse (flight-count < Flightsteps_until_change); and mistake-chance > 0.01 ) ; after XY random movements, the bee justs goes to the next available flower
+     
+     ifelse (flight-count < Flightsteps_until_change) ; after XY random movements, the bee justs goes to the next available flower
               [
                 ; find out if there are any flowers in the visible area of the bee which have the preferres species AND were not visited before
-                set sight patches in-cone view 180 with [(species = [choice] of myself) and (not member? self [visited-flowers] of myself) ] 
-                let next-flower min-one-of sight [distance myself]
-                ifelse any? sight 
-                    [ face next-flower fd 1]
+                set array patches in-cone view 180 with [(species = [choice] of myself) and (not member? self [flower-memory] of myself) ] 
+                let next-flower min-one-of array [distance myself]
+                ifelse any? array 
+                    [ face next-flower fd 1] ;face the nearest flower and move to it in a straight line (see Viswanathan 2008)
                     [ rt random-normal 0 stdev-angle fd 1 set flight-count flight-count + 1 ]
               ]
    
    
               [
-                set sight patches in-cone view 180 with [ (species > 0) and (not member? self [visited-flowers] of myself) ] 
-                let next-flower min-one-of sight [distance myself]
-                ifelse any? sight
-                    [ face next-flower fd 1 set choice [species] of next-flower]
+                set array patches in-cone view 180 with [ (species > 0) and (not member? self [flower-memory] of myself) ] 
+                let next-flower min-one-of array [distance myself]
+                ifelse any? array
+                    [ face next-flower fd 1 set choice [species] of next-flower set change-count2 change-count2 + 1]
                     [ rt random-normal 0 stdev-angle fd 1 set flight-count flight-count + 1 ]
               ]
- 
   
 end           
            
-           
-
 
 
 to visit
-;process of visiting the flower ( --> reduce reward)
 
-
-  ; the bee memorizes the flower type and the reward (list)
-  ; bee compares average reward to current one --> possibility for change of strategy
-   
-   
-;   if (reward < mean memory) [
-;   set change-prob change-prob + 0.2 
-;   ifelse (choice = 1)
-;   [ if (random-float 1 < change-prob) [set choice 2 set change-prob 0.1]]
-;   [ if (random-float 1 < change-prob) [set choice 1 set change-prob 0.1]]
-;   ]
-
-
-   while [(length memory) >= 4] [ set memory (but-first memory) ]
-   set memory (lput [reward] of patch-here memory )
-   
-   set flight-count 0
-   set flowers-visited flowers-visited + 1
-   
-   while [(length visited-flowers) >= length-memory] [ set visited-flowers (but-first visited-flowers) ]
-   set visited-flowers (lput patch-here visited-flowers )
-   
-    
-   if (reward > 1) [set reward reward - 1]           ; when a bee finds a flower, the reward is reduced by one
-   set visit-count visit-count + 1                   ; and the VR goes up
+  ; Option 1: 
+  ; If the reward is in the lower quantile of the overall-reward the probability to change increases with every visit (see Chittka 1997)
+  ; The propability to change the preferred species increases with 10% every time the flower has a low reward
+  ; option 2: 
+  ; The pollinator remembers the reward of the last 3 (4) visited flowers and compares this average with the current reward. (see Faruq2013)
+  ; Is the reward worse than average the pollinator changes its preference
+  ; The memory is working with a list
+  ; Problem: If one species has a low reward, the average is also very low and the pollinator won´t change even if the other species has a much higher reward
+  ; one solution: Occasionly tests oin other flowers (see Goulson1999) 
   
+
+   if (reward < (mean [reward] of patches with [ species > 0])/ 2 ) [
+   ;if (reward < mean memory) [
+   set change-prob change-prob + 0.1 
+   ifelse (choice = 1)
+   [ if (random-float 1 < change-prob) [set choice 2 set change-prob 0.1 set change-count1 change-count1 + 1]]
+   [ if (random-float 1 < change-prob) [set choice 1 set change-prob 0.1 set change-count1 change-count1 + 1]]
+   ]
+  
+  
+   while [(length reward-memory ) >= 4] [ set reward-memory  (but-first reward-memory ) ]
+   set reward-memory  (lput [reward] of patch-here reward-memory  )
+ 
+   if (spec-last-visit = [species] of patch-here) [set pollination-count pollination-count + 1] ; if the last visited flower was from the same species, pollination was successfull
+   if (reward > 1) [set reward reward - 1]           ; when a bee finds a flower, the reward is reduced by one
+   set visit-count visit-count + 1                   
+   
+   set flight-count 0                                ; every time a pollinator visits a flower, the flight-count is set to zero again
+   set flowers-visited flowers-visited + 1
+   set spec-last-visit ([species] of patch-here)
+   
+   ; Every pollinator has a memory for visited flowers. Pollinators avoid recently visited flowers (see Goulson1999 for review)
+   ; Goulson 2000: "Pollinators can remember the location of the last 4 visited flowers"
+   
+   while [(length flower-memory) >= 4] [ set flower-memory (but-first flower-memory) ]
+   set flower-memory (lput patch-here flower-memory )
+   
+
    fd 1
 
 end
 
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
+to go
+ 
+; see, if the bee is on a flower of choice and then either search for one ore visit      
 
+ask bees [
+ifelse ([choice] of self = species) 
+      [visit] 
+      [move]      
+]
+
+ask patches [if (reward < 10) [set reward reward * renew_reward]]
+
+tick
+
+if ticks >= 5000 [stop]
+
+end
+
+
+to-report visits1
+report (sum [visit-count] of patches with [species = 1])
+end
+
+to-report visits2
+report (sum [visit-count] of patches with [species = 2])
+end
+
+to-report pollination-success-1
+report (sum [pollination-count] of patches with [species = 1]) / count patches with [species = 1]
+end
   
+to-report pollination-success-2
+report (sum [pollination-count] of patches with [species = 2]) / count patches with [species = 2]
+end
+
+to-report reward-1
+report ( mean [reward] of patches with [species = 1])
+end
+
+to-report reward-2
+report ( mean [reward] of patches with [species = 2])
+end
+
+to-report count-change-flightsteps
+report sum [change-count2] of bees
+end
+
+to-report count-change-reward
+report sum [change-count1] of bees
+end
+
+to-report number_flowers1
+report count patches with [species = 1]
+end
+
+to-report number_flowers2
+report count patches with [species = 2]
+end
 @#$#@#$#@
 GRAPHICS-WINDOW
 555
@@ -201,7 +244,7 @@ number_bees
 number_bees
 0
 100
-24
+20
 1
 1
 NIL
@@ -216,7 +259,7 @@ flower_cover
 flower_cover
 0
 100
-9
+15
 1
 1
 NIL
@@ -265,7 +308,7 @@ frequency
 frequency
 0
 100
-89
+30
 1
 1
 NIL
@@ -322,17 +365,6 @@ count bees with [ choice = 1]
 11
 
 INPUTBOX
-198
-33
-291
-93
-number_species
-2
-1
-0
-Number
-
-INPUTBOX
 294
 33
 351
@@ -352,7 +384,7 @@ stdev-angle
 stdev-angle
 0
 90
-33
+60
 1
 1
 NIL
@@ -367,7 +399,7 @@ Flightsteps_until_change
 Flightsteps_until_change
 0
 100
-100
+20
 1
 1
 NIL
@@ -431,7 +463,7 @@ length-memory
 length-memory
 0
 40
-22
+4
 1
 1
 NIL
@@ -475,24 +507,161 @@ PENS
 "default" 1.0 0 -8330359 true "" "plot count bees with [ choice = 1]"
 "pen-1" 1.0 0 -5825686 true "" "plot count bees with [ choice = 2]"
 
-MONITOR
-212
-330
-463
-375
+PLOT
+418
+587
+618
+737
+Pollination success
 NIL
-count bees with [[choice] of self = species]
+NIL
+0.0
+10.0
+0.0
+10.0
+true
+false
+"" ""
+PENS
+"default" 1.0 0 -11085214 true "" "plot (sum [pollination-count] of patches with [species = 1]) / count patches with [species = 1]"
+"pen-1" 1.0 0 -7858858 true "" "plot (sum [pollination-count] of patches with [species = 2]) / count patches with [species = 1]"
+
+PLOT
+420
+424
+620
+585
+Change-Reasons (green=flight-count, pink=reward)
+NIL
+NIL
+0.0
+10.0
+0.0
+10.0
+true
+false
+"" ""
+PENS
+"default" 1.0 0 -13840069 true "" "plot sum [change-count2] of bees"
+"pen-1" 1.0 0 -7858858 true "" "plot sum [change-count1] of bees"
+
+MONITOR
+214
+329
+285
+374
+VR 1
+(sum [visit-count] of patches with [species = 1]) / count patches with [species = 1]
 17
 1
 11
 
 MONITOR
-212
+214
 376
-463
+286
 421
-NIL
-count bees with [[choice] of self != species]
+VR 2
+(sum [visit-count] of patches with [species = 2]) / count patches with [species = 2]
+17
+1
+11
+
+MONITOR
+289
+329
+346
+374
+Poll 1
+(sum [pollination-count] of patches with [species = 1]) / count patches with [species = 1]
+17
+1
+11
+
+MONITOR
+290
+376
+347
+421
+Poll 2
+(sum [pollination-count] of patches with [species = 2]) / count patches with [species = 2]
+17
+1
+11
+
+MONITOR
+349
+329
+412
+374
+reward 1
+( mean [reward] of patches with [species = 1])
+17
+1
+11
+
+MONITOR
+349
+376
+412
+421
+reward 2
+( mean [reward] of patches with [species = 2])
+17
+1
+11
+
+MONITOR
+415
+376
+499
+421
+change reward
+sum [change-count1] of bees
+17
+1
+11
+
+MONITOR
+414
+329
+499
+374
+change flight
+sum [change-count2] of bees
+17
+1
+11
+
+INPUTBOX
+192
+179
+347
+239
+renew_reward
+1.001
+1
+0
+Number
+
+INPUTBOX
+237
+33
+293
+93
+number_species
+2
+1
+0
+Number
+
+MONITOR
+214
+280
+286
+325
+Sum Visits
+sum [visit-count] of patches
 17
 1
 11
@@ -869,6 +1038,68 @@ NetLogo 5.1.0
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
+<experiments>
+  <experiment name="bee1" repetitions="1" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>go</go>
+    <metric>VR-per-flower-1</metric>
+    <metric>VR-per-flower-2</metric>
+    <metric>pollination-success-1</metric>
+    <metric>pollination-success-2</metric>
+    <metric>reward-1</metric>
+    <metric>reward-2</metric>
+    <metric>count-change-flightsteps</metric>
+    <metric>count-change-reward</metric>
+    <metric>changes-by-100-visits</metric>
+    <enumeratedValueSet variable="frequency">
+      <value value="30"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="number_bees">
+      <value value="10"/>
+      <value value="15"/>
+      <value value="20"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Flightsteps_until_change">
+      <value value="5"/>
+      <value value="10"/>
+      <value value="20"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="flower_cover">
+      <value value="15"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="renew_reward">
+      <value value="1.0001"/>
+      <value value="1.0005"/>
+      <value value="1.001"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="reward" repetitions="1" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>go</go>
+    <metric>visits1</metric>
+    <metric>visits2</metric>
+    <metric>reward-1</metric>
+    <metric>reward-2</metric>
+    <metric>number_flowers1</metric>
+    <metric>number_flowers2</metric>
+    <enumeratedValueSet variable="number_bees">
+      <value value="20"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="renew_reward">
+      <value value="1.001"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="stdev-angle">
+      <value value="30"/>
+      <value value="50"/>
+      <value value="90"/>
+      <value value="130"/>
+      <value value="180"/>
+      <value value="190"/>
+      <value value="270"/>
+      <value value="360"/>
+    </enumeratedValueSet>
+  </experiment>
+</experiments>
 @#$#@#$#@
 @#$#@#$#@
 default
