@@ -1,0 +1,78 @@
+\documentclass{article}
+%\documentclass[11pt,twoside,a4paper,final]{report}
+
+%----------------------------------------------------------------------------
+% Allow more floating material on text pages:
+\renewcommand\floatpagefraction{.9}%
+\renewcommand\topfraction{.9}%
+\renewcommand\bottomfraction{.9}%
+\renewcommand\textfraction{.1}%
+\setcounter{bottomnumber}{4}%
+\setcounter{topnumber}{4}%
+\setcounter{totalnumber}{4}%
+
+%----------------------------------------------------------------------------
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage[utf8]{inputenc}
+\usepackage{libertine}
+\usepackage{amsmath}  
+\usepackage[top=3cm, bottom=3cm, outer=2.5cm, inner=3.5cm]{geometry} 
+
+%---------------------------------------------------------------
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{figure}[h]
+  \begin{flushright}
+    \vspace{-2cm}
+    \includegraphics[width=4cm]{images/ufcd-logo-e1-a4-color} %ALU_longlogo}
+  \end{flushright}
+\end{figure}
+
+\def\maintitle {The effects of flower frequency dependence for pollination in a similarity and spatial cluster gradient (working copy)}
+\def\authors{Helen Czioska}
+\def\supervisor{Supervisor: Dr. Gita Benadi, Department of Biometry and Environmental System Analysis}
+\def\cosupervisor{Co-supervisor: Prof. Dr. Alexandra-Maria Klein, Department of Nature Conservation and Landscape Ecology }
+\def\year{Freiburg, 2015}
+\def\course{Master Thesis  (Student ID 3522583) \\submitted to \\the Faculty of Environment \& Natural Resources \\ at the Albert-Ludwigs-University Freiburg}
+
+
+\begin{center}
+  {\huge\bfseries\maintitle\par}
+  \vskip 2em%
+%  {\Large\bfseries\subtitle\par}
+%  \vskip 2em%
+  {\Large\authors\par}
+   \vskip 2cm%
+  {\course\par}
+  \vskip 2cm%
+ % \vskip 2em%
+\end{center}
+  {\supervisor \\  \cosupervisor \\
+  \flushright \year \par} 
+
+%-------------------------------------------------------------
+\newpage
+\pagestyle{plain}
+\pagenumbering{arabic}
+
+%\abstract{ ... } 
+
+\input{Chapters/introduction}
+
+\input{Chapters/methods}
+
+\input{Chapters/results}
+
+\input{Chapters/discussion}
+
+\end{document}
