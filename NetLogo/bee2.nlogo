@@ -29,6 +29,9 @@ patches-own [
 
 
 globals[
+  flower-number
+  flower-number1
+  flower-number2
 ]
 
 
@@ -42,16 +45,34 @@ to setup
   ; species are randomly distributed within the total flower_cover
   
    
-   ask patches [ifelse random-float 100 > flower-cover
-     [set pcolor green]
-     [ifelse random-float 100 < frequency 
-      [set species 1 set pcolor 47 set reward 1 ] 
-      [set species 2 set pcolor 17 set reward 1 ]
-     ] 
-     ]
- ; second approach with clusters
- ; ask n-of (frequency / 10 ) patches [ set pcolor 47] 
- ; ask patches with [pcolor = 47] 
+;   ask patches [ifelse random-float 100 > flower-cover
+;     [set pcolor green]
+;     [ifelse random-float 100 < frequency 
+;      [set species 1 set pcolor 47 set reward 1 ] 
+;      [set species 2 set pcolor 17 set reward 1 ]
+;     ] 
+;     ]
+
+
+ ; second approach with clusters:
+ ask patches [set pcolor green]
+ set flower-number round ((flower-cover / 100) * (count patches))
+ set flower-number1 round (flower-number * (frequency / 100))
+ set flower-number2 round (flower-number - flower-number1)
+ 
+ ask n-of (flower-number1 / cluster-degree ) patches with [pcolor = green] [set species 1 set pcolor 47 set reward 1 ] 
+ ask n-of (flower-number2 / cluster-degree ) patches with [pcolor = green] [set species 2 set pcolor 17 set reward 1 ]
+ 
+ while [count patches with [species = 1] < flower-number1] [
+   ask one-of patches with [species = 1] [if any? neighbors with [pcolor = green] [ask one-of neighbors with [pcolor = green] [set species 1 set pcolor 47 set reward 1 ]]]
+ ]
+ 
+  while [count patches with [species = 2] < flower-number2] [
+   ask one-of patches with [species = 2] [if any? neighbors with [pcolor = green] [ask one-of neighbors with [pcolor = green][set species 2 set pcolor 17 set reward 1 ]]]
+ ]  
+   
+   
+   
    
    
    
@@ -298,7 +319,7 @@ flower-cover
 flower-cover
 0
 100
-10
+25
 1
 1
 NIL
@@ -347,7 +368,7 @@ frequency
 frequency
 0
 100
-20
+62
 1
 1
 NIL
@@ -708,6 +729,21 @@ false
 PENS
 "default" 1.0 0 -13840069 true "" "plot ((sum [visit-count] of patches with [species = 1]) / count patches with [species = 1]) / (ticks + 1)"
 "pen-1" 1.0 0 -7858858 true "" "plot ((sum [visit-count] of patches with [species = 2]) / count patches with [species = 2]) / (ticks + 1)"
+
+SLIDER
+340
+208
+512
+241
+cluster-degree
+cluster-degree
+1
+20
+20
+1
+1
+NIL
+HORIZONTAL
 
 @#$#@#$#@
 ## WHAT IS IT?
