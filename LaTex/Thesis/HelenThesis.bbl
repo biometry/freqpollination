@@ -1,0 +1,158 @@
+\begin{thebibliography}{}
+
+\bibitem[Bartumeus et~al., 2005]{bartumeus2005animal}
+Bartumeus, F., da~Luz, M. G.~E., Viswanathan, G., and Catalan, J. (2005).
+\newblock Animal search strategies: a quantitative random-walk analysis.
+\newblock {\em Ecology}, 86(11):3078--3087.
+
+\bibitem[Benadi et~al., 2012]{benadi2012population}
+Benadi, G., Bl{\"u}thgen, N., Hovestadt, T., and Poethke, H.-J. (2012).
+\newblock Population dynamics of plant and pollinator communities: stability
+  reconsidered.
+\newblock {\em The American Naturalist}, 179(2):157--168.
+
+\bibitem[Bobisud and Neuhaus, 1975]{bobisud1975pollinator}
+Bobisud, L.~E. and Neuhaus, R.~J. (1975).
+\newblock Pollinator constancy and survival of rare species.
+\newblock {\em Oecologia}, 21(3):263--272.
+
+\bibitem[Bukovac et~al., 2013]{bukovac2013bees}
+Bukovac, Z., Dorin, A., and Dyer, A. (2013).
+\newblock A-bees see: a simulation to assess social bee visual attention during
+  complex search tasks.
+\newblock 12:276--283.
+
+\bibitem[Campbell, 1986]{campbell1986predicting}
+Campbell, D.~R. (1986).
+\newblock Predicting plant reproductive success from models of competition for
+  pollination.
+\newblock {\em Oikos}, pages 257--266.
+
+\bibitem[Chittka et~al., 1997]{chittka1997foraging}
+Chittka, L., Gumbert, A., and Kunze, J. (1997).
+\newblock Foraging dynamics of bumble bees: correlates of movements within and
+  between plant species.
+\newblock {\em Behavioral Ecology}, 8(3):239--249.
+
+\bibitem[Chittka et~al., 1999]{chittka1999flower}
+Chittka, L., Thomson, J.~D., and Waser, N.~M. (1999).
+\newblock Flower constancy, insect psychology, and plant evolution.
+\newblock {\em Naturwissenschaften}, 86(8):361--377.
+
+\bibitem[Codling et~al., 2008]{codling2008random}
+Codling, E.~A., Plank, M.~J., and Benhamou, S. (2008).
+\newblock Random walk models in biology.
+\newblock {\em Journal of the Royal Society Interface}, 5(25):813--834.
+
+\bibitem[Dornhaus et~al., 2006]{dornhaus2006benefits}
+Dornhaus, A., Kl{\"u}gl, F., Oechslein, C., Puppe, F., and Chittka, L. (2006).
+\newblock Benefits of recruitment in honey bees: effects of ecology and colony
+  size in an individual-based model.
+\newblock {\em Behavioral Ecology}, 17(3):336--344.
+
+\bibitem[Dyer et~al., 2014]{dyer2014bee}
+Dyer, A., Dorin, A., Reinhardt, V., Garcia, J., and Rosa, M. (2014).
+\newblock Bee reverse-learning behavior and intra-colony differences:
+  Simulations based on behavioral experiments reveal benefits of diversity.
+\newblock {\em Ecological Modelling}, 277:119--131.
+
+\bibitem[Dyer et~al., 2008]{dyer2008comparative}
+Dyer, A.~G., Spaethe, J., and Prack, S. (2008).
+\newblock Comparative psychophysics of bumblebee and honeybee colour
+  discrimination and object detection.
+\newblock {\em Journal of Comparative Physiology A}, 194(7):617--627.
+
+\bibitem[Essenberg, 2012]{essenberg2012explaining}
+Essenberg, C.~J. (2012).
+\newblock Explaining variation in the effect of floral density on pollinator
+  visitation.
+\newblock {\em The American Naturalist}, 180(2):153--166.
+
+\bibitem[Faruq et~al., 2013]{faruq2013biological}
+Faruq, S., McOwan, P.~W., and Chittka, L. (2013).
+\newblock The biological significance of color constancy: An agent-based model
+  with bees foraging from flowers under varied illumination.
+\newblock {\em Journal of vision}, 13(10):10.
+
+\bibitem[Goulson, 1994]{goulson1994model}
+Goulson, D. (1994).
+\newblock A model to predict the influence of insect flower constancy on
+  interspecific competition between insect pollinated plants.
+\newblock {\em Journal of Theoretical Biology}, 168(3):309--314.
+
+\bibitem[Goulson, 1999]{goulson1999foraging}
+Goulson, D. (1999).
+\newblock Foraging strategies of insects for gathering nectar and pollen, and
+  implications for plant ecology and evolution.
+\newblock {\em Perspectives in Plant Ecology, Evolution and Systematics},
+  2(2):185--209.
+
+\bibitem[Goulson, 2000]{goulson2000pollinators}
+Goulson, D. (2000).
+\newblock Why do pollinators visit proportionally fewer flowers in large
+  patches?
+\newblock {\em Oikos}, 91(3):485--492.
+
+\bibitem[Hanoteaux et~al., 2013]{hanoteaux2013effects}
+Hanoteaux, S., Tielb{\"o}rger, K., and Seifan, M. (2013).
+\newblock Effects of spatial patterns on the pollination success of a less
+  attractive species.
+\newblock {\em Oikos}, 122(6):867--880.
+
+\bibitem[Kunin and Iwasa, 1996]{kunin1996pollinator}
+Kunin, W. and Iwasa, Y. (1996).
+\newblock Pollinator foraging strategies in mixed floral arrays: density
+  effects and floral constancy.
+\newblock {\em Theoretical population biology}, 49(2):232--263.
+
+\bibitem[Kunin, 1991]{kunin1991few}
+Kunin, W.~E. (1991).
+\newblock {\em Few and far between: plant population density and its effects on
+  insect-plant interactions}.
+\newblock PhD thesis, University of Washington.
+
+\bibitem[Montgomery, 2009]{montgomery2009pollen}
+Montgomery, B.~R. (2009).
+\newblock Do pollen carryover and pollinator constancy mitigate effects of
+  competition for pollination?
+\newblock {\em Oikos}, 118(7):1084--1092.
+
+\bibitem[Ne'eman and Kevan, 2001]{ne2001effect}
+Ne'eman, G. and Kevan, P.~G. (2001).
+\newblock The effect of shape parameters on maximal detection distance of model
+  targets by honeybee workers.
+\newblock {\em Journal of Comparative Physiology A}, 187(8):653--660.
+
+\bibitem[Pyke and Cartar, 1992]{pyke1992flight}
+Pyke, G. and Cartar, R. (1992).
+\newblock The flight directionality of bumblebees: do they remember where they
+  came from?
+\newblock {\em Oikos}, pages 321--327.
+
+\bibitem[Thomson, 1981]{thomson1981field}
+Thomson, J.~D. (1981).
+\newblock Field measures of flower constancy in bumblebees.
+\newblock {\em American Midland Naturalist}, pages 377--380.
+
+\bibitem[Viswanathan et~al., 2008]{viswanathan2008levy}
+Viswanathan, G., Raposo, E., and Da~Luz, M. (2008).
+\newblock L{\'e}vy flights and superdiffusion in the context of biological
+  encounters and random searches.
+\newblock {\em Physics of Life Reviews}, 5(3):133--150.
+
+\bibitem[Waddington, 1980]{waddington1980flight}
+Waddington, K.~D. (1980).
+\newblock Flight patterns of foraging bees relative to density of artificial
+  flowers and distribution of nectar.
+\newblock {\em Oecologia}, 44(2):199--204.
+
+\bibitem[Wertlen et~al., 2008]{wertlen2008detection}
+Wertlen, A.~M., Niggebr{\"u}gge, C., Vorobyev, M., and de~Ibarra, N.~H. (2008).
+\newblock Detection of patches of coloured discs by bees.
+\newblock {\em Journal of Experimental Biology}, 211(13):2101--2104.
+
+\bibitem[Wilensky, 1999]{wilensky1999netlogo}
+Wilensky, U. (1999).
+\newblock Netlogo.
+
+\end{thebibliography}

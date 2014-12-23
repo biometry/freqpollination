@@ -12,7 +12,7 @@
 \setcounter{totalnumber}{4}%
 
 %----------------------------------------------------------------------------
-\usepackage{hyperref}
+\usepackage[]{hyperref}
 \usepackage{color}
 \usepackage{xcolor}
 \usepackage{graphicx}
@@ -24,6 +24,8 @@
 \usepackage{libertine}
 \usepackage{amsmath}  
 \usepackage[top=3cm, bottom=3cm, outer=2.5cm, inner=3.5cm]{geometry} 
+\usepackage{natbib}
+\usepackage{rotating}
 
 %---------------------------------------------------------------
 
@@ -34,11 +36,11 @@
 \begin{figure}[h]
   \begin{flushright}
     \vspace{-2cm}
-    \includegraphics[width=4cm]{images/ufcd-logo-e1-a4-color} %ALU_longlogo}
+    \includegraphics[width=4cm]{Images/uni-logo} %ALU_longlogo}
   \end{flushright}
 \end{figure}
 
-\def\maintitle {The effects of flower frequency dependence for pollination in a similarity and spatial cluster gradient (working copy)}
+\def\maintitle {The effects of flower frequency dependence for pollination in a spatial cluster and similarity gradient (working file)}
 \def\authors{Helen Czioska}
 \def\supervisor{Supervisor: Dr. Gita Benadi, Department of Biometry and Environmental System Analysis}
 \def\cosupervisor{Co-supervisor: Prof. Dr. Alexandra-Maria Klein, Department of Nature Conservation and Landscape Ecology }
@@ -69,10 +71,21 @@
 
 \input{Chapters/introduction}
 
+\newpage
+
 \input{Chapters/methods}
+
+\newpage
 
 \input{Chapters/results}
 
+\newpage
+
 \input{Chapters/discussion}
+
+\newpage
+
+\bibliographystyle{apalike}
+\bibliography{masterthesis1}
 
 \end{document}
