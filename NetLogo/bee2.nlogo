@@ -54,10 +54,10 @@ to setup
 ;     ]
 
 
- ; second approach with clusters:
+; second approach with clusters:
  
  
- ask patches [set pcolor green]
+ ask patches [set pcolor green set species 0]
  set flower-number round ((flower-cover / 100) * (count patches))
  set flower-number1 round (flower-number * (frequency / 100))
  set flower-number2 round (flower-number - flower-number1)
@@ -65,24 +65,26 @@ to setup
  ask n-of (flower-number1 / cluster-degree ) patches with [pcolor = green] [set species 1 set pcolor 47 set reward 1 ] 
  ask n-of (flower-number2 / cluster-degree ) patches with [pcolor = green] [set species 2 set pcolor 17 set reward 1 ]
  
- while [count patches with [species = 1] < flower-number1 ] [
-   ask one-of patches with [species = 1] [if any? neighbors with [pcolor = green] [ask one-of neighbors with [pcolor = green][set species 1 set pcolor 47 set reward 1 ]]]
+ 
+ 
+ while [count patches with [species > 0] < flower-number ]
+ [ask one-of patches with [species > 0] 
+   [
+    if (species = 1 and (count patches with [species = 1] < flower-number1))
+      [if (any? neighbors with [species = 0])
+        [ask one-of neighbors with [species = 0] [set species [species] of myself set pcolor [pcolor] of myself set reward 1 ]]
+      ]
+   
+   if (species = 2 and (count patches with [species = 2] < flower-number2))
+      [if (any? neighbors with [species = 0])
+        [ask one-of neighbors with [species = 0] [set species [species] of myself set pcolor [pcolor] of myself set reward 1 ]]
+      ]
+   ]
  ]
  
-  while [count patches with [species = 2] < flower-number2] [
-   ask one-of patches with [species = 2] [if any? neighbors with [pcolor = green] [ask one-of neighbors with [pcolor = green][set species 2 set pcolor 17 set reward 1 ]]]
- ]  
-   
- 
- 
- ;verbesserungen:
- ;- species nicht nacheinander clustern lassen, species 2 hat sonst weniger freiheitsräume
- ;- unterschiedlich gr0ße Cluster, es sollen auch einzelne Blüten bleiben
  ;- die variable "Cluster-degree" von 1 bis number-flowers1 bzw number-flowers2 einsetzbar machen
  
-   
-   
-   
+
   create-bees number-bees 
   [ ;set shape "bee"
     set shape "circle" set color 104 
@@ -93,9 +95,8 @@ to setup
     set flower-memory (list)
     set handling-time 0
     
-
     let next-flower min-one-of patches with [species > 0 ][distance myself]
-    face next-flower set choice [species] of next-flower
+    face next-flower set choice [species] of next-flower ;sets the initial preference 
     ]
 
   reset-ticks
@@ -135,7 +136,7 @@ to move
   
 end           
            
-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 to visit
 
@@ -188,11 +189,10 @@ to visit
    set spec-last-visit ([species] of patch-here)    ; must update this parameter after checking for successful pollination
  
 
-   
-
-
 end
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 to stay
   
@@ -222,41 +222,19 @@ end
 
 
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-
-
-
-
-
-
-
-
-
-
-
-to-report visits1
-report (sum [visit-count] of patches with [species = 1])
+to-report visits [spec]
+report (sum [visit-count] of patches with [species = spec])
 end
 
-to-report visits2
-report (sum [visit-count] of patches with [species = 2])
+to-report pollination-success [spec]
+report (sum [pollination-count] of patches with [species = spec]) / count patches with [species = spec]
 end
 
-to-report pollination-success-1
-report (sum [pollination-count] of patches with [species = 1]) / count patches with [species = 1]
-end
-  
-to-report pollination-success-2
-report (sum [pollination-count] of patches with [species = 2]) / count patches with [species = 2]
-end
-
-to-report reward-1
-report ( mean [reward] of patches with [species = 1])
-end
-
-to-report reward-2
-report ( mean [reward] of patches with [species = 2])
+to-report reward-report [spec]
+report ( mean [reward] of patches with [species = spec])
 end
 
 to-report count-change-flightsteps
@@ -267,12 +245,8 @@ to-report count-change-reward
 report sum [change-count1] of bees
 end
 
-to-report number_flowers1
-report count patches with [species = 1]
-end
-
-to-report number_flowers2
-report count patches with [species = 2]
+to-report number_flowers [spec]
+report count patches with [species = spec]
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
@@ -375,7 +349,7 @@ frequency
 frequency
 0
 100
-62
+44
 1
 1
 NIL
@@ -746,7 +720,7 @@ cluster-degree
 cluster-degree
 1
 200
-5
+9
 1
 1
 NIL
