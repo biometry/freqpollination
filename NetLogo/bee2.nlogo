@@ -55,6 +55,8 @@ to setup
 
 
  ; second approach with clusters:
+ 
+ 
  ask patches [set pcolor green]
  set flower-number round ((flower-cover / 100) * (count patches))
  set flower-number1 round (flower-number * (frequency / 100))
@@ -63,16 +65,21 @@ to setup
  ask n-of (flower-number1 / cluster-degree ) patches with [pcolor = green] [set species 1 set pcolor 47 set reward 1 ] 
  ask n-of (flower-number2 / cluster-degree ) patches with [pcolor = green] [set species 2 set pcolor 17 set reward 1 ]
  
- while [count patches with [species = 1] < flower-number1] [
-   ask one-of patches with [species = 1] [if any? neighbors with [pcolor = green] [ask one-of neighbors with [pcolor = green] [set species 1 set pcolor 47 set reward 1 ]]]
+ while [count patches with [species = 1] < flower-number1 ] [
+   ask one-of patches with [species = 1] [if any? neighbors with [pcolor = green] [ask one-of neighbors with [pcolor = green][set species 1 set pcolor 47 set reward 1 ]]]
  ]
  
   while [count patches with [species = 2] < flower-number2] [
    ask one-of patches with [species = 2] [if any? neighbors with [pcolor = green] [ask one-of neighbors with [pcolor = green][set species 2 set pcolor 17 set reward 1 ]]]
  ]  
    
-   
-   
+ 
+ 
+ ;verbesserungen:
+ ;- species nicht nacheinander clustern lassen, species 2 hat sonst weniger freiheitsräume
+ ;- unterschiedlich gr0ße Cluster, es sollen auch einzelne Blüten bleiben
+ ;- die variable "Cluster-degree" von 1 bis number-flowers1 bzw number-flowers2 einsetzbar machen
+ 
    
    
    
@@ -283,7 +290,7 @@ GRAPHICS-WINDOW
 1
 0
 1
-1
+0
 1
 -50
 50
@@ -304,7 +311,7 @@ number-bees
 number-bees
 0
 100
-4
+37
 1
 1
 NIL
@@ -319,7 +326,7 @@ flower-cover
 flower-cover
 0
 100
-25
+20
 1
 1
 NIL
@@ -738,8 +745,8 @@ SLIDER
 cluster-degree
 cluster-degree
 1
-20
-20
+200
+5
 1
 1
 NIL
