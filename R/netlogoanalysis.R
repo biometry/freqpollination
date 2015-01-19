@@ -1,66 +1,39 @@
+###################################
+NLQuit()
+###################################
+
 install.packages("RNetLogo")
 install.packages ("reshape")
+install.packages("rJava")
+
 library (reshape)
 library (RNetLogo)
 nl.path <- "C:/Program Files (x86)/NetLogo 5.1.0"
 NLStart(nl.path)
 NLStart(nl.path, gui=FALSE)
 
-#####
-#fire-test
-#####
-model.fire <-  file.path("models", "Sample Models", "Earth Science", "Fire.nlogo")
-NLLoadModel(file.path(nl.path, model.fire))
-NLCommand ("set density 77")
-NLCommand("setup")
-NLCommand("go")          # just one tick
-NLDoCommand(10, "go")    # 10 ticks
-NLCommand("print \"Hello NetLogo, I called you from R.\"")
-NLReport("ticks")
 
-burned <- NLDoReportWhile("any? turtles", "go", c("ticks", "(burned-trees / initial-trees) * 100"), as.data.frame = TRUE, df.col.names = c("tick", "percent burned"))
-plot(burned, type = "s")
-
-#####################################
-###Exploratory Analysis
-
-NLCommand("setup")
-sim <- function(density) {
-  NLCommand("set density ", density, "setup")
-  NLDoCommandWhile("any? turtles", "go");
-  ret <- NLReport("(burned-trees / initial-trees) * 100")
-  return(ret)
-  }
-
-d <- seq(1,100,1)
-pb <- sapply(d, function(dens) sim(dens))
-plot(d, pb, xlab="density", ylab="percent burned")
-
-d <- seq(1,100,5)
-pb <- sapply(d, function(density) sim(density))
-plot(d, pb, xlab="density", ylab="percent burned")
-
-
-###################################
-NLQuit()
 
 model.path <- "C:/Users/hczioska/Documents/GitHub/freqpollination/NetLogo/bee2.nlogo"
 NLLoadModel(model.path)
+
+model.path2 <- "C:/Users/Helen/Desktop/bee2.nlogo"
+NLLoadModel(model.path2)
+
+
+# world: 100x100cells = 10x10m = 10m²
+
 NLCommand("setup")
+
+##"Default" - Settings
 NLCommand ("set frequency 30")
-NLDoCommand(10, "go")    # 10 ticks
-NLReport("ticks")
-
-######################
-visits <- NLDoReportWhile("ticks < 1000", "go", c("ticks", 
-                          "(sum [visit-count] of patches with [species = 1]) / count patches with [species = 1]",
-                          "(sum [visit-count] of patches with [species = 2]) / count patches with [species = 2]"),
-                          as.data.frame = TRUE, df.col.names = c("ticks", "VR1" , "VR2"))
-
-plot(visits$VR1 ~ visits$tick,  type = "s")
-points(visits$VR2 ~ visits$tick, col="red" ,  type = "s")
-legend ("topleft", c("VR1 (30% freq)", "VR2 (70% freq)"), lty=1, col= c("black", "red"), cex=.75)
-#######################
+NLCommand ("set reward-function 0.00004")
+NLCommand ("set number-bees 5")
+NLCommand ("set flower-cover 30 ")
+NLCommand ("set view 5")
+NLCommand ("set flightsteps-until-change 5")
+NLCommand ("set stdev-angle 65")
+NLCommand ("set cluster-degree 1")
 
 
 ####
@@ -71,22 +44,6 @@ rep.simf <- function(frequency, rep)
 d <- seq(10, 99, 10); res <- rep.simf(d, 10)
 boxplot(res, names = d, xlab = "frequency", ylab = "VR1")
 
-
-###############################################
-##mit VR1 und VR2
-
-# world: 100x100cells = 10x10m = 10m²
-
-LCommand("setup")
-
-##"Default" - Settings
-NLCommand ("set frequency 30")
-NLCommand ("set reward-function 0.00004")
-NLCommand ("set number-bees 5")
-NLCommand ("set flower-cover 30 ")
-NLCommand ("set view 5")
-NLCommand ("set flightsteps-until-change 5")
-NLCommand ("set stdev-angle 65")
 
 
 #####
@@ -214,7 +171,6 @@ points(dev.seq,dev.y[2,], col="red")
 legend ("topleft", c("VR1 (30%) ", "VR2 (70%)"), pch=15, col= c("black", "red"), cex=.75)
 
 
-
 #####
 #flightsteps-until-change
 #####
@@ -248,23 +204,26 @@ par(mfrow=c(3, 2))
 par(mfrow=c(1, 1))
 
 
-
-
-
 ###################
 
-flight.seq <- c(1,3,5,7,10,15,20) # 5
-angle.seq <- c(0,30,60,180,270,360) #65
-view.seq <- c(1,3,5,7,10,15,20) # 6
-reward.seq <- c(0, 0.00001, 0.00005, 0.0001 ,0.0005, 0.005) # 0.0004
-cover.seq <- c(10,0,90,) # 20
+flight.seq <- c(1,5,10) # 5
+angle.seq <- c(30, 60, 180) #65
+view.seq <- c(1,6,15) # 6
+reward.seq <- c(0, 0.0001, 0.001 ) # 0.0004
+cover.seq <- c(20, 30, 50) # 20
+bee.seq <- c(1,5,10,20,30) #5
+cluster.seq <- c(1)
+freq.seq <- c(rep(seq(from=5,to=95,by=10), rep(10)))
 
 
-all<- expand.grid(flight.seq,angle.seq,view.seq,reward.seq,cover.seq)
-names(all) <- c("flight", "angle", "view","reward","cover")
+test <- rep(1:4, rep(4))
+
+
+all<- expand.grid(flight.seq,angle.seq,view.seq,reward.seq,cover.seq, bee.seq)
+names(all) <- c("flight", "angle", "view","reward","cover", "bees")
 
 sim.all <- function (alldata) {
-  NLCommand("set stdev-angle", alldata[2], "set flightsteps-until-change", alldata[1], "set view", alldata[3], "setup")
+  NLCommand("set flightsteps-until-change", alldata[1], "set stdev-angle", alldata[2],  "set view", alldata[3], "set reward-function", alldata[4],"set flower-cover", alldata[5], "set number-bees", alldata[6], "setup")
   NLDoCommandWhile("ticks < 500", "go");
   VR1 <- NLReport("(sum [visit-count] of patches with [species = 1])/ count patches with [species = 1]")
   VR2 <- NLReport("(sum [visit-count] of patches with [species = 2])/ count patches with [species = 2]")
@@ -272,25 +231,121 @@ sim.all <- function (alldata) {
   return ( output)
 }
 
-output <- apply(all,1, sim.all) 
-output<- data.frame(matrix(unlist(output), nrow=448, byrow=T)) #list into dataframe
-names(output) <- c("VR1", "VR2") #new names
-sa1 <- cbind(all,output) #both dataframes together
+
+output3 <- apply(all,1, sim.all) 
+output.frame.3<- data.frame(matrix(unlist(output3), nrow=nrow(all), byrow=T)) #list into dataframe
+names(output.frame.3) <- c("VR1", "VR2") #new names
+sensitive.3 <- cbind(all,output.frame.3) #both dataframes together
+
+
+sensitive.4 <- read.csv("C:/Users/Helen/Desktop/output3.csv", header=T, sep= ",")
+str(sensitive.4)
+sensitive.4$freq1 <- 30
+sensitive.4$cluster <- 1
+sensitive.4[1] <- NULL
+length(unique(sensitive.4$bees))
+
+sa.all <- rbind(sa.all,sensitive.4)
+str(sa.all)
+length(unique(sa.all$bees))
+
+write.csv(sa.all, "C:/Users/Helen/Desktop/sa.all.csv")
+
+sa.all$beeVR1 <- sa.all$VR1 / sa.all$bees #visits per bee (mehr bienen = mehr visits)
+sa.all$beeVR2 <- sa.all$VR2 / sa.all$bees #visits per bee (mehr bienen = mehr visits)
+
 
 ##############################
+subset.c <- sa.all[ which(sa.all$cover == 20 & sa.all$bees == 5), ]
+subset.b <- sa.all[ which(sa.all$cover == 20 & sa.all$view == 6), ]
 
-plot(VR1 ~ flight, data=sa1, ylab="Visitation Rate in 1000sec")
-points(VR2 ~ flight, data=sa1, col="red")
+summary(glm (VR1 ~ flight+view+angle+cover+reward, data=sa.all))
+#view, cover und reward sind sig
 
-plot(VR1 ~ view, data=sa1, ylab="Visitation Rate in 1000sec")
-points(VR2 ~ view, data=sa1, col="red")
+summary(glm (VR2 ~ flight+view+angle+cover+reward, data=sa.all))
+#flight und cover sind sig
 
-plot(VR1 ~ angle, data=sa1, ylab="Visitation Rate in 1000sec")
-points(VR2 ~ angle, data=sa1, col="red")
+summary(glm (beeVR1~ flight+view+angle+reward+bees, data=subset.b))
+#view, reward und bees sind sig
+
+summary(glm (VR2 ~ flight+view+angle+reward, data=subset.c))
+#flight, view  und reward sind sig
 
 
 
-subset1 <- sa1[ which(sa1$flight == 5 & sa1$angle == 60), ]
+summary(lm (VR2 ~ flight, data=subset.c))
+#flight, view  und reward sind sig
 
-plot(VR1 ~ view, data=subset1, ylab="Visitation Rate in 1000sec")
-points(VR2 ~ view, data=subset1, col="red")
+abline(lm (VR1 ~ flight, data=subset.c))
+
+
+boxplot(VR1 ~ flight, data=subset.c, ylab="Visitation Rate in 1000sec")
+boxplot(VR2 ~ flight, data=subset.c, col="red")
+
+plot(beeVR1 ~ flight, data=sa.all, ylab="Visitation Rate in 1000sec")
+points(beeVR2 ~ flight, data=sa.all, col="red")
+
+plot(VR1 ~ flight, data=sa.all, ylab="Visitation Rate in 1000sec")
+points(VR2 ~ flight, data=sa.all, col="red")
+
+
+
+plot(VR1 ~ view, data=subset.c, ylab="Visitation Rate in 1000sec")
+points(VR2 ~ view, data=subset.c, col="red")
+
+plot(VR1 ~ view, data=sa.all, ylab="Visitation Rate in 1000sec")
+points(VR2 ~ view, data=sa.all, col="red")
+
+
+
+plot(VR1 ~ angle, data=subset.c, ylab="Visitation Rate in 1000sec")
+points(VR2 ~ angle, data=subset.c, col="red")
+
+plot(VR1 ~ reward, data=subset.c, ylab="Visitation Rate in 1000sec" , xlim=c(0,0.005))
+points(VR2 ~ reward, data=subset.c, col="red")
+abline(lm(VR1~reward, data=subset.c))
+abline(lm(VR2~reward, data=subset.c), col="red")
+
+plot(VR1 ~ cover, data=sa.all, ylab="Visitation Rate in 1000sec")
+points(VR2 ~ cover, data=sa.all, col="red")
+
+
+par(mfrow=c(2,2))
+boxplot(beeVR1 ~ bees, data=subset.b, ylab="Visitation Rate in 1000sec")
+boxplot(beeVR2 ~ bees, data=subset.b, col="red")
+
+
+length(unique(subset.b$bees))
+
+
+
+
+
+########################################
+#Default:
+NLCommand ("set reward-function 0.00004")
+NLCommand ("set number-bees 5")
+NLCommand ("set flower-cover 10 ")
+NLCommand ("set view 6")
+NLCommand ("set flightsteps-until-change 5")
+NLCommand ("set stdev-angle 65")
+NLCommand ("set cluster-degree 1")
+
+freq.seq <- c(rep((seq(from=5,to=95,by=10)), each=10))
+
+sim.freq <- function (freqtest) {
+  NLCommand("set frequency", freqtest, "setup")
+  NLDoCommandWhile("ticks < 2000", "go");
+  VR1 <- NLReport("(sum [visit-count] of patches with [species = 1])/ count patches with [species = 1]")
+  VR2 <- NLReport("(sum [visit-count] of patches with [species = 2])/ count patches with [species = 2]")
+  output <- c(VR1, VR2)
+  return ( output)
+}
+
+
+output20 <- sapply(freq.seq,function(d) sim.freq(d)) 
+
+plot(freq.seq,output10[1,],ylab="Visitation Rate in 1000sec", xlab="frequency")
+
+output10 <- sapply(freq.seq,function(d) sim.freq(d))
+
