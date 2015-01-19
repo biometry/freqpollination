@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.8)  23 DEC 2014 15:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.8)  15 JAN 2015 15:41
 entering extended mode
 **HelenThesis.tex
 
@@ -1253,6 +1253,16 @@ Package natbib Warning: Citation `molofsky2002novel' on page 1 undefined on inp
 ut line 23.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
@@ -1291,25 +1301,15 @@ e pro-gram-ming en-vi-ron-ment for ABMs and con-nectable with R through
 File: Images/flowchart-model.jpg Graphic file (type jpg)
 
 <use Images/flowchart-model.jpg>
-Package pdftex.def Info: Images/flowchart-model.jpg used on input line 187.
+Package pdftex.def Info: Images/flowchart-model.jpg used on input line 191.
 (pdftex.def)             Requested size: 426.79134pt x 342.55154pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 [6 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/flow
 chart-model.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
@@ -1325,25 +1325,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--206
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
+
+ []
+
+
 Package natbib Warning: Citation `roubik1992ecology' on page 7 undefined on inp
-ut line 207.
+ut line 211.
 
 
 Package natbib Warning: Citation `keasar1996innate' on page 7 undefined on inpu
-t line 209.
+t line 213.
 
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 220.
+(Font)              scaled to size 8.0pt on input line 224.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 225.
+(Font)              scaled to size 8.0pt on input line 229.
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 230.
+(Font)              scaled to size 8.0pt on input line 234.
 
 Package natbib Warning: Citation `roubik1992ecology' on page 7 undefined on inp
-ut line 251.
+ut line 255.
 
 
-Overfull \hbox (52.7356pt too wide) in paragraph at lines 223--269
+Overfull \hbox (52.7356pt too wide) in paragraph at lines 227--273
  [][][] 
  []
 
@@ -1369,7 +1379,7 @@ x)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `HelenThesis.out' has not changed.
-(rerunfilecheck)             Checksum: B9C56A837696D797E976B422A3DC7233;1112.
+(rerunfilecheck)             Checksum: FF35D7DCC5F1E5200D6EE6A06E8083B2;1118.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
  ) 
 Here is how much of TeX's memory you used:
@@ -1390,7 +1400,7 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:
 .pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pf
 b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on HelenThesis.pdf (13 pages, 765281 bytes).
+Output written on HelenThesis.pdf (13 pages, 765253 bytes).
 PDF statistics:
  313 PDF objects out of 1000 (max. 8388607)
  62 named destinations out of 1000 (max. 500000)

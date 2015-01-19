@@ -109,7 +109,7 @@ Within the 4 weeks of sampling I got 386 entries, each equivalent to 15min of ob
 
 mixed model (lme,lmer,glmer) --> glmPQL für p-values
 
-response variable: Per-Flower visitation rate (summed or by pollinator-subfamily) (poissson)
+response variable: Per-Flower visitation rate (summed or by pollinator-subfamily) (poisson)
 
 fixed: frequency, species richness, flower cover
 
@@ -134,14 +134,14 @@ Backwards selection with AIC
 
 
 \subsubsection{About ABMs}
-Agent-Based Model (ABM, also known as Individual-Based Model IBM)
-Every pollinator (bee-agent) behaves independently after the given behavior rules
+Agent-Based Model (ABM, also known as Individual-Based Model IBM) are a valuable tool for assessing interactions in an ecosystem. Every agent behaves independently after simple behavior rules. 
 Very good for testing behavior change with changing environmental conditions (eg. nectar reward or flower quantity)
 
-
-NetLogo \citep{wilensky1999netlogo} is a simple programming environment for ABMs and  connectable with R through the RNetLogo-Package.
+NetLogo \citep{wilensky1999netlogo} is a simple programming environment for ABMs and connectable with R through the RNetLogo-Package.
 
 Agent-based models get more attractive throughout the modeling community of various research areas. Foraging models also grew in number over the last years.
+
+
 
 \citet{faruq2013biological} compared the foraging success while applying different color wavelengths.
 
@@ -157,27 +157,34 @@ The ABM of \citet{hanoteaux2013effects} showed reproduction success of plants in
 
 \subsubsection{The Environment}
 
-In NetLogo, the "world" contains a spatial grid with a set number of cells calles patches. Agents move freely over the patches after their behavior rules. Patches and agents can both have own properties and can interact with each other. 
-The meadow has 100x100grid cells with horizontally and vertically wrapping to avoid edge effects. Every grid cell can either contain a single flower of one of the two species or grass. Flowers of two species are randomly distributed over the meadow. Every flower contains 1Joule of floral reward in the beginning of each simulation run. The bee-agents are also randomly distributed over the modeling environment, no hive is assigned. Bee-agents start without a fixed preference for a flower type but just pick the closest one when the simulation starts. 
+In NetLogo, the "world" contains a spatial grid with a set number of cells called patches. Agents are not spatially explicit and can move freely over the patches according to their given behavior rules. Patches and agents can both have own properties and can interact with each other. 
+In my model, the "meadow" has 100x100grid cells with horizontally and vertically wrapping to avoid edge effects. Every grid cell can either contain a single flower of one of the two species or grass. The flowers of those two species are randomly distributed over the meadow. Every flower contains 1Joule of floral reward in the beginning of each simulation run. The pollinators ("bee-agents") are also randomly distributed over the modeling environment, no hive is assigned. Bee-agents start without a fixed preference for a flower type but just pick the closest one when the simulation starts. 
+
 
 \subsubsection{Assumptions}
 
 \begin{itemize}
-\item	Pollinators choose behavioral strategies to maximize their foraging success (by favoring the more rewarding flower type)
-\item	Pollinators behave under the theory of flower constancy
-\item	Pollinators have a specific memory and sight distance
-\item	Pollinators follow the “correlated random walk” if no target is assigned
 \item	All pollinators are identical
+\item All flowers types are equal (also in terms of reward regrowth, handling times and attractiveness to the pollinator)
+\item	Pollinators behave under the theory of flower constancy
+
+\begin{itemize}
+\item Change when search is unsuccessful
+\item Chance when species is not rewarding any more
+\end{itemize}
+
+\item	All bees have a memory for recently visited flowers and gained reward
+\item	Pollinators follow the “correlated random walk” if no target is assigned
 \item	Energetic costs are ignored
-\item	Pollinators are randomly distributed, no hive is assigned 
-\item	Flowers offer a reward to the visiting pollinator
 \item	The reward is completely emptied by each visit and can be renewed over time
-\item	All Flower types are equal and treated indiscriminately by the pollinators
-\item	Equal handling times and rate of reward reproduction for both flower types
 \item	Pollinators do not communicate
 \item	Pollinators only use one trait to choose flower (visual)
 \item Pollinators do not have a limit of gained rewards
+\item	Pollinators are randomly distributed, no hive is assigned  (no central place foragers)
+
 \end{itemize}
+
+Behavior rules and parameter values are based on empirical research
 
 
 \subsubsection{Behavior rules}
@@ -214,7 +221,7 @@ For simplicity reasons, the pollen carryover rate for successful pollination is 
 After full collection of the reward, the bee-agent updates its flower-memory and its reward-memory and continues foraging. Each visit and successful pollination is recorded for later analysis. 
 
 
-% ------------------------------------
+%% ------------------------------------
 
 \begin{sidewaystable}[htbp]
 \footnotesize
