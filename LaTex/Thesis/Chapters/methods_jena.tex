@@ -1,0 +1,55 @@
+\label{ch:methods}
+
+\section{Natural Field Condition} 
+%Natural condition experiments
+%natural frequency experiments
+%field data
+
+\subsection{Methods}
+
+\subsubsection*{Study Site}
+
+The data used in this analysis were collected in the area of the Jena-Experiment, locatednorth of the city of Jena in the middle of Germany (N\ang{50;55;} E\ang{11;35;} ; 130 m a.s.l.). Mean annual temperature is $9.3 ^\circ\text{C}$ and mean annual precipitation 578mm \citep{kluge2000klima}.
+In 2002, 10ha of strongly fertilized arable field in a floodplain of the Saale river were converted into a biodiversity experiment. Species mixes of 1, 2, 4, 6, 8, 16 and 60 species from a pool of 60 common European grassland species were sown in 82 plots a 20m x 20m \citep{roscher2004role}. 
+
+The Jena Experiment has the purpose to explore the effect of plant diversity (species richness and functional group richness) in grassland communities and is object to numerous studies and experiments.
+The plots of the Jena Experiment are mowed twice a year in accord to standard grassland management. Parts of each plot are additionally weeded twice a year to maintain the original plant composition. Two subplots were excluded from the weeding since 2002 ("Old Invasion Plots", 4m x 5.5m , 22m$^{2}$ ) and since 2009 ("New Invasion Plots", 5m x 3.5m, 17.5m$^{2}$) to evaluate invasive potential and effects. 
+Subplots with continuous weeding were scarce with flowers and had a generally low species richness. Hence I collected the data in the old and new invasion plots with a higher cover, species richness and diversity. From the 82 plots of the Jena Experiment I only included plots with a floral cover between 20\% and 70\% for better comparison. In total, 23 plots were sampled throughout this study. 
+
+\subsubsection*{The Sampling}
+
+I selected the focal plant species during the field work as the flora changed very quickly. A focal species had to be flowering for at least one week in the sampling time and be present in at least five plots with a differing frequency to get sufficient data. Therefore, I chose \textit{Lathyrus pratensis}, \textit{Lathyrus pratensis}, \textit{Trifolium pratense} and \textit{Onobrychis viciifolia} of the family Fabaceae and \textit{Geranium pratense} of the family Geraniaceae (Supplementary material, tab.~\ref{tab:Species}).\\
+
+Pollinator observations were only made during suitable weather conditions (maximum partly overcast, maximum light wind, min. $15 ^\circ\text{C}$). The sampling took place between 9am and 5pm. Overall, 15 days between 20th of July and 12th of August 2014 were suitable for pollinator observations.\\
+
+Per observation I recorded all pollinator activity during 15 minutes in a 80cm x 80cm subplot. This size is feasible to watch even with high pollinator activity and floral cover. The documentation included all visits to flowers of the focal plant species and accumulated visitation number for all other flowers in the subplot. I counted the flowers of the focal species to calculate the per-flower visitation rate. As possible drivers for visitation rate changes, I estimated the floral cover and identified all other flowering plant species present on subplot and plot level. Each plot contained eight evenly distributed subplots for 2h observation time per focal species and frequency. \\
+%as shown in Figure~\ref{fig:plot-design}
+
+
+\subsubsection*{Statistical Analysis}
+
+Per-flower visitation rate is a effective response variable for analyzing the effect of frequency dependence. It is calculated as followed:\\
+
+%In this study, visitation rate equals the count of visits of all pollinator types to all flowers of the focal species per subplot within 15 minutes observation time divided trough the number of flowers of the focal species within the subplot
+
+VR$_{\textit{i}}$= $\dfrac{\Sigma V_{\textit{i}}}{\Sigma F_{\textit{i}}}$
+\\
+
+With VR$_{\textit{i}}$ being the per-flower visitation rate of species \textit{i}, 
+V$_{\textit{i}}$ the count of all visits to a flower with species \textit{i} within 15 minutes and F$_{\textit{i}}$ a flower of species \textit{i} within the subplot. Therefore, the response variable is no count data and was treated with a Gaussian error distribution in the analysis.
+
+The explanatory variables of the beyond optimal model include species richness, floral cover and frequency as single, quadratic and cubic term with and without interaction with species, all on the plot level and as continuous variable. Species was included as nominal response variable. All statistical analysis was performed with R, version 3.1.2. \citep{R}. \\
+%All variables also existed on a subplot level but with only 386 data points, I decided to focus on the plot level.
+
+I used variance inflation factors (VIF) to check weather any variables in the dataset are collinear and should be removed prior to the analysis. With all values below two, there was no sign for collinearity and therefore OK to use them in the model selection as explanatory variables (\citealt{zuur2007analysing}, supplementary material, tab.~\ref{tab:VIF}). Pairwise scatterplots with included correlation of coefficients also showed only minor correlation (Supplementary material, fig.~\ref{fig:pairs-plot}).
+
+The sampling design contained 8 observations per plot summing up to 2h of observations per species and frequency. Therefore, the data are not independent and I chose a linear mixed effect model with subplot nested in plot as random effect. I used the function "lme" from the R package "nlme" \citep{Rnlme} for all further analysis.
+%Zuur p147
+
+The beyond optimal model with the full set of reasonable predictors and interactions showed a strong pattern of heteroscedasticity in the residuals. With the varIdent-function from the R-package "nlme", every species is allowed to have its own variance structure and we can maintain the differences in attractiveness of the five focal species in the model as biological information. The weighting provided a significantly better variance structure for the model (\textit{L} = 383.74, \textit{df} = 4, \textit{p} $<$ 0.0001).
+
+I performed a backward stepwise deletion of interactions and predictors with maximum likelihood estimation (ML) for each model. The loss of explanatory power in the model after removal of a variable was tested by comparing the Akaike information criterion (AIC) of the model with and without the explanatory variable (ANOVA model comparison). If there was no significant loss of explanatory power, the variable was removed. The selection was verified by a global selection via the dredge-function from the R-package "MuMin" \citep{MuMIn} with maximum likelihood estimation. 
+
+%The mixed effect model was significantly better compared to a generalized least squares model with the same set of explanatory variables (models estimated with REML, \textit{L} =7.97 , \textit{df} =2 , \textit{P} = 0.0186).\\
+
+The final model was again validated by plotting the normalized residuals against fitted values. The vertical gap in the residuals can be explained by the difference in flower attractiveness. \textit{Geranium pratense} and \textit{Onobrychis viciifolia} got very high visitation rates whereas \textit{Trifolium pratense}, \textit{Lotus corniculatus} and \textit{Lathyrus pratensis} had generally only few visits. However, the heteroscedasticity of residuals could be dealt with by the weighting and the mean of the residuals is close to zero ($<$ 0.0001, supplementary material fig.~\ref{fig:residuals}). 

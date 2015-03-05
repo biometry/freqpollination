@@ -1,6 +1,67 @@
-\chapter{Discussion}
 \label{ch:discussion}
+%
+%Move from specific to general: your finding(s) --> literature, theory, practice.
+%
+%1. Summarize findings (some people only read this part)
+%-restate the problem (one sentence) and the methods 
+%2.Discuss findings, connect to other findings, speculate about reasons
+%- "our findings support earlier findings" 
+%- "We speculate"
+%- "still unknown"
+%- Describe the patterns, principles, relationships results show
+%3. discuss limits
+%-Sense of this section is to establish the domain under which your results are valid, not to question your approach in general
+%-Discuss expected criticism of reviewers
+
+
+%there results are consistent with ...
+
 \section{Discussion}
 
-\section{Conclusions}
-\label{sec:conclusions}
+Frequency dependence can have far reaching consequences for the development and maintaining of biodiversity. Aim of this thesis is to study the existence of frequency dependence in a natural plant community for the first time, explore the kind of relationship and understand the underlying rules and drivers for frequency dependence with the help of an agent-based model.
+The results of the natural condition data are consistent with the simulation data: We were able to find a distinct frequency dependence within the per-flower visitation rate (cf. fig.~\ref{fig:LME} and fig.~\ref{fig:PFV}A). The relationship is defined by a a steep increase of visits within the first 20\% occurrence followed by a unproportional low gain of visits for every additional flower until the flower becomes exclusive and the per-flower visitation rate increases again. Additional simulations confirms the negative frequency dependence as outcome of the empirical based default values.\\
+
+\subsubsection*{Explaining negative frequency dependence}
+
+The field data suggests a negative FD for at least four different rewarding flower species confirmed by the results from the foraging simulation whereas previous research found positive FD for lab experiments and inconsistence in the few field experiments with color morphs (review by \citealt{smithson2001pollinator}). Where does the discrepancy of lab and field data comes from? 
+The sensitivity analysis of the ABM can give an explanation: If the reward function is increased to a refill within 10 ticks, the relationship reversed to a positive frequency dependence (Fig.~\ref{fig:SA_reward}) and the rare species gets unproportionally few visits. The curve is  highly consistent with findings of  \cite{smithson1997density} and \cite{smithson1996frequency} in their lab experiments. On the bee-board, artificial flowers were refilled after each foraging bout. Therefore, every bumble bee got a fresh set of equally rewarding flowers to forage on which is comparable to a high regrowth function in the ABM.
+ It is known that pollinators change constancy if they experience bad reward \citep{chittka1997foraging} and if the reward is always high, bee-agents have less incentive to go on exploratory visits to the rare species as the abundant type is easy to find and sufficient rewarding. 
+Hence it can be assumed that negative frequency dependent selection does not exclusively apply for non-rewarding species but also for flowering communities with varying or intermediate to low reward. Positive frequency dependence in pollination might be only possible for highly rewarding or artificial systems as is was  If negative frequency dependence is in fact found for a variety of rewarding flowers, I agree with \cite{Eckhart2006frequency} that frequency dependence might be more important in the development and conservation of diversity then previously recognized. More research, especially on natural field conditions, is needed to confirm this hypothesis.
+
+%+ FD and -FD can occur spatial, time ralated, simulataiously, for all rewarding flowers
+
+%high nectar production rates increases approach rates Pleasants 1981; Real & Rathcke 1991;Duffield al 1993; Shykoff & Bucheli 1995 (from  Klinkhamer 2001)
+
+\subsubsection*{Cover and Cluster as important drivers}
+The model reveals two drivers for frequency dependence: The higher the floral cover, the stronger the frequency dependence and the bigger the clusters, the lower the frequency dependence (Fig.~\ref{fig:PFV}E-H). 
+Floral density is known to influence visitation rates, usually positive and with a saturating function (e.g.\citealt{essenberg2012explaining}, \citealt{bernhardt2008effects}, \citealt{Kunin1997}). Those findings are consistent with the functional response found for different cover values (Supplementary material, fig.~\ref{fig:nonfreq}a). If the cover is increasing, the absolute number of flowers rises also for the rare species. That makes it more likely for a bee-agent to find a flower before changing preference towards the common species even if foraging on the later would be more efficient. High cover causes the same effect as expanded vision distance or maximum search limit (cf. fig.~\ref{fig:SA_view} and fig.~\ref{fig:SA_flight}): The main reason of abandoning flower constancy becomes multiple visit of flowers with low reward. Furthermore, every visit to a rare species weights high in the per-flower visitation rate because the sum of visits is divided through the number of flowers. Even few "exploratory" visits can have great impact on the proportion. 
+
+The model shows that spatial agglomeration of flowers can lead to a more efficient foraging (more visits per time unit), less FD and a higher quality of visits due to compatible pollen deposits. If flowers are evenly distributed, many short search and flight times apply. A intermediate cluster level is easy to exploit by a pollinator whereas the flight and search times can be very long in between few big cluster, especially for low floral densities (Supplementary material, fig.~\ref{fig:nonfreq}b). 
+It was already suggested by \cite{epperson1987frequency} that spatial agglomeration of flowers decreases frequency dependence. In the model, a similar effect as with low cover takes place: If flowers are agglomerated at few places, they are more difficult to find for a bee-agent with limited vision. They will change preferences due to long search times and forage efficiently on the next best cluster. 
+
+\subsubsection*{Requirements for successful pollination}
+Optimal visitation rate is gained at low frequency with high cover and low cluster values. Those visits might not be the best quality if the pollination per visit ratio is comparatively low (Fig.~\ref{fig:POC}a,d). 
+The ratio can be seen as index for flower constancy: If the majority of visits lead even for small pollen-carryover to a successful pollination the bee-agents behave strongly after the theory of constancy \citep{montgomery2009pollen}. If the cover is high enough, bee-agents will keep their constancy also for rare species because they are abundant enough. If the agglomeration of flowers is high, bee-agents exploit this cluster before leaving for the next. Every visit within a cluster of flowers of the same species is counted as successful pollination and can lead to a high visit quality even if the cover is low (cf. \citealt{jakobsson2009relationships})
+
+Therefore it would be optimal for rare flowers to stand in clusters of flowers if the cover is low to get sufficient pollination. If the cover is high the spatial distribution plays a minor role for the visit quality.  
+
+\subsubsection*{Frequency dependence exists also on sum of visits to the flower community}
+
+Additionally to individual frequency dependence, I analyzed the impact of species partitioning on frequency dependent visitation the system as whole. Unfortunately, this part of frequency dependence lacks completely in previous research. 
+
+If the cover is very low, most visits can be gained if one species is exclusive. Co-flowering will lead to longer search times and less overall visits (u-shape for 5\% cover in fig.~\ref{fig:SUM}a). For higher cover, the frequency dependence shows a fourth-degree polynomial relationship. If one species is rare at 5-20\%, some bee-agents will still have at least exploratory visits to the rare species and spend inefficient time searching, the total visitation number drops to a minimum. If species are even distributed the pollinators forage on both species in equal amounts. This is the most efficient status for the overall ecosystem, especially for high covers or spatial agglomeration. 
+
+A higher spatial agglomeration weakens the frequency effect but will also reduce the total visits. If flowers are evenly and random distributed, the bee-agent has many small search times intermittent by collecting reward on a single flower and continue foraging. Rare flowers can be found comparatively easy if they are spread over the whole meadow and flower constancy will be kept even if it is highly inefficient. If the clusters of flowers are bigger, bee-agents will not find rare flowers that easily because they might occur only in a single cluster on the meadow. The bee-agent will switch to the common flower, the minimum at very uneven distribution disappears and the relationship becomes slightly hump-shaped (Fig.~\ref{fig:SUM}b,c). 
+
+For both the pollinators and the co-flowering plants the ABM suggests to have even frequency for high cover and very uneven for low cover. An intermediate degree of clustering also improves the absolute number of visits, species partitioning gets less important. These findings should be verified by manipulated field experiments. Natural conditions data like sampled in the Jena Experiment are not suitable for this purpose because every plot contains more than two co-flowering species with unequal attractiveness.  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection*{Limitations of the study design and future research suggestions}
+
+Even though modeling can be an excellent tool to understand and interpret ecological data, some questions evolve comparing the data collected in the Jena Experiment and the foraging model.
+Floral cover is an important factor in the outcome of the model. It influences not only the absolute number of visits but also the intensity of frequency dependence. But it was removed in the model selection as it was no factor of explanatory power to the per-flower visitation data. 
+Reason could lie in the sampling design. Data was only observed from plots with an intermediate cover, no extremes were taken into account. In total, there were only five values for cover in the final analysis. Also all cover values are estimations, no exact measurements. Another drawback are the lack of data for cluster values and pollination success. The experimental design and time restraints made it impossible to take more predictors into account. The data collected in Jena shows drastic differences in attractiveness of the focal species. Also, frequency dependence was found to be subject to each species. Therefore I strongly suggest research on a variety on species, both rewarding and unrewarding in natural occurring flower communities and manipulated simple two-species systems. 
+Necessary to validate further results of the ABM would be a supplementary study with manipulated frequency, cover and cluster values of only two co-flowering species. Either under natural conditions where manipulation is possible (eg. \citealt{Eckhart2006frequency,essenberg2012explaining}) or with potted plants \citep{epperson1987frequency}. 
+
+
