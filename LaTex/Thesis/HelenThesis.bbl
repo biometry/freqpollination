@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Barton, 2014]{MuMIn}
+Barton, K. (2014).
+\newblock {\em MuMIn: Multi-Model Inference}.
+\newblock R package version 1.12.1.
+
 \bibitem[Bartumeus et~al., 2005]{bartumeus2005animal}
 Bartumeus, F., da~Luz, M. G.~E., Viswanathan, G., and Catalan, J. (2005).
 \newblock Animal search strategies: a quantitative random-walk analysis.
@@ -11,6 +16,18 @@ Benadi, G., Bl{\"u}thgen, N., Hovestadt, T., and Poethke, H.-J. (2012).
   reconsidered.
 \newblock {\em The American Naturalist}, 179(2):157--168.
 
+\bibitem[Bernhardt et~al., 2008]{bernhardt2008effects}
+Bernhardt, C.~E., Mitchell, R.~J., and Michaels, H.~J. (2008).
+\newblock Effects of population size and density on pollinator visitation,
+  pollinator behavior, and pollen tube abundance in lupinus perennis.
+\newblock {\em International Journal of Plant Sciences}, 169(7):944--953.
+
+\bibitem[Bever, 1999]{bever1999dynamics}
+Bever, J. (1999).
+\newblock Dynamics within mutualism and the maintenance of diversity: inference
+  from a model of interguild frequency dependence.
+\newblock {\em Ecology Letters}, 2(1):52--61.
+
 \bibitem[Bobisud and Neuhaus, 1975]{bobisud1975pollinator}
 Bobisud, L.~E. and Neuhaus, R.~J. (1975).
 \newblock Pollinator constancy and survival of rare species.
@@ -20,7 +37,7 @@ Bobisud, L.~E. and Neuhaus, R.~J. (1975).
 Bukovac, Z., Dorin, A., and Dyer, A. (2013).
 \newblock A-bees see: a simulation to assess social bee visual attention during
   complex search tasks.
-\newblock 12:276--283.
+\newblock {\em Advances in Artificial Life, ECAL}, 12:276--283.
 
 \bibitem[Campbell, 1986]{campbell1986predicting}
 Campbell, D.~R. (1986).
@@ -44,6 +61,12 @@ Codling, E.~A., Plank, M.~J., and Benhamou, S. (2008).
 \newblock Random walk models in biology.
 \newblock {\em Journal of the Royal Society Interface}, 5(25):813--834.
 
+\bibitem[DeAngelis and Mooij, 2005]{deangelis2005individual}
+DeAngelis, D.~L. and Mooij, W.~M. (2005).
+\newblock Individual-based modeling of ecological and evolutionary processes.
+\newblock {\em Annual Review of Ecology, Evolution, and Systematics}, pages
+  147--168.
+
 \bibitem[Dornhaus et~al., 2006]{dornhaus2006benefits}
 Dornhaus, A., Kl{\"u}gl, F., Oechslein, C., Puppe, F., and Chittka, L. (2006).
 \newblock Benefits of recruitment in honey bees: effects of ecology and colony
@@ -62,6 +85,25 @@ Dyer, A.~G., Spaethe, J., and Prack, S. (2008).
   discrimination and object detection.
 \newblock {\em Journal of Comparative Physiology A}, 194(7):617--627.
 
+\bibitem[Eckhart et~al., 2006]{Eckhart2006frequency}
+Eckhart, V., Rushing, N., Hart, G., and Hansen, J. (2006).
+\newblock Frequency-dependent pollinator foraging in polymorphic clarkia
+  xantiana ssp. xantiana populations: implications for flower colour evolution
+  and pollinator interactions.
+\newblock {\em Oikos}, 112(2):412--421.
+
+\bibitem[Elliott and Irwin, 2009]{elliott2009effects}
+Elliott, S.~E. and Irwin, R.~E. (2009).
+\newblock Effects of flowering plant density on pollinator visitation, pollen
+  receipt, and seed production in delphinium barbeyi (ranunculaceae).
+\newblock {\em American Journal of Botany}, 96(5):912--919.
+
+\bibitem[Epperson and Clegg, 1987]{epperson1987frequency}
+Epperson, B.~K. and Clegg, M.~T. (1987).
+\newblock Frequency-dependent variation for outcrossing rate among flower-color
+  morphs of ipomoea purpurea.
+\newblock {\em Evolution}, pages 1302--1311.
+
 \bibitem[Essenberg, 2012]{essenberg2012explaining}
 Essenberg, C.~J. (2012).
 \newblock Explaining variation in the effect of floral density on pollinator
@@ -73,6 +115,13 @@ Faruq, S., McOwan, P.~W., and Chittka, L. (2013).
 \newblock The biological significance of color constancy: An agent-based model
   with bees foraging from flowers under varied illumination.
 \newblock {\em Journal of vision}, 13(10):10.
+
+\bibitem[Gigord et~al., 2001]{gigord2001negative}
+Gigord, L.~D., Macnair, M.~R., and Smithson, A. (2001).
+\newblock Negative frequency-dependent selection maintains a dramatic flower
+  color polymorphism in the rewardless orchid dactylorhiza sambucina (l.) soo.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  98(11):6253--6255.
 
 \bibitem[Goulson, 1994]{goulson1994model}
 Goulson, D. (1994).
@@ -93,11 +142,53 @@ Goulson, D. (2000).
   patches?
 \newblock {\em Oikos}, 91(3):485--492.
 
+\bibitem[Goulson et~al., 1997]{goulson1997foraging}
+Goulson, D., Ollerton, J., and Sluman, C. (1997).
+\newblock Foraging strategies in the small skipper butterfly,< i> thymelicus
+  flavus</i>: when to switch?
+\newblock {\em Animal Behaviour}, 53(5):1009--1016.
+
+\bibitem[Goulson and Wright, 1998]{goulson1998flower}
+Goulson, D. and Wright, N.~P. (1998).
+\newblock Flower constancy in the hoverflies episyrphus balteatus (degeer) and
+  syrphus ribesii (l.)(syrphidae).
+\newblock {\em Behavioral Ecology}, 9(3):213--219.
+
 \bibitem[Hanoteaux et~al., 2013]{hanoteaux2013effects}
 Hanoteaux, S., Tielb{\"o}rger, K., and Seifan, M. (2013).
 \newblock Effects of spatial patterns on the pollination success of a less
   attractive species.
 \newblock {\em Oikos}, 122(6):867--880.
+
+\bibitem[HILL et~al., 1997]{hill1997spontaneous}
+HILL, P.~S., WELLS, P.~H., and WELLS, H. (1997).
+\newblock Spontaneous flower constancy and learning in honey bees as a function
+  of colour.
+\newblock {\em Animal Behaviour}, 54(3):615--627.
+
+\bibitem[Jakobsson et~al., 2009]{jakobsson2009relationships}
+Jakobsson, A., L{\'a}zaro, A., and Totland, {\O}. (2009).
+\newblock Relationships between the floral neighborhood and individual pollen
+  limitation in two self-incompatible herbs.
+\newblock {\em Oecologia}, 160(4):707--719.
+
+\bibitem[Jones, 1996]{jones1996pollinator}
+Jones, K.~N. (1996).
+\newblock Pollinator behavior and postpollination reproductive success in
+  alternative floral phenotypes of clarkia gracilis (onagraceae).
+\newblock {\em International Journal of Plant Sciences}, pages 733--738.
+
+\bibitem[Keasar et~al., 1996]{keasar1996innate}
+Keasar, T., Shmida, A., and Motro, U. (1996).
+\newblock Innate movement rules in foraging bees: flight distances are affected
+  by recent rewards and are correlated with choice of flower type.
+\newblock {\em Behavioral Ecology and Sociobiology}, 39(6):381--388.
+
+\bibitem[Kluge et~al., 2000]{kluge2000klima}
+Kluge, G., M{\"u}ller-Westermeier, G., and Wetterdienst, D. (2000).
+\newblock {\em Das Klima ausgew{\"a}hlter Orte der Bundesrepublik Deutschland:
+  Jena}.
+\newblock Selbstverlag des Deutschen Wetterdienstes.
 
 \bibitem[Kunin and Iwasa, 1996]{kunin1996pollinator}
 Kunin, W. and Iwasa, Y. (1996).
@@ -111,11 +202,36 @@ Kunin, W.~E. (1991).
   insect-plant interactions}.
 \newblock PhD thesis, University of Washington.
 
+\bibitem[Kunin, 1993]{kunin1993sex}
+Kunin, W.~E. (1993).
+\newblock Sex and the single mustard: population density and pollinator
+  behavior effects on seed-set.
+\newblock {\em Ecology}, pages 2145--2160.
+
+\bibitem[Kunin, 1997]{Kunin1997}
+Kunin, W.~E. (1997).
+\newblock Population size and density effects in pollination: pollinator
+  foraging and plant reproductive success in experimental arrays of brassica
+  kaber.
+\newblock {\em Journal of Ecology}, pages 225--234.
+
+\bibitem[Molofsky and Bever, 2002]{molofsky2002novel}
+Molofsky, J. and Bever, J.~D. (2002).
+\newblock A novel theory to explain species diversity in landscapes: positive
+  frequency dependence and habitat suitability.
+\newblock {\em Proceedings of the Royal Society of London. Series B: Biological
+  Sciences}, 269(1508):2389--2393.
+
 \bibitem[Montgomery, 2009]{montgomery2009pollen}
 Montgomery, B.~R. (2009).
 \newblock Do pollen carryover and pollinator constancy mitigate effects of
   competition for pollination?
 \newblock {\em Oikos}, 118(7):1084--1092.
+
+\bibitem[Morris et~al., 2010]{morris2010benefit}
+Morris, W.~F., V{\'a}zquez, D.~P., and Chacoff, N.~P. (2010).
+\newblock Benefit and cost curves for typical pollination mutualisms.
+\newblock {\em Ecology}, 91(5):1276--1285.
 
 \bibitem[Ne'eman and Kevan, 2001]{ne2001effect}
 Ne'eman, G. and Kevan, P.~G. (2001).
@@ -123,11 +239,76 @@ Ne'eman, G. and Kevan, P.~G. (2001).
   targets by honeybee workers.
 \newblock {\em Journal of Comparative Physiology A}, 187(8):653--660.
 
+\bibitem[Pinheiro et~al., 2014]{Rnlme}
+Pinheiro, J., Bates, D., DebRoy, S., Sarkar, D., and {R Core Team} (2014).
+\newblock {\em {nlme}: Linear and Nonlinear Mixed Effects Models}.
+\newblock R package version 3.1-117.
+
 \bibitem[Pyke and Cartar, 1992]{pyke1992flight}
 Pyke, G. and Cartar, R. (1992).
 \newblock The flight directionality of bumblebees: do they remember where they
   came from?
 \newblock {\em Oikos}, pages 321--327.
+
+\bibitem[{R Core Team}, 2014]{R}
+{R Core Team} (2014).
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria.
+
+\bibitem[Rands and Whitney, 2010]{rands2010effects}
+Rands, S.~A. and Whitney, H.~M. (2010).
+\newblock Effects of pollinator density-dependent preferences on field margin
+  visitations in the midst of agricultural monocultures: A modelling approach.
+\newblock {\em Ecological Modelling}, 221(9):1310--1316.
+
+\bibitem[Roscher et~al., 2004]{roscher2004role}
+Roscher, C., Schumacher, J., Baade, J., Wilcke, W., Gleixner, G., Weisser,
+  W.~W., Schmid, B., and Schulze, E.-D. (2004).
+\newblock The role of biodiversity for element cycling and trophic
+  interactions: an experimental approach in a grassland community.
+\newblock {\em Basic and Applied Ecology}, 5(2):107--121.
+
+\bibitem[Roubik, 1992]{roubik1992ecology}
+Roubik, D.~W. (1992).
+\newblock {\em Ecology and natural history of tropical bees}.
+\newblock Cambridge University Press.
+
+\bibitem[Smithson, 2001]{smithson2001pollinator}
+Smithson, A. (2001).
+\newblock Pollinator preference, frequency dependence, and floral evolution.
+\newblock {\em Cognitive ecology of pollination: Animal behaviour and
+  evolution, Cambridge Univ. Press, Cambridge}, pages 237--257.
+
+\bibitem[Smithson and Macnair, 1996]{smithson1996frequency}
+Smithson, A. and Macnair, M. (1996).
+\newblock Frequency-dependent selection by pollinators: mechanisms and
+  consequences with regard to behaviour of bumblebees bombus terrestris
+  (l.)(hymenoptera: Apidae).
+\newblock {\em Journal of Evolutionary Biology}, 9(5):571--588.
+
+\bibitem[Smithson and Macnair, 1997]{smithson1997density}
+Smithson, A. and Macnair, M.~R. (1997).
+\newblock Density-dependent and frequency-dependent selection by bumblebees
+  bombus terrestris (l.)(hymenoptera: Apidae).
+\newblock {\em Biological Journal of the Linnean Society}, 60(3):401--417.
+
+\bibitem[Smithson and MacNair, 1997]{smithson1997negative}
+Smithson, A. and MacNair, M.~R. (1997).
+\newblock Negative frequency-dependent selection by pollinators on artificial
+  flowers without rewards.
+\newblock {\em Evolution}, pages 715--723.
+
+\bibitem[Stout et~al., 1998]{stout1998influence}
+Stout, J.~C., Allen, J.~A., and Goulson, D. (1998).
+\newblock The influence of relative plant density and floral morphological
+  complexity on the behaviour of bumblebees.
+\newblock {\em Oecologia}, 117(4):543--550.
+
+\bibitem[Thiele et~al., 2012]{thiele2014r}
+Thiele, J.~C., Kurth, W., and Grimm, V. (2012).
+\newblock Rnetlogo: An r package for running and exploring individual-based
+  models implemented in netlogo.
+\newblock {\em Methods in Ecology and Evolution}, 3:480--483.
 
 \bibitem[Thomson, 1981]{thomson1981field}
 Thomson, J.~D. (1981).
@@ -146,6 +327,11 @@ Waddington, K.~D. (1980).
   flowers and distribution of nectar.
 \newblock {\em Oecologia}, 44(2):199--204.
 
+\bibitem[Waser, 1986]{waser1986flower}
+Waser, N.~M. (1986).
+\newblock Flower constancy: definition, cause, and measurement.
+\newblock {\em American Naturalist}, pages 593--603.
+
 \bibitem[Wertlen et~al., 2008]{wertlen2008detection}
 Wertlen, A.~M., Niggebr{\"u}gge, C., Vorobyev, M., and de~Ibarra, N.~H. (2008).
 \newblock Detection of patches of coloured discs by bees.
@@ -154,5 +340,12 @@ Wertlen, A.~M., Niggebr{\"u}gge, C., Vorobyev, M., and de~Ibarra, N.~H. (2008).
 \bibitem[Wilensky, 1999]{wilensky1999netlogo}
 Wilensky, U. (1999).
 \newblock Netlogo.
+\newblock {\em Center for Connected Learning and Computer-Based Modeling,
+  Northwestern University. Evanston, IL.}
+
+\bibitem[Zuur et~al., 2007]{zuur2007analysing}
+Zuur, A., Ieno, E.~N., and Smith, G.~M. (2007).
+\newblock {\em Analysing ecological data}.
+\newblock Springer Science \& Business Media.
 
 \end{thebibliography}

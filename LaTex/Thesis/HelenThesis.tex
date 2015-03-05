@@ -14,7 +14,7 @@
 %----------------------------------------------------------------------------
 \usepackage[]{hyperref}
 \usepackage{color}
-\usepackage{xcolor}
+\usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{graphicx}
 \usepackage{multicol}
 \usepackage{multirow}
@@ -26,6 +26,26 @@
 \usepackage[top=3cm, bottom=3cm, outer=2.5cm, inner=3.5cm]{geometry} 
 \usepackage{natbib}
 \usepackage{rotating}
+\usepackage{float}
+\usepackage{chngcntr}
+\usepackage{listings}
+\usepackage[font=scriptsize]{caption}
+\usepackage{cleveref}
+\counterwithout{table}{section}
+
+
+\makeatletter
+\newcommand{\shorteq}{
+	\settowidth{\@tempdima}{-}
+	\resizebox{\@tempdima}{\height}{=}
+}
+
+\newcommand{\beginsupplement}{%
+	\setcounter{table}{0}
+	\renewcommand{\thetable}{S\arabic{table}}%
+	\setcounter{figure}{0}
+	\renewcommand{\thefigure}{S\arabic{figure}}%
+}
 
 %---------------------------------------------------------------
 
@@ -40,13 +60,12 @@
   \end{flushright}
 \end{figure}
 
-\def\maintitle {flower frequency dependence of pollination (working file)}
+\def\maintitle {Frequency dependent pollination: nonlinear relationship consistent in field and model data}
 \def\authors{Helen Czioska}
 \def\supervisor{Supervisor: Dr. Gita Benadi, Department of Biometry and Environmental System Analysis}
 \def\cosupervisor{Co-supervisor: Prof. Dr. Alexandra-Maria Klein, Department of Nature Conservation and Landscape Ecology }
 \def\year{Freiburg, 2015}
 \def\course{Master Thesis  (Student ID 3522583) \\submitted to \\the Faculty of Environment \& Natural Resources \\ at the Albert-Ludwigs-University Freiburg}
-
 
 \begin{center}
   {\huge\bfseries\maintitle\par}
@@ -67,25 +86,117 @@
 \pagestyle{plain}
 \pagenumbering{arabic}
 
-%\abstract{ ... } 
+\newpage
+
+\textbf{possible titles}
+
+should contain:
+\begin{itemize}
+\item Frequency dependence (negative frequency dependence), frequency dependent pollination, frequency dependent selection
+\item model /agent-based model/ simulation/ foraging model /model data
+\item natural field condition/ field data/ natural condition / 
+\\
+\item drivers, reasons, explanation, consistent, coincide, causes, depend, understand
+\item co-flowering plants
+\item non-linear, sigmoid, cubic, 
+
+\end{itemize}
+
+ideas...
+\begin{itemize}
+
+\item Understand frequency dependence: Results consistent in natural field conditions and agent-based modeling
+
+\item  Reasons for positive and negative frequency dependent selection
+
+\item Drivers of Frequency Dependent Pollination in natural field condition and agent-based modeling
+
+\item Frequency Dependence in natural field conditions and agent-based modeling
+
+\item  Flower frequency dependence of pollination
+
+\item Spatial distribution and cover as limited drivers of flower frequency dependence
+
+\item  Frequency dependent pollination of co-flowering plants 
+
+\item  possible causes for frequency dependent pollination of co-flowering plants 
+
+\item  Natural conditions and simulation experiment coincide in negative frequency dependence
+
+\item  Negative frequency dependence coincide in natural conditions and simulation experiment
+
+\item  Sigmoidal frequency dependence coincide in natural field condition and foraging model
+
+\item  Sigmoidal frequency dependence consistent in natural field condition and foraging model
+
+\item  Nonlinear Relation of Pollinator Visitation to Flower Frequency
+
+\item  Field data and foraging model show sigmoidal frequency dependence
+
+\item  Comparing field with model data: Frequency dependence appears to be non-linear 
+
+\item  Frequency dependent foraging might be non-linear 
+
+\item  Frequency dependent pollination: nonlinear relationship consistent in field and model data
+
+
+
+foraging model
+agent-based model
+simulation
+
+
+\end{itemize}
+
+\newpage
+
+%\input{Chapters/abstract}
+
+\newpage
 
 \input{Chapters/introduction}
 
 \newpage
 
-\input{Chapters/methods}
-
+\input{Chapters/methods_jena}
+%1039 words
 \newpage
 
-\input{Chapters/results}
+\input{Chapters/results_jena}
+%370 words
+\newpage
 
+\input{Chapters/methods_model}
+%1400 words
+\newpage
+
+\input{Chapters/results_model}
+%1000 words (with tables)
 \newpage
 
 \input{Chapters/discussion}
+%1577 words
+
+\input{Chapters/conclusion}
 
 \newpage
 
 \bibliographystyle{apalike}
 \bibliography{masterthesis1}
+
+\newpage
+
+%\input{Chapters/appendix_jena}
+%\input{Chapters/appendix_ABM}
+\newpage
+
+
+\input{Chapters/sup}
+
+\newpage
+
+\input{Chapters/code}
+
+%\input{Chapters/selbststaendigkeit}
 
 \end{document}

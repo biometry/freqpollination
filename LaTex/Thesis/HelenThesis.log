@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.8)  15 JAN 2015 15:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.8)  5 MAR 2015 14:31
 entering extended mode
 **HelenThesis.tex
 
@@ -169,6 +169,7 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
+Package xcolor Info: Package option `usenames' ignored on input line 216.
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 LaTeX Info: Redefining \color on input line 702.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
@@ -180,7 +181,10 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
-)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -1082,30 +1086,102 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box76
 \rot@mess@toks=\toks26
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count175
+\float@exts=\toks27
+\float@box=\box77
+\@float@everytoks=\toks28
+\@floatcapt=\box78
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\chngcntr\chngcntr.sty"
+Package: chngcntr 2009/09/02 v1.0a change counter resetting
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count176
+\lst@gtempboxa=\box79
+\lst@token=\toks29
+\lst@length=\count177
+\lst@currlwidth=\dimen193
+\lst@column=\count178
+\lst@pos=\count179
+\lst@lostspace=\dimen194
+\lst@width=\dimen195
+\lst@newlines=\count180
+\lst@lineno=\count181
+\lst@maxwidth=\dimen196
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count182
+\lst@skipnumbers=\count183
+\lst@framebox=\box80
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen197
+\captionmargin@=\dimen198
+\captionwidth=\dimen199
+\caption@tempdima=\dimen200
+\caption@indent=\dimen201
+Normal \dimen register pool exhausted, switching to extended pool.
+\caption@parindent=\dimen256
+\caption@hangindent=\dimen257
+)
+\c@ContinuedFloat=\count184
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cleveref\cleveref.sty"
+Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2230.
+LaTeX Info: Redefining \cref on input line 2230.
+LaTeX Info: Redefining \Cref on input line 2230.
+LaTeX Info: Redefining \crefrange on input line 2230.
+LaTeX Info: Redefining \Crefrange on input line 2230.
+LaTeX Info: Redefining \cpageref on input line 2230.
+LaTeX Info: Redefining \Cpageref on input line 2230.
+LaTeX Info: Redefining \cpagerefrange on input line 2230.
+LaTeX Info: Redefining \Cpagerefrange on input line 2230.
+LaTeX Info: Redefining \labelcref on input line 2230.
+LaTeX Info: Redefining \labelcpageref on input line 2230.
+Package cleveref Info: `listings' support loaded on input line 2950.
+)
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\HelenThesis.au
 x)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 52.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    ... okay on input line 52.
 LaTeX Font Info:    Try loading font information for OT1+LinuxLibertineT-TLF on
- input line 32.
+ input line 52.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\libertine\ot1linuxlibertinet-tlf.
 fd"
@@ -1113,20 +1189,20 @@ File: OT1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for OT1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 32.
-\AtBeginShipoutBox=\box77
-Package hyperref Info: Link coloring OFF on input line 32.
+(Font)              scaled to size 10.0pt on input line 52.
+\AtBeginShipoutBox=\box81
+Package hyperref Info: Link coloring OFF on input line 52.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count175
+\c@section@level=\count185
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 52.
+LaTeX Info: Redefining \pageref on input line 52.
+LaTeX Info: Redefining \nameref on input line 52.
 
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\HelenThesis.ou
 t)
@@ -1135,17 +1211,17 @@ t)
 \@outlinefile=\write3
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count176
-\scratchdimen=\dimen193
-\scratchbox=\box78
-\nofMPsegments=\count177
-\nofMParguments=\count178
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count179
-\MPscratchDim=\dimen194
-\MPnumerator=\count180
-\makeMPintoPDFobject=\count181
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count186
+\scratchdimen=\dimen258
+\scratchbox=\box82
+\nofMPsegments=\count187
+\nofMParguments=\count188
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count189
+\MPscratchDim=\dimen259
+\MPnumerator=\count190
+\makeMPintoPDFobject=\count191
+\everyMPtoPDFconversion=\toks31
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\tran
 slator-basic-dictionary\translator-basic-dictionary-English.dict"
@@ -1155,8 +1231,8 @@ Dictionary: translator-basic-dictionary, Language: English
 "
 File: siunitx-abbreviations.cfg 2014/10/28 v2.6d siunitx: Abbreviated units
 )
-\c@mv@tabular=\count182
-\c@mv@boldtabular=\count183
+\c@mv@tabular=\count192
+\c@mv@boldtabular=\count193
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1192,22 +1268,25 @@ File: siunitx-abbreviations.cfg 2014/10/28 v2.6d siunitx: Abbreviated units
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c__siunitx_mathsf_int=\count184
-\c__siunitx_mathtt_int=\count185
-<Images/uni-logo.png, id=71, 139.9629pt x 165.2574pt>
+\c@lstlisting=\count194
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\c__siunitx_mathsf_int=\count195
+\c__siunitx_mathtt_int=\count196
+<Images/uni-logo.png, id=39, 139.9629pt x 165.2574pt>
 File: Images/uni-logo.png Graphic file (type png)
 
 <use Images/uni-logo.png>
-Package pdftex.def Info: Images/uni-logo.png used on input line 39.
+Package pdftex.def Info: Images/uni-logo.png used on input line 59.
 (pdftex.def)             Requested size: 113.81102pt x 134.37971pt.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 20.74pt on input line 52.
+(Font)              scaled to size 20.74pt on input line 71.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 52.
+(Font)              scaled to size 20.74pt on input line 71.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 56.
+(Font)              scaled to size 14.4pt on input line 75.
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
@@ -1215,6 +1294,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/hczioska/Documen
 ts/GitHub/freqpollination/LaTex/Thesis/Images/uni-logo.png>]
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 91.
+LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on
+ input line 95.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\libertine\ts1linuxlibertinet-tlf.
+fd"
+File: TS1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/
+LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 95.
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.151 \newpage
+               [1]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/intro
 duction.tex
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
@@ -1223,186 +1325,343 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 3.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 3.
-LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on
- input line 7.
+ [2]
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 87.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\libertine\ts1linuxlibertinet-tlf.
-fd"
-File: TS1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/
-LinuxLibertineT-TLF.
-)
-LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 7.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
-
-
-Package natbib Warning: Citation `Eckhart2006frequency' on page 1 undefined on 
-input line 21.
-
-
-Package natbib Warning: Citation `smithson2001pollinator ' on page 1 undefined 
-on input line 21.
-
-
-Package natbib Warning: Citation `bever1999dynamics' on page 1 undefined on inp
-ut line 23.
-
-
-Package natbib Warning: Citation `molofsky2002novel' on page 1 undefined on inp
-ut line 23.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.74 \newpage
-              [1]
+) [3]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/metho
-ds.tex
+ds_jena.tex
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 10.
+(Font)              scaled to size 7.0pt on input line 12.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 10.
+(Font)              scaled to size 5.0pt on input line 12.
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[2] <Images/plot-design.png, id=97, 415.5525pt x 367.1316pt>
-File: Images/plot-design.png Graphic file (type png)
 
-<use Images/plot-design.png>
-Package pdftex.def Info: Images/plot-design.png used on input line 63.
-(pdftex.def)             Requested size: 256.0748pt x 226.24675pt.
- [3 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/plo
-t-design.png>] [4]
-Overfull \hbox (0.3981pt too wide) in paragraph at lines 142--143
-[]\OT1/LinuxLibertineT-TLF/m/n/10 NetLogo ([]Wilen-sky[], []1999[]) is a sim-pl
-e pro-gram-ming en-vi-ron-ment for ABMs and con-nectable with R through
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+
  []
 
-[5] <Images/flowchart-model.jpg, id=133, 622.42537pt x 499.56638pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
+
+ []
+
+) [5]
+(C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/resul
+ts_jena.tex
+
+LaTeX Warning: Reference `tab:VR_spec' on page 6 undefined on input line 9.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
+
+ []
+
+
+LaTeX Warning: Reference `tab:anova' on page 6 undefined on input line 15.
+
+
+LaTeX Warning: Reference `tab:anova' on page 6 undefined on input line 15.
+
+
+LaTeX Warning: Reference `fig:LME' on page 6 undefined on input line 17.
+
+) [6]
+(C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/metho
+ds_model.tex [7]
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+[8] <Images/cluster.png, id=324, 1077.7866pt x 813.2784pt>
+File: Images/cluster.png Graphic file (type png)
+
+<use Images/cluster.png>
+Package pdftex.def Info: Images/cluster.png used on input line 58.
+(pdftex.def)             Requested size: 426.79134pt x 322.04187pt.
+
+<Images/flowchart-model.jpg, id=325, 623.4492pt x 534.3162pt>
 File: Images/flowchart-model.jpg Graphic file (type jpg)
 
 <use Images/flowchart-model.jpg>
-Package pdftex.def Info: Images/flowchart-model.jpg used on input line 191.
-(pdftex.def)             Requested size: 426.79134pt x 342.55154pt.
+Package pdftex.def Info: Images/flowchart-model.jpg used on input line 65.
+(pdftex.def)             Requested size: 426.79134pt x 365.7761pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 78.
+
+Overfull \hbox (27.71771pt too wide) in paragraph at lines 73--96
+ [][] 
  []
 
-[6 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/flow
-chart-model.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
-
- []
-
-
-Package natbib Warning: Citation `roubik1992ecology' on page 7 undefined on inp
-ut line 211.
-
-
-Package natbib Warning: Citation `keasar1996innate' on page 7 undefined on inpu
-t line 213.
-
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 224.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 229.
-LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 234.
-
-Package natbib Warning: Citation `roubik1992ecology' on page 7 undefined on inp
-ut line 255.
-
-
-Overfull \hbox (52.7356pt too wide) in paragraph at lines 227--273
- [][][] 
- []
-
-) [7] [8]
+) [9 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/cl
+uster.png>]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/resul
-ts.tex) [9]
+ts_model.tex
+
+LaTeX Warning: Reference `fig:SUM' on page 10 undefined on input line 6.
+
+Missing character: There is no ´ in font LinLibertineT-tlf-ts1!
+
+LaTeX Warning: Reference `fig:PFV' on page 10 undefined on input line 11.
+
+
+LaTeX Warning: Reference `fig:PFV' on page 10 undefined on input line 12.
+
+
+Overfull \hbox (2.75981pt too wide) in paragraph at lines 11--13
+\OT1/LinuxLibertineT-TLF/m/n/10 The per-flower vis-i-ta-tion shows a sim-i-lar 
+cu-bic func-tion as the data col-lected in the Jena Ex-per-i-ment (Fig. []A,B).
+
+ []
+
+[10 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/flo
+wchart-model.jpg>]
+
+LaTeX Warning: Reference `fig:PFV' on page 11 undefined on input line 14.
+
+
+LaTeX Warning: Reference `fig:PFV' on page 11 undefined on input line 14.
+
+
+LaTeX Warning: Reference `fig:POC' on page 11 undefined on input line 17.
+
+
+LaTeX Warning: Reference `fig:POC' on page 11 undefined on input line 17.
+
+
+LaTeX Warning: Reference `fig:POC' on page 11 undefined on input line 17.
+
+[11]) [12]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/discu
-ssion.tex) [10]
+ssion.tex
+
+LaTeX Warning: Reference `fig:LME' on page 13 undefined on input line 22.
+
+
+LaTeX Warning: Reference `fig:PFV' on page 13 undefined on input line 22.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
+
+LaTeX Warning: Reference `fig:PFV' on page 13 undefined on input line 36.
+
+[13]
+
+LaTeX Warning: Reference `fig:POC' on page 14 undefined on input line 43.
+
+
+LaTeX Warning: Reference `fig:SUM' on page 14 undefined on input line 52.
+
+
+LaTeX Warning: Reference `fig:SUM' on page 14 undefined on input line 54.
+
+[14])
+(C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/concl
+usion.tex) [15]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\HelenThesis.bb
-l
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 6.
- [11])
+l [16] [17] [18]) [19]
+(C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/sup.t
+ex <Images/plot-design.png, id=438, 415.5525pt x 367.1316pt>
+File: Images/plot-design.png Graphic file (type png)
 
-Package natbib Warning: There were undefined citations.
+<use Images/plot-design.png>
+Package pdftex.def Info: Images/plot-design.png used on input line 27.
+(pdftex.def)             Requested size: 256.0748pt x 226.24675pt.
+ [20 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/pl
+ot-design.png>]
+<Images/pairs-plot.png, id=446, 849.1725pt x 740.7675pt>
+File: Images/pairs-plot.png Graphic file (type png)
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
-[12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
+<use Images/pairs-plot.png>
+Package pdftex.def Info: Images/pairs-plot.png used on input line 38.
+(pdftex.def)             Requested size: 455.24408pt x 397.12617pt.
+
+Overfull \hbox (11.6656pt too wide) in paragraph at lines 38--39
+ [][] 
+ []
+
+[21 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/pai
+rs-plot.png>] <Images/residuals.png, id=456, 557.9244pt x 285.9483pt>
+File: Images/residuals.png Graphic file (type png)
+
+<use Images/residuals.png>
+Package pdftex.def Info: Images/residuals.png used on input line 71.
+(pdftex.def)             Requested size: 426.79134pt x 218.74536pt.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/it' will be
+(Font)              scaled to size 10.0pt on input line 83.
+ [22
+
+ <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/residu
+als.png>]
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 119.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 124.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
+(Font)              scaled to size 8.0pt on input line 127.
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 132.
+
+Overfull \hbox (55.58614pt too wide) in paragraph at lines 122--179
+ [][][][] 
+ []
+
+<Images/nonfreq.png, id=498, 598.3956pt x 329.5512pt>
+File: Images/nonfreq.png Graphic file (type png)
+ <use Images/nonfreq.png>
+Package pdftex.def Info: Images/nonfreq.png used on input line 188.
+(pdftex.def)             Requested size: 398.33858pt x 219.38008pt.
+Missing character: There is no ´ in font LinLibertineT-tlf-ts1!
+Missing character: There is no ´ in font LinLibertineT-tlf-ts1!
+
+[23 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/non
+freq.png>] [24] <Images/SA_SUM.png, id=509, 531.9072pt x 491.436pt>
+File: Images/SA_SUM.png Graphic file (type png)
+
+<use Images/SA_SUM.png>
+Package pdftex.def Info: Images/SA_SUM.png used on input line 197.
+(pdftex.def)             Requested size: 398.33858pt x 368.05118pt.
+ [25
+
+ <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_SUM
+.png>]
+<Images/SA_reward.png, id=515, 560.3334pt x 398.4486pt>
+File: Images/SA_reward.png Graphic file (type png)
+
+<use Images/SA_reward.png>
+Package pdftex.def Info: Images/SA_reward.png used on input line 206.
+(pdftex.def)             Requested size: 398.33858pt x 283.25919pt.
+ [26
+
+ <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_rew
+ard.png>]
+<Images/SA_view.png, id=521, 548.0475pt x 398.2077pt>
+File: Images/SA_view.png Graphic file (type png)
+ <use Images/SA_view.png>
+Package pdftex.def Info: Images/SA_view.png used on input line 216.
+(pdftex.def)             Requested size: 398.33858pt x 289.43752pt.
+
+[27
+
+ <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_vie
+w.png>] <Images/SA_flight.png, id=527, 557.6835pt x 398.2077pt>
+File: Images/SA_flight.png Graphic file (type png)
+
+<use Images/SA_flight.png>
+Package pdftex.def Info: Images/SA_flight.png used on input line 226.
+(pdftex.def)             Requested size: 398.33858pt x 284.43684pt.
+ [28
+
+ <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_fli
+ght.png>]
+<Images/SA_bees.png, id=533, 548.0475pt x 398.2077pt>
+File: Images/SA_bees.png Graphic file (type png)
+ <use Images/SA_bees.png>
+Package pdftex.def Info: Images/SA_bees.png used on input line 235.
+(pdftex.def)             Requested size: 398.33858pt x 289.43752pt.
+) [29
+
+ <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_bee
+s.png>]
+(C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/code.
+tex ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
+File: lstlang2.sty 2014/09/06 1.5e listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
+File: lstlang3.sty 2014/09/06 1.5e listings language file
+))
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 202.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 202.
 
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\HelenThesis.au
 x)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 202.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 202.
 Package rerunfilecheck Info: File `HelenThesis.out' has not changed.
-(rerunfilecheck)             Checksum: FF35D7DCC5F1E5200D6EE6A06E8083B2;1118.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
+(rerunfilecheck)             Checksum: E7348ED6E1C424FB9A51934BC6553585;490.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 202.
  ) 
 Here is how much of TeX's memory you used:
- 17459 strings out of 493921
- 334759 string characters out of 3144867
- 376072 words of memory out of 3000000
- 20496 multiletter control sequences out of 15000+200000
- 30986 words of font info for 62 fonts, out of 3000000 for 9000
+ 21746 strings out of 493921
+ 414747 string characters out of 3144867
+ 483801 words of memory out of 3000000
+ 24626 multiletter control sequences out of 15000+200000
+ 38612 words of font info for 72 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,16n,39p,10405b,875s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_xogrpz.enc}
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C
-:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}{C:/
-Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc}<C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTB.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTI
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on HelenThesis.pdf (13 pages, 765253 bytes).
+ 53i,16n,92p,10405b,953s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_zajy4r.enc}
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_tltjc6.enc}{C
+:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_xogrpz.enc}{C:/
+Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}{C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTBI.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT
+I.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on HelenThesis.pdf (30 pages, 3254605 bytes).
 PDF statistics:
- 313 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 615 PDF objects out of 1000 (max. 8388607)
+ 146 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

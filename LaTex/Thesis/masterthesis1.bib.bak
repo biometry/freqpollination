@@ -1,5 +1,5 @@
 % This file was created with JabRef 2.10.
-% Encoding: Cp1252
+% Encoding: UTF8
 
 
 @Article{abrol1992oxygen,
@@ -9,6 +9,15 @@
   Year                     = {1992},
   Pages                    = {27--42},
   Volume                   = {39}
+}
+
+@Manual{MuMIn,
+  Title                    = {MuMIn: Multi-Model Inference},
+  Author                   = {Kamil Barton},
+  Note                     = {R package version 1.12.1},
+  Year                     = {2014},
+
+  Url                      = {http://CRAN.R-project.org/package=MuMIn}
 }
 
 @Article{bartumeus2005animal,
@@ -51,10 +60,23 @@ between individual plants and pollinators},
   Volume                   = {179},
 
   Comment                  = {mutualism, plant-pollinator networks, coexistence, theoretical paper, many equations,},
-  File                     = {benadi2012population.pdf:Literatur\\benadi2012population.pdf:PDF},
+  File                     = {benadi2012population.pdf:benadi2012population.pdf:PDF},
   Keywords                 = {model, VR,},
   Owner                    = {1},
   Publisher                = {JSTOR}
+}
+
+@Article{benadi2014specialization,
+  Title                    = {Specialization and phenological synchrony of plant--pollinator interactions along an altitudinal gradient},
+  Author                   = {Benadi, Gita and Hovestadt, Thomas and Poethke, Hans-Joachim and Bl{\"u}thgen, Nico},
+  Journal                  = {Journal of Animal Ecology},
+  Year                     = {2014},
+  Number                   = {3},
+  Pages                    = {639--650},
+  Volume                   = {83},
+
+  File                     = {benadi2014specialization.pdf:benadi2014specialization.pdf:PDF},
+  Publisher                = {Wiley Online Library}
 }
 
 @Article{bernhardt2008effects,
@@ -67,7 +89,7 @@ between individual plants and pollinators},
   Volume                   = {169},
 
   Comment                  = {plant-pollinator interaction, pollination,},
-  File                     = {bernhardt2008effects.pdf:Literatur\\bernhardt2008effects.pdf:PDF},
+  File                     = {bernhardt2008effects.pdf:bernhardt2008effects.pdf:PDF},
   Keywords                 = {density, field, VR,},
   Publisher                = {JSTOR}
 }
@@ -96,7 +118,7 @@ between individual plants and pollinators},
   Pages                    = {282--291},
   Volume                   = {12},
 
-  Keywords                 = {jena, field, pollination},
+  File                     = {bluthgen2011functional.pdf:bluthgen2011functional.pdf:PDF},
   Publisher                = {Elsevier}
 }
 
@@ -110,7 +132,7 @@ between individual plants and pollinators},
   Volume                   = {21},
 
   Comment                  = {effect of constancy on rare plant species, Markov model, model with 3 plant species,interesting assumptions, mathematical model, many equations},
-  File                     = {bobisud1975pollinator.pdf:Literatur\\bobisud1975pollinator.pdf:PDF},
+  File                     = {bobisud1975pollinator.pdf:bobisud1975pollinator.pdf:PDF},
   Keywords                 = {constancy, model},
   Owner                    = {1},
   Publisher                = {Springer}
@@ -119,6 +141,7 @@ between individual plants and pollinators},
 @Article{bukovac2013bees,
   Title                    = {A-bees see: a simulation to assess social bee visual attention during complex search tasks},
   Author                   = {Bukovac, Zoe and Dorin, Alan and Dyer, Adrian},
+  Journal                  = {Advances in Artificial Life, ECAL},
   Year                     = {2013},
   Pages                    = {276--283},
   Volume                   = {12},
@@ -222,7 +245,20 @@ between individual plants and pollinators},
   Pages                    = {188--196},
   Volume                   = {98},
 
+  Keywords                 = {cluster, VR,},
   Publisher                = {Wiley Online Library}
+}
+
+@Article{deangelis2005individual,
+  Title                    = {Individual-based modeling of ecological and evolutionary processes},
+  Author                   = {DeAngelis, Donald L and Mooij, Wolf M},
+  Journal                  = {Annual Review of Ecology, Evolution, and Systematics},
+  Year                     = {2005},
+  Pages                    = {147--168},
+
+  File                     = {deangelis2005individual.pdf:deangelis2005individual.pdf:PDF},
+  Keywords                 = {ABM},
+  Publisher                = {JSTOR}
 }
 
 @Article{dornhaus2006benefits,
@@ -239,7 +275,7 @@ Spatial/2D-Space, agent-based
 1 out of 7 behaviors
 90%of foraging within 4km of hive
 Influence of resource distribution
-Difference in “scout speed” and “flight speed”},
+Difference in ï¿½scout speedï¿½ and ï¿½flight speedï¿½},
   File                     = {dornhaus2006benefits.pdf:dornhaus2006benefits.pdf:PDF},
   Keywords                 = {model, density, foraging, ABM},
   Publisher                = {ISBE}
@@ -296,6 +332,7 @@ Difference in “scout speed” and “flight speed”},
   Pages                    = {453--465},
   Volume                   = {169},
 
+  File                     = {ebeling2012multitrophic.pdf:ebeling2012multitrophic.pdf:PDF},
   Keywords                 = {field, pollinator, jena},
   Publisher                = {Springer}
 }
@@ -337,7 +374,7 @@ Difference in “scout speed” and “flight speed”},
   Pages                    = {1302--1311},
 
   Comment                  = {outcrossing rates, color morphs,},
-  File                     = {epperson1987frequency.pdf:Literatur\\epperson1987frequency.pdf:PDF},
+  File                     = {epperson1987frequency.pdf:epperson1987frequency.pdf:PDF},
   Keywords                 = {morph, FDP, field,},
   Publisher                = {JSTOR}
 }
@@ -411,7 +448,7 @@ Difference in “scout speed” and “flight speed”},
   Volume                   = {105},
 
   Comment                  = {mathematical model with simple assumptions to check for facilitation among two plant species},
-  File                     = {Feldman2004can.pdf:Literatur\\Feldman2004can.pdf:PDF},
+  File                     = {Feldman2004can.pdf:Feldman2004can.pdf:PDF},
   Keywords                 = {model, VR, density},
   Publisher                = {Wiley Online Library}
 }
@@ -449,6 +486,8 @@ Difference in “scout speed” and “flight speed”},
   Pages                    = {295--304},
   Volume                   = {94},
 
+  File                     = {ghazoul2006floral.pdf:ghazoul2006floral.pdf:PDF},
+  Keywords                 = {field},
   Publisher                = {Wiley Online Library}
 }
 
@@ -519,7 +558,7 @@ environment, many references},
   Volume                   = {168},
 
   Comment                  = {mathematical model about flower constancy in a plant community of 2 co-flowering plants. flower constancy will suppress pollination of scarce speceis in favour of the most common plant species and so decrease diversity in plant community},
-  File                     = {goulson1994model.pdf:Literatur\\goulson1994model.pdf:PDF},
+  File                     = {goulson1994model.pdf:goulson1994model.pdf:PDF},
   Keywords                 = {model, constancy, basic, density},
   Publisher                = {Elsevier}
 }
@@ -618,8 +657,21 @@ environment, many references},
   Volume                   = {122},
 
   File                     = {hanoteaux2013effects.pdf:hanoteaux2013effects.pdf:PDF},
-  Keywords                 = {model, ABM, references, foraging, FDP},
+  Keywords                 = {model, ABM, references, foraging, FDP, cluster},
   Publisher                = {Wiley Online Library}
+}
+
+@Article{hill1997spontaneous,
+  Title                    = {Spontaneous flower constancy and learning in honey bees as a function of colour},
+  Author                   = {HILL, PEGGY SM and WELLS, PATRICK H and WELLS, HARRINGTON},
+  Journal                  = {Animal Behaviour},
+  Year                     = {1997},
+  Number                   = {3},
+  Pages                    = {615--627},
+  Volume                   = {54},
+
+  Keywords                 = {constancy},
+  Publisher                = {Elsevier}
 }
 
 @Article{hudewenz2012herbivore,
@@ -631,6 +683,7 @@ environment, many references},
   Pages                    = {42--52},
   Volume                   = {150},
 
+  File                     = {hudewenz2012herbivore.pdf:hudewenz2012herbivore.pdf:PDF},
   Keywords                 = {jena, field, pollination},
   Publisher                = {Elsevier}
 }
@@ -696,13 +749,13 @@ environment, many references},
   Pages                    = {381--388},
   Volume                   = {39},
 
-  Comment                  = {However ßight distances were longer when the previous flower was unrewarding than when it was rewarding. Also: Higher chance for flower chance with every non-rewarding visit},
+  Comment                  = {However ï¿½ight distances were longer when the previous flower was unrewarding than when it was rewarding. Also: Higher chance for flower chance with every non-rewarding visit},
   File                     = {keasar1996innate.pdf:Literatur\\keasar1996innate.pdf:PDF},
   Keywords                 = {lab, foraging, constancy,},
   Publisher                = {Springer}
 }
 
-@Article{keitt2009habitat,
+@Article{Keitt2009,
   Title                    = {Habitat conversion, extinction thresholds, and pollination services in agroecosystems},
   Author                   = {Keitt, Timothy H},
   Journal                  = {Ecological Applications},
@@ -712,6 +765,13 @@ environment, many references},
   Volume                   = {19},
 
   Publisher                = {Eco Soc America}
+}
+
+@Book{kluge2000klima,
+  Title                    = {Das Klima ausgew{\"a}hlter Orte der Bundesrepublik Deutschland: Jena},
+  Author                   = {Kluge, Gerhard and M{\"u}ller-Westermeier, Gerhard and Wetterdienst, Deutscher},
+  Publisher                = {Selbstverlag des Deutschen Wetterdienstes},
+  Year                     = {2000}
 }
 
 @Article{kunin1992density,
@@ -740,7 +800,7 @@ environment, many references},
 
   Comment                  = {very mathematical, lot of formula, more foraging strategies},
   File                     = {kunin1996pollinator.pdf:kunin1996pollinator.pdf:PDF},
-  Keywords                 = {constancy, model, VR, parametervalues, foraging, rare},
+  Keywords                 = {constancy, model, VR, parametervalues, foraging, rare, FDP},
   Owner                    = {1},
   Publisher                = {Elsevier}
 }
@@ -758,7 +818,7 @@ environment, many references},
 }
 
 @InCollection{kunin1997population,
-  Title                    = {Population biology and rarity: on the complexity of density dependence in insect—plant interactions},
+  Title                    = {Population biology and rarity: on the complexity of density dependence in insect-plant interactions},
   Author                   = {Kunin, William E},
   Booktitle                = {The biology of rarity},
   Publisher                = {Springer},
@@ -773,7 +833,7 @@ environment, many references},
   Year                     = {1993},
   Pages                    = {2145--2160},
 
-  File                     = {kunin1993sex.pdf:Literatur\\kunin1993sex.pdf:PDF},
+  File                     = {kunin1993sex.pdf:kunin1993sex.pdf:PDF},
   Keywords                 = {density, field, VR,},
   Publisher                = {JSTOR}
 }
@@ -870,7 +930,7 @@ environment, many references},
   Volume                   = {118},
 
   Comment                  = {Many good references in introduction},
-  File                     = {montgomery2009pollen.pdf:Literatur\\montgomery2009pollen.pdf:PDF},
+  File                     = {montgomery2009pollen.pdf:montgomery2009pollen.pdf:PDF},
   Keywords                 = {model, constancy, IPM, parametervalues},
   Publisher                = {Wiley Online Library}
 }
@@ -884,8 +944,8 @@ environment, many references},
   Pages                    = {1276--1285},
   Volume                   = {91},
 
-  Comment                  = {benefits and costs of mutualism; density dependence; interaction frequency; nectar robbery; pollinating seed–consumer mutualism.},
-  File                     = {morris2010benefit.pdf:Literatur\\morris2010benefit.pdf:PDF},
+  Comment                  = {benefits and costs of mutualism; density dependence; interaction frequency; nectar robbery; pollinating seedï¿½consumer mutualism.},
+  File                     = {morris2010benefit.pdf:morris2010benefit.pdf:PDF},
   Keywords                 = {model, density, field,},
   Publisher                = {Eco Soc America}
 }
@@ -915,6 +975,15 @@ environment, many references},
   File                     = {ne2001effect.pdf:ne2001effect.pdf:PDF},
   Keywords                 = {view, parametervalues},
   Publisher                = {Springer}
+}
+
+@Manual{Rnlme,
+  Title                    = {{nlme}: Linear and Nonlinear Mixed Effects Models},
+  Author                   = {Jose Pinheiro and Douglas Bates and Saikat DebRoy and Deepayan Sarkar and {R Core Team}},
+  Note                     = {R package version 3.1-117},
+  Year                     = {2014},
+
+  Url                      = {http://CRAN.R-project.org/package=nlme}
 }
 
 @Article{pleasants1983distribution,
@@ -967,6 +1036,17 @@ environment, many references},
   Publisher                = {Springer}
 }
 
+@Manual{R,
+  Title                    = {R: A Language and Environment for Statistical Computing},
+
+  Address                  = {Vienna, Austria},
+  Author                   = {{R Core Team}},
+  Organization             = {R Foundation for Statistical Computing},
+  Year                     = {2014},
+
+  Url                      = {http://www.R-project.org/}
+}
+
 @Article{rands2010effects,
   Title                    = {Effects of pollinator density-dependent preferences on field margin visitations in the midst of agricultural monocultures: A modelling approach},
   Author                   = {Rands, Sean A and Whitney, Heather M},
@@ -977,7 +1057,7 @@ environment, many references},
   Volume                   = {221},
 
   Comment                  = {monocultures and field margins, free pollination, wild pollinators, spacial model},
-  File                     = {rands2010effects.pdf:Literatur\\rands2010effects.pdf:PDF},
+  File                     = {rands2010effects.pdf:rands2010effects.pdf:PDF},
   Keywords                 = {model, foraging, constancy, density},
   Publisher                = {Elsevier}
 }
@@ -991,6 +1071,7 @@ environment, many references},
   Pages                    = {107--121},
   Volume                   = {5},
 
+  File                     = {roscher2004role.pdf:roscher2004role.pdf:PDF},
   Keywords                 = {jena},
   Publisher                = {Elsevier}
 }
@@ -1077,7 +1158,7 @@ environment, many references},
   Volume                   = {60},
 
   Comment                  = {different corolla color, different reward, learning, naive bumblebees on array of artificial flowers},
-  File                     = {smithson1997density.pdf:Literatur\\smithson1997density.pdf:PDF},
+  File                     = {smithson1997density.pdf:smithson1997density.pdf:PDF},
   Keywords                 = {lab, morph, density, FDP, foraging},
   Publisher                = {Wiley Online Library}
 }
@@ -1105,7 +1186,7 @@ environment, many references},
   Volume                   = {281},
 
   Comment                  = {adaptive foraging, flower constancy,mutualism, plant species coexistence,population dynamics, interesting graphic about density ~ frequency},
-  File                     = {song2014adaptive.pdf:Literatur\\song2014adaptive.pdf:PDF},
+  File                     = {song2014adaptive.pdf:song2014adaptive.pdf:PDF},
   Keywords                 = {model, foraging, constancy, parametervalues, FDP},
   Publisher                = {The Royal Society}
 }
@@ -1149,9 +1230,18 @@ environment, many references},
   Volume                   = {52},
 
   Comment                  = {reward, nectar, Lotus},
-  File                     = {stout2002influence.pdf:Literatur\\stout2002influence.pdf:PDF},
+  File                     = {stout2002influence.pdf:stout2002influence.pdf:PDF},
   Keywords                 = {model, parametervalues, field, foraging, VR},
   Publisher                = {Springer}
+}
+
+@Article{thiele2014r,
+  Title                    = {RNetLogo: An R Package for Running and Exploring Individual-Based Models Implemented in NetLogo},
+  Author                   = {Thiele, Jan C and Kurth, Winfried and Grimm, Volker},
+  Journal                  = {Methods in Ecology and Evolution},
+  Year                     = {2012},
+  Pages                    = {480-483},
+  Volume                   = {3}
 }
 
 @Article{thomson1981field,
@@ -1240,6 +1330,17 @@ environment, many references},
   Publisher                = {Springer}
 }
 
+@Article{waser1986flower,
+  Title                    = {Flower constancy: definition, cause, and measurement},
+  Author                   = {Waser, Nickolas M},
+  Journal                  = {American Naturalist},
+  Year                     = {1986},
+  Pages                    = {593--603},
+
+  File                     = {waser1986flower.pdf:waser1986flower.pdf:PDF},
+  Publisher                = {JSTOR}
+}
+
 @Article{wertlen2008detection,
   Title                    = {Detection of patches of coloured discs by bees},
   Author                   = {Wertlen, Anna M and Niggebr{\"u}gge, Claudia and Vorobyev, Misha and de Ibarra, Natalie Hempel},
@@ -1255,9 +1356,11 @@ environment, many references},
 @Article{wilensky1999netlogo,
   Title                    = {NetLogo},
   Author                   = {Wilensky, Uri},
+  Journal                  = {Center for Connected Learning and Computer-Based Modeling, Northwestern University. Evanston, IL.},
   Year                     = {1999},
 
-  Publisher                = {Northwestern University}
+  Publisher                = {Northwestern University},
+  Url                      = {http://ccl.northwestern.edu/netlogo/}
 }
 
 @Article{zhang2011interaction,
@@ -1272,6 +1375,13 @@ environment, many references},
   Publisher                = {Wiley Online Library}
 }
 
+@Book{zuur2007analysing,
+  Title                    = {Analysing ecological data},
+  Author                   = {Zuur, Alain and Ieno, Elena N and Smith, Graham M},
+  Publisher                = {Springer Science \& Business Media},
+  Year                     = {2007}
+}
+
 @comment{jabref-meta: groupsversion:3;}
 
 @comment{jabref-meta: groupstree:
@@ -1282,5 +1392,6 @@ environment, many references},
 1 KeywordGroup:Constancy\;0\;keywords\;constancy\;0\;0\;;
 1 KeywordGroup:FDP\;0\;keywords\;FDP\;0\;0\;;
 1 KeywordGroup:IPM\;0\;keywords\;IPM\;0\;0\;;
+1 KeywordGroup:jena\;0\;keywords\;jena\;0\;0\;;
 }
 
