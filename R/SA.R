@@ -1,11 +1,12 @@
+view2$freqshare <- view2$freq / 100
+view2$VR <- view2$VR1+ view2$VR2
+
 bees <- read.csv("C:/Users/hczioska/Documents/GitHub/Data/SA/bees.csv")
 view <- read.csv("C:/Users/hczioska/Documents/GitHub/Data/SA/view.csv")
 flight <- read.csv("C:/Users/hczioska/Documents/GitHub/Data/SA/flight.csv")
-bees <- read.csv("C:/Users/hczioska/Documents/GitHub/Data/SA/bees.csv")
+reward <- read.csv("C:/Users/hczioska/Documents/GitHub/Data/SA/reward.csv")
 
-
-bees$freqshare <- bees$freq / 100
-bees$VR <- bees$VR1+ bees$VR2
+write.csv(view,"C:/Users/hczioska/Documents/GitHub/Data/SA/view.csv", row.names=F)
 
 
 SA.cover.seq <- c(5,20,50)
@@ -19,10 +20,11 @@ SA.col <- c("cornflowerblue", "blue4", "red", "orange")
 
 par(mfrow=c(2,2))
 par(mfrow=c(2,2), mar = c(4, 4, 3, 2) + 0.1)
-boxplot(VR~reward, data=reward, ylab="Sum Visits", xlab="Reward regrowth rate (Joule/sec)")
-boxplot(VR~view, data=view, ylab="Sum Visits", xlab="Vision distance (in patches)")
-boxplot(VR~flight, data=flight, ylab="Sum Visits", xlab="Search limit (in seconds)")
-boxplot(VR~bees, data=bees, ylab="Sum Visits", xlab="Number bee-agents")
+boxplot(VR~reward, data=reward, ylab="Sum of Visits", xlab="Reward regrowth rate [Joule/sec]")
+boxplot(VR~view, data=view, ylab="Sum of Visits", xlab="Vision distance [patches]")
+boxplot(VR~flight, data=flight, ylab="Sum of Visits", xlab="Search limit [seconds]")
+boxplot(VR~bees, data=bees, ylab="Sum of Visits", xlab="Number bee-agents")
+
 plot(VR/bees~bees, data=bees, ylab="Sum Visits", xlab="Number bee-agents", col=cover)
      
 
@@ -48,62 +50,6 @@ legend("bottomright", pch=20, legend=unique(view$cover), col=covercol, cex=0.8, 
 #####
 #view
 #####
-
-par(mfrow=c(2,3), mar = c(2, 2, 2, 2))
-
-plot(1, ylim=c(0,1), xlim=c(0,1), ylab="Proportion of visits", xlab="Frequency", type="n" )
-for (i in 1:4) {
-  sub <- bees[which(bees$cover == 5 & bees$cluster == 1 & bees$bees == bees.seq[i]),]
-  sub.mean <-  tapply(sub$VR1/sub$VR, sub$freqshare, mean)
-  sub.sd <-  tapply(sub$VR1/sub$VR, sub$freqshare, sd)
-  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i])
-  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i], type="l") 
-} 
-abline(0,1, lty=2)
-
-plot(1, ylim=c(0,1), xlim=c(0,1), ylab="Proportion of visits", xlab="Frequency", type="n" )
-for (i in 1:4) {
-  sub <- bees[which(bees$cover == 5 & bees$cluster == 10 & bees$bees == bees.seq[i]),]
-  sub.mean <-  tapply(sub$VR1/sub$VR, sub$freqshare, mean)
-  sub.sd <-  tapply(sub$VR1/sub$VR, sub$freqshare, sd)
-  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i])
-  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i], type="l")
-} 
-abline(0,1, lty=2)
-
-plot(1, type="n" )
-legend("right", pch=20, legend=unique(bees$bees), col=SA.col, cex=2, title="bees", bty="n") 
-
-plot(1, ylim=c(0,1), xlim=c(0,1), ylab="Proportion of visits", xlab="Frequency", type="n" )
-for (i in 1:4) {
-  sub <- bees[which(bees$cover == 20 & bees$cluster == 1 & bees$bees == bees.seq[i]),]
-  sub.mean <-  tapply(sub$VR1/sub$VR, sub$freqshare, mean)
-  sub.sd <-  tapply(sub$VR1/sub$VR, sub$freqshare, sd)
-  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i])
-  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i], type="l")
-} 
-abline(0,1, lty=2)
-
-plot(1, ylim=c(0,1), xlim=c(0,1), ylab="Proportion of visits", xlab="Frequency", type="n" )
-for (i in 1:4) {
-  sub <- bees[which(bees$cover == 20 & bees$cluster == 10 & bees$bees == bees.seq[i]),]
-  sub.mean <-  tapply(sub$VR1/sub$VR, sub$freqshare, mean)
-  sub.sd <-  tapply(sub$VR1/sub$VR, sub$freqshare, sd)
-  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i])
-  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i], type="l")
-} 
-abline(0,1, lty=2)
-
-
-plot(1, ylim=c(0,1), xlim=c(0,1), ylab="Proportion of visits", xlab="Frequency", type="n" )
-for (i in 1:4) {
-  sub <- bees[which(bees$cover == 20 & bees$cluster == 100 & bees$bees == bees.seq[i]),]
-  sub.mean <-  tapply(sub$VR1/sub$VR, sub$freqshare, mean)
-  sub.sd <-  tapply(sub$VR1/sub$VR, sub$freqshare, sd)
-  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i])
-  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i], type="l")
-} 
-abline(0,1, lty=2)
 
 #####
 #bees
@@ -185,4 +131,63 @@ for (i in 1:4) {
   points(sub.mean~freq.seq, pch=20, col=covercol[i], type="l")
   #arrows(freq.seq.share, sub.mean-sub.sd, freq.seq.share, sub.mean+sub.sd, length=0.03, angle=90, code=3, col="#00000020") 
 } 
-legend("bottomright", pch=20, legend=unique(reward$reward), col=covercol, cex=0.8, title="reward", bty="n") 
+legend("bottomright", pch=20, legend=unique(reward$reward), col=covercol, cex=0.8, title="reward", bty="n")
+
+#####################################################################################################################
+
+par(mfrow=c(2,3), mar = c(2, 2, 2, 2))
+
+plot(1, ylim=c(0,1), xlim=c(0,1), ylab="Proportion of visits", xlab="Frequency", type="n" )
+for (i in 1:4) {
+  sub <- flight[which(flight$cover == 5 & flight$cluster == 1 & flight$flight == flight.seq[i]),]
+  sub.mean <-  tapply(sub$VR1/sub$VR, sub$freqshare, mean)
+  sub.sd <-  tapply(sub$VR1/sub$VR, sub$freqshare, sd)
+  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i])
+  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i], type="l") 
+} 
+abline(0,1, lty=2)
+
+plot(1, ylim=c(0,1), xlim=c(0,1), ylab="Proportion of visits", xlab="Frequency", type="n" )
+for (i in 1:4) {
+  sub <- flight[which(flight$cover == 5 & flight$cluster == 10 & flight$flight == flight.seq[i]),]
+  sub.mean <-  tapply(sub$VR1/sub$VR, sub$freqshare, mean)
+  sub.sd <-  tapply(sub$VR1/sub$VR, sub$freqshare, sd)
+  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i])
+  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i], type="l")
+} 
+abline(0,1, lty=2)
+
+plot(1, type="n" )
+#legend("right", pch=20, legend=unique(flight$flight), col=SA.col, cex=2, title="flight", bty="n") 
+
+plot(1, ylim=c(0,1), xlim=c(0,1), ylab="Proportion of visits", xlab="Frequency", type="n" )
+for (i in 1:4) {
+  sub <- flight[which(flight$cover == 20 & flight$cluster == 1 & flight$flight == flight.seq[i]),]
+  sub.mean <-  tapply(sub$VR1/sub$VR, sub$freqshare, mean)
+  sub.sd <-  tapply(sub$VR1/sub$VR, sub$freqshare, sd)
+  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i])
+  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i], type="l")
+} 
+abline(0,1, lty=2)
+
+plot(1, ylim=c(0,1), xlim=c(0,1), ylab="Proportion of visits", xlab="Frequency", type="n" )
+for (i in 1:4) {
+  sub <- flight[which(flight$cover == 20 & flight$cluster == 10 & flight$flight == flight.seq[i]),]
+  sub.mean <-  tapply(sub$VR1/sub$VR, sub$freqshare, mean)
+  sub.sd <-  tapply(sub$VR1/sub$VR, sub$freqshare, sd)
+  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i])
+  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i], type="l")
+} 
+abline(0,1, lty=2)
+
+
+plot(1, ylim=c(0,1), xlim=c(0,1), ylab="Proportion of visits", xlab="Frequency", type="n" )
+for (i in 1:4) {
+  sub <- flight[which(flight$cover == 20 & flight$cluster == 100 & flight$flight == flight.seq[i]),]
+  sub.mean <-  tapply(sub$VR1/sub$VR, sub$freqshare, mean)
+  sub.sd <-  tapply(sub$VR1/sub$VR, sub$freqshare, sd)
+  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i])
+  points(sub.mean~freq.seq.share, pch=20, col=SA.col[i], type="l")
+} 
+abline(0,1, lty=2)
+
