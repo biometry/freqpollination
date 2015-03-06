@@ -127,16 +127,15 @@
 		\multicolumn{6}{l}{\textsc{Setup Parameters:}} \\ 
 		\addlinespace[0.2cm]
 		
-		area  & "world" in NetLogo, number of grid-cells &       & integer & 100x100 &  \\
+		area  & "world" in NetLogo, defined by a grid of cells called patches &       & integer & 100x100 &  \\
 		
-		patch-size & Size one grid-cell in NetLogo. Can be either a flower or grass &       & float & 0.1m² &  \\
+		patch-size & Size of one grid-cell in NetLogo. Can be either a flower or grass &       & float & 0.1m² &  \\
 		
 		tick  & One time-unit in NetLogo &       & integer & 1s    &  \\
 		
 		flower-cover & Proportion of grid cells containing a flower & global & integer &       5, 10, 20, 30, 50 &  \\
 		
-		frequency & Proportion of flowers which are species A  
-		feq(B) = 100 - freq(A) & global & integer &   0-100\%    &  \\
+		frequency & Proportion of flowers which are species A 	($Freq_{B} = 100 - Freq_{A}$)  & global & integer &   0-100\%    &  \\
 		
 		cluster-number & Average number of flowers per cluster & global & integer &  1, 2, 5, 10, 20, 50, 75, 100 &  \\
 		
@@ -145,25 +144,25 @@
 		\addlinespace[0.2cm]
 		\multicolumn{ 6 } {l} {\textsc{Behavioural Parameters:}} \\ 
 		
-		search-speed & Distance a pollinator can move per tick & bees-own & integer & 0.1m /sec  & \begin{tabular}{@{}l@{}} \citep{kunin1991few} in \citep{kunin1996pollinator}  \\  0.09-0.17 \citep{essenberg2012explaining} \end{tabular} \\
+		search-speed & Distance a pollinator can move per tick & bees-own & integer & 0.1m /sec  & \begin{tabular}{@{}l@{}} \citealt{kunin1991few} in \citealt{kunin1996pollinator}  \\  0.09-0.17 \citep{essenberg2012explaining} \end{tabular} \\
 		
 		stdev-angle & Standard deviation for the normal distribution used in the CRW & global & integer &  30    & \citealt{waddington1980flight}  \\
 		
-		flightsteps-until-change & seconds of unsuccessful search before the constancy changes & bees-own & integer & 5s ( = 5 ticks) &  \citealt{chittka1997foraging}  \\
+		flightsteps-until-change & Seconds of unsuccessful search before the preference changes & bees-own & integer & 5s ( = 5 ticks) &  \citealt{chittka1997foraging,kunin1993sex}  \\
 		
 		length-memory & How many flowers can a bee remember to avoid double-visiting.  & bees-own & integer & 4     & \citealt{goulson2000pollinators}, see \citealt{goulson1999foraging} for review \\
 		
-		view  & Value for the radius of grid-cells a pollinator can see (cone-view of 180°) & bees-own & integer & 0.7m ( = 6 grid-cells) &  \begin{tabular}{@{}l@{}} \citep{dyer2008comparative, wertlen2008detection} \\ \citealt{ne2001effect} \end{tabular} \\
+		view  & Value for the radius of grid-cells a pollinator can see (cone-view of 180°) & bees-own & integer & 0.7m ( = 6 grid-cells) &  \begin{tabular}{@{}l@{}} \citealt{dyer2008comparative, wertlen2008detection} \\ \citealt{ne2001effect} \end{tabular} \\
 		
-		array & \begin{tabular}{@{}l@{}} Array of all suitable flowers (referred, non-visited)\\ flowers in sight of the pollinator \end{tabular} & bees-own & Array &       &  \\
+		array & \begin{tabular}{@{}l@{}} Array of all suitable flowers (referred, non-visited)\\ in sight of the pollinator \end{tabular} & bees-own & Array &       &  \\
 		
-		reward-function & How fast the reward is renew per second & flowers-own & float & 0.00004 J/s   &  \\
+		reward-function & How much reward is regrowing per second & flowers-own & float & 0.00004 J/s   &  \\
 		
 		handling-time & The time a pollinator needs for exploiting the floral reward & bees-own & integer & reward * 4s + 0.5s (+ 3s) & \citealt{roubik1992ecology} in \citealt{kunin1996pollinator} \\
 		
 		reward & \begin{tabular}{@{}l@{}}Reward in Joule the flower has to offer. \\  Exploited with each visit, renewed over time \end{tabular} & flowers-own   & float & reward(max) = 1J & \citealt{kunin1991few} in \citealt{kunin1996pollinator}  \\
 		
-		pollen carry-over rate & The max. number of visits within a successful pollination is possible & flowers-own & integer & 1, 2, 4, 6, 8, 16  & \citealt{benadi2012population} \\
+		pollen carry-over rate & Max. number of visits within a successful pollination is possible & flowers-own & integer & 1, 2, 4, 6, 8, 16  & \citealt{benadi2012population} \\
 		
 		flower-memory & A list of flower-locations  & bees-own & string &    4   & see \citealt{goulson1999foraging} for review) \\
 		
