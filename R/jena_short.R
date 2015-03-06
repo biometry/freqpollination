@@ -104,7 +104,7 @@ jena.tp <- jena.tp[order(jena.tp$Freq_Plot),]
 jena.lot <- jena.lot[order(jena.lot$Freq_Plot),]
 
 #################################
-###START ANALYSIS################
+###ANALYSIS################
 #################################
 # following Zuur 2009
 
@@ -148,7 +148,7 @@ corvif(z)
 
 # 2. The beyond optimal model ----
 #####
-#I want to apply a mixed model because I have 8 observation per Plot.The data is therefore not independent but nested. 
+
 
 fALL <- formula(VR_spec ~ 
                   Freq_Plot+
@@ -164,20 +164,16 @@ fALL <- formula(VR_spec ~
                   I(Freq_Plot^3):Spec+
                   I(Freq_Plot^2):Cover_Plot)
 
-lmeALL <- lme(fALL,
-               random=~1|PlotID/PatchID, data=jena)
-
+#I am using a mixed model because I have 8 observation per Plot.The data is therefore not independent but nested. 
+lmeALL <- lme(fALL,random=~1|PlotID/PatchID, data=jena)
 
 # 3. Model Validation Nr. 1 ----
 #####
 
-#Crawley p.347
-#Zuur Chapter 4 p.85
 plot(lmeALL)
-#mist: Heterogeneity / Heteroscedasticity
+#Problem: Strong Heterogeneity / Heteroscedasticity!!
 #violates the homogeneity of variance assumption
-#transformation? Log geht wohl nicht weil so viele Nuller drin sind.
-#Möglichkeiten aus Zuur chapter 4 (p.72ff & (auch: Zuur Appendix p. 535) ---> Adjestment of weights
+#MFollowing Zuur 2009 chapter 4 (p.72ff & Appendix p. 535) ---> Adjestment of weights
 
 # 4a. Applying different weights ----
 #####
@@ -186,8 +182,7 @@ M.original <- gls(fALL, data=jena)
 
 fixed <- varFixed(~Freq_Plot)
 M1.fixed <- gls(fALL, data=jena, weights=fixed)
-#AIC sogar größer als ohne weight?!
-#Geht nicht für Spec weil factor
+#Not possible for Spec because it is a factor
 
 varFreq <- varIdent(form=~1|Freq_Plot)
 M1.varFreq <- gls(fALL, data=jena, weights=varFreq)
@@ -214,7 +209,7 @@ M1.varCP <- gls(fALL, data=jena, weights=varCP)
 
 varCPs <- varConstPower(form=~Freq_Plot|Spec)
 M1.varCPs <- gls(fALL, data=jena, weights=varCPs)
-#Constant plus power of the variance covariate (?)
+#Constant plus power of the variance covariate
 
 varCom <- varComb(varIdent(form=~1|Spec),varExp(form=~Freq_Plot))
 M1.varCom <- gls(fALL, data=jena, weights=varCom)
@@ -229,31 +224,34 @@ AIC(M.original,M1.fixed, M1.varFreq, M1.varSpec, M1.varCov,
     M1.varCom, M1.varCom2) 
 
 #Winner is varCPs, danach varSpec (varIdent)
-#macht auch total sinn varIdent zu nehmen: Spec is a nominal variable. So varIdent allowes different residual variation for the visitation rate per focal species
+#Ecologically it makes sense to choose varIdent! Spec is a nominal variable with very different values for each species. VarIdent allowes different residual variation for the visitation rate per focal species
 
-#In das mixed model einbauen:
-M1 <- lme(fALL, random=~1|PlotID/PatchID, data=jena, weights = varSpec)
-M2 <- lme(fALL, random=~1|PlotID/PatchID, data=jena, weights=varCPs) #geht leider nicht
+#Include it in the mixed model:
+M1 <- lme(fALL, random=~1|PlotID/PatchID, 
+          data=jena, weights = varSpec)
+M2 <- lme(fALL, random=~1|PlotID/PatchID, 
+          data=jena, weights=varCPs) #does not work, too few data
 
 anova(lmeALL,M1) 
 
 plot(M1)
 plot(lmeALL)
-#sehr großer unterschied! M1 viel besser! 
+#great difference, weightingmakes a significantly better variance structure!
 # L= 383.7 (df=4, p<0.0001)
-#significantly better variance structure
+#No more Heteroscedasticity
 
 # 5. Model Selection ----
 #####
 lmeALL <- lme(fALL, 
               random=~1|PlotID/PatchID, 
               data=jena, method="ML", weights = varSpec)
+#Important to choose the method "Maximum Likelihood" here because we are comparing models with different fixed effect structure. REML (would )default) is not possible.
 
 # 5a. Global Model Selection by MiMIn ----
 #####
-dd2 <- dredge(lmeALL , extra= alist(AIC))
+global.selection <- dredge(lmeALL , extra= alist(AIC))
 
-dd2[1:10]
+global.selection[1:10] #only show the first 10 results
 
 # 5b. Backward Selection ----
 #####
@@ -295,7 +293,9 @@ M6a <- update(M5d, .~. -Freq_Plot:Spec)
 M6b <- update(M5d, .~. -I(Freq_Plot^2):Spec)
 M6c <- update(M5d, .~. -I(Freq_Plot^3):Spec)
 
-anova(M5d,M6a,M6b,M6c) # M5d bleibt das beste
+anova(M5d,M6a,M6b,M6c) # M5d stays the best
+
+#Same result as global selection!
 
 #6. THE FINAL MODEL ----
 #####
@@ -322,22 +322,24 @@ M.final.onerandom <- lme(fFinal,~1|PlotID,
 
 M.final.NOrandom <- gls(fFinal,data=jena, weights = varSpec)
 
+anova(M.final,M.final.noweight)
 
-anova(M.final.NOrandom,M.final)
-#Model                  df      AIC      BIC    logLik   Test  L.Ratio p-value
-#M.final.NOrandom     1 25 987.6298 1085.127 -468.8149                        
-#M.final              2 27 983.6561 1088.953 -464.8281 1 vs 2 7.973616  0.0186
-#--> Random effects besser!
+#validating random effect structure:
+AIC(M.final.NOrandom,M.final.onerandom,M.final)
+#                   df      AIC
+#M.final.NOrandom  25 987.6298
+#M.final.onerandom 26 989.6279
+#M.final           27 983.6561
 
 #7. Model Validation Nr. 2 ----
 #####
 plot(M.final, main="Model Validation", ylim=c(-3.5,3.5)) 
-#sieht ok aus, die Lücke ist auch nicht mehr so stark wie bei M.final2
+#looks ok
 
 plot(M.final.noweight, main="Model Validation", ylim=c(-6,6))
+# weighting makes big difference
 
-mean(resid(M.final)) #super, so gut wie Null!
-mean(resid(M.final.noweight))
+mean(resid(M.final)) #should be zero --> good
 
 # 8. Summary & Interpretation ----
 ######
@@ -354,12 +356,13 @@ anova(M.final)
 # Spec:I(Freq_Plot^2)     4   191   3.43666  0.0097
 # Spec:I(Freq_Plot^3)     4   191   3.41020  0.0101
 
-
-# F-Werte so riesig bei Species weil die between-group variability so hoch ist (attractive ARten vs. nicht attraktive arten.) Aber das ist ja auch gut, F darf groß sein, p klein
+#F-Values are high because the between-group variability in the species is high (attractive species vs. non-attractive species), high F-values are good
 
 r.squaredGLMM(M.final.onerandom)
-#R2m       R2c 
-#0.5329026 0.5341637 
+#R2m (marginal) : 0.5329026 
+#--> represents the variance explained by fixed factors
+#R2c (conditional): 0.5341637 
+#--> both fixed and random factors (i.e. the entire model)
 
 # 9. Plotten  -----
 #####

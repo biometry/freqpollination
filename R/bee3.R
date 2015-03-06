@@ -1,15 +1,16 @@
 ###read data####
 
-cluster100<- read.csv("C:/Users/hczioska/Documents/GitHub/Data/bee.final2/cluster100.csv")
+NL<- read.csv("C:/Users/hczioska/Documents/GitHub/Data/NL.csv")
 
 NL$VR <- NULL
-NL2<- rbind(cluster1, cluster2, cluster5, cluster10, cluster20, cluster50, cluster75, cluster100)
-NL2$VR <- NL2$VR1+ NL2$VR2
-NL2$freqshare <- NL2$freq / 100
-NL2$F1[NL2$F1 == 0] <- 0.1
+NL$freqshare <- NULL
+
+NL$VR <- NL$VR1+ NL$VR2
+NL$freqshare <- NL$freq / 100
+NL$F1[NL$F1 == 0] <- 0.1
+
 write.csv(NL3,"C:/Users/hczioska/Documents/GitHub/Data/NL.csv", row.names=F)
 
-NL <- rbind(NL,NL2)
 
 #####basics############
 
@@ -442,28 +443,6 @@ for (i in 1:6) {
 
 legend("bottomright",legend=unique(NL$pollen), cex=0.8, pch= 16, col=coverpol)
 
-
-#####iNTERPRETATION##############
-
-# Frequency-Independent (but still interesting!):
-# - Hump-Shaped influence of clustering for sum of visits. Maximum somewhere between 5 and 15 flowers per Cluster
-# - small degree of clustering: more efficient foraging, find quicker new flower, still small distance between patches. If the patches grow bigger, foraging within a patch might be better but distances and seach success in smaller
-# 
-# Frequency-Dependent:
-# 1. sum of visits: 
-#   -shape equation of the 4. degree (but only for 1 and 2 cluster)
-#   - difference for cover
-# 
-# - Visitation rate:
-#   - Hump-shaped for cluster 1 and 2
-#   - no frequency-dependence for bigger cluster
-#   - Higher cover reduces VR for high frequencies (maybe because the absolut quantity of the rarer species is higher, easier to find)
-#   - Numer of bees and flightsepts until change have influence  on the intercept, not so much about shape
-#  
-
-
-
-
 ####VR1/F1 ~ Freq (different cluster and cover)######
 
 par(oma = c(1, 1, 3, 4), mar = c(1, 1, 1, 1))
@@ -517,7 +496,6 @@ par(fig = c(0, 1, 0, 1), new = TRUE)
 plot(0, 0, type = "n", bty = "n", xaxt = "n", yaxt = "n")
 legend("right", pch=20, legend=unique(NL$cover), col=covercol, title="Cover (%) ", bty="n", cex = 2)
 mtext("Per-Flower Visitation Rate per Frequency", side = 3, line = -2, outer = TRUE)
-
 #####################################
 
 par(mfrow=c(1,4),mar = c(5, 2, 3, 2), oma=c(0,0,0,0))
@@ -572,7 +550,6 @@ for (i in 1:5) {
 } 
 abline(0,1, lty=2)
 #legend("topleft", legend=unique(sub$cluster), cex=0.8, bty="n") 
-
 
 
 ##############
