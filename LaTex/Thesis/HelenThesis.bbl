@@ -116,13 +116,6 @@ Faruq, S., McOwan, P.~W., and Chittka, L. (2013).
   with bees foraging from flowers under varied illumination.
 \newblock {\em Journal of vision}, 13(10):10.
 
-\bibitem[Gigord et~al., 2001]{gigord2001negative}
-Gigord, L.~D., Macnair, M.~R., and Smithson, A. (2001).
-\newblock Negative frequency-dependent selection maintains a dramatic flower
-  color polymorphism in the rewardless orchid dactylorhiza sambucina (l.) soo.
-\newblock {\em Proceedings of the National Academy of Sciences},
-  98(11):6253--6255.
-
 \bibitem[Goulson, 1994]{goulson1994model}
 Goulson, D. (1994).
 \newblock A model to predict the influence of insect flower constancy on
@@ -153,6 +146,11 @@ Goulson, D. and Wright, N.~P. (1998).
 \newblock Flower constancy in the hoverflies episyrphus balteatus (degeer) and
   syrphus ribesii (l.)(syrphidae).
 \newblock {\em Behavioral Ecology}, 9(3):213--219.
+
+\bibitem[Greggers and Menzel, 1993]{greggers1993memory}
+Greggers, U. and Menzel, R. (1993).
+\newblock Memory dynamics and foraging strategies of honeybees.
+\newblock {\em Behavioral Ecology and Sociobiology}, 32(1):17--29.
 
 \bibitem[Hanoteaux et~al., 2013]{hanoteaux2013effects}
 Hanoteaux, S., Tielb{\"o}rger, K., and Seifan, M. (2013).
@@ -260,6 +258,11 @@ Rands, S.~A. and Whitney, H.~M. (2010).
 \newblock Effects of pollinator density-dependent preferences on field margin
   visitations in the midst of agricultural monocultures: A modelling approach.
 \newblock {\em Ecological Modelling}, 221(9):1310--1316.
+
+\bibitem[Rathcke, 1983]{rathcke1983competition}
+Rathcke, B. (1983).
+\newblock Competition and facilitation among plants for pollination.
+\newblock {\em Pollination biology}, pages 305--329.
 
 \bibitem[Roscher et~al., 2004]{roscher2004role}
 Roscher, C., Schumacher, J., Baade, J., Wilcke, W., Gleixner, G., Weisser,
