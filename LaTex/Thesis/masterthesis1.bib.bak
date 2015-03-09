@@ -615,7 +615,7 @@ environment, many references},
   Volume                   = {32},
 
   Comment                  = {(absolute flow rates 0.0625, 0.125, 0.25, 0.5 piko-l/ min), bee speed 1-2m/sec},
-  File                     = {greggers1993memory.pdf:Literatur\\greggers1993memory.pdf:PDF},
+  File                     = {greggers1993memory.pdf:greggers1993memory.pdf:PDF},
   Keywords                 = {lab, foraging, model, constancy,},
   Publisher                = {Springer}
 }
@@ -890,6 +890,7 @@ environment, many references},
   Year                     = {1972},
   Pages                    = {453--460},
 
+  File                     = {levin1972low.pdf:levin1972low.pdf:PDF},
   Publisher                = {JSTOR}
 }
 
@@ -1060,6 +1061,16 @@ environment, many references},
   File                     = {rands2010effects.pdf:rands2010effects.pdf:PDF},
   Keywords                 = {model, foraging, constancy, density},
   Publisher                = {Elsevier}
+}
+
+@Article{rathcke1983competition,
+  Title                    = {Competition and facilitation among plants for pollination},
+  Author                   = {Rathcke, B},
+  Journal                  = {Pollination biology},
+  Year                     = {1983},
+  Pages                    = {305--329},
+
+  Publisher                = {Academic Press London}
 }
 
 @Article{roscher2004role,
