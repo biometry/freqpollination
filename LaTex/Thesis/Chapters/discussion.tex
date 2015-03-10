@@ -6,7 +6,7 @@ The results of the natural condition data are consistent with the simulation dat
 
 \subsubsection*{Explaining negative frequency dependence}
 
-Previous research found positive FD for lab experiments and inconsistence in the few field experiments with color morphs (review by \citealt{smithson2001pollinator}). However, the field data suggests a negative FD for at least four different rewarding flower species confirmed by the results from the foraging simulation. Where does the discrepancy of lab and field data comes from? 
+Previous research found positive FD for lab experiments and inconsistence in the few field experiments focusing on color morphs (review by \citealt{smithson2001pollinator}). However, the field data suggests a negative FD for at least four different rewarding flower species confirmed by the results from the foraging simulation. Where does the discrepancy of lab and field data comes from? 
 
 The sensitivity analysis of the ABM can give an explanation: If the reward function is increased to a refill within 10 ticks, the relationship is reversed to a positive frequency dependence and the rare species gets unproportionally few visits (Fig.~\ref{fig:SA_reward}). The curve is highly consistent with findings of  \cite{smithson1997density} and \cite{smithson1996frequency} in their lab experiments. In their study design, artificial flowers were refilled after each foraging bout. Therefore, every bumble bee got a fresh set of equally rewarding flowers to forage on which is comparable to a high regrowth function in the ABM.
 
@@ -20,17 +20,19 @@ We know that pollinators more likely abandon flower constancy if they experience
 %smithson1997density: high density still +FD BUT only 5-10\% density
 
 The model reveals two drivers for frequency dependence: The higher the floral cover, the stronger the frequency dependence and the bigger the clusters, the lower the frequency dependence (Fig.~\ref{fig:PFV}E-H). 
-Floral density is known to influence visitation rates, usually positive and with a saturating function (e.g.\citealt{rathcke1983competition}, \citealt{essenberg2012explaining}, \citealt{bernhardt2008effects}, \citealt{Kunin1997}). Those findings are consistent with the functional response found for different cover values (Supplementary material, fig.~\ref{fig:nonfreq}a). If the cover is increasing, the absolute number of flowers rises also for the rare species. That makes it more likely for a bee-agent to find a flower before changing preference towards the common species even if foraging on the later would be more efficient. High cover causes the same effect as expanded vision distance or maximum search limit (cf. fig.~\ref{fig:SA_view} and fig.~\ref{fig:SA_flight}): The main reason of abandoning flower constancy becomes multiple visit of flowers with low reward. Furthermore, every visit to a rare species weights high in the per-flower visitation rate because the sum of visits is divided through the number of flowers. Even few "exploratory" visits can have great impact on the proportion. 
+Floral density is known to influence visitation rates, usually positive and with a saturating function (e.g.\citealt{rathcke1983competition}, \citealt{essenberg2012explaining}, \citealt{bernhardt2008effects}, \citealt{Kunin1997}). Those findings are consistent with the functional response found for different cover values (Supplementary material, fig.~\ref{fig:nonfreq}a). If the cover is increasing, the absolute number of flowers rises also for the rare species. That makes it more likely for a bee-agent to find a flower before changing preference towards the common species even if foraging on the later would be more efficient. Therefore, high cover causes the same effect as expanded vision distance or maximum search limit (cf. fig.~\ref{fig:SA_view} and fig.~\ref{fig:SA_flight}): The main reason of abandoning flower constancy becomes multiple visit of flowers with low reward. Furthermore, every visit to a rare species weights high in the per-flower visitation rate because the sum of visits is divided through the number of flowers. Even few "exploratory" visits can have great impact on the proportion. 
 
 The model shows that spatial agglomeration of flowers can lead to a more efficient foraging (more visits per time unit), less FD and a higher quality of visits due to compatible pollen deposits. If flowers are evenly distributed, many short search and flight times apply. A intermediate cluster level is easy to exploit by a pollinator whereas the flight and search times can be very long in between few big cluster, especially for low floral densities (Supplementary material, fig.~\ref{fig:nonfreq}b). 
 It was already suggested by \cite{epperson1987frequency} that spatial agglomeration of flowers decreases frequency dependence. In the model, a similar effect compared to low cover takes place: If flowers are agglomerated at few places, they are more difficult to find for a bee-agent with limited vision, they affect the pollinators perception of frequency. They will change preferences due to long search times and forage efficiently on the next best cluster. 
+
+%more literature!
 
 \subsubsection*{Requirements for successful pollination}
 Optimal visitation rate is gained at low frequency with high cover and low cluster values. However, those visits might not be the best quality if the pollination per visit ratio is comparatively low (Fig.~\ref{fig:POC}a,d). 
 The ratio can be seen as index for flower constancy: If the majority of visits lead even for a small pollen-carryover value to a successful pollination the bee-agents behave strongly after the theory of constancy \citep{montgomery2009pollen}. If the cover is high, bee-agents will keep their constancy also for rare species because they are abundant enough. If the agglomeration of flowers is high, bee-agents exploit this cluster before leaving for the next. Every visit within a cluster of flowers of the same species is counted as successful pollination and can lead to a high visit quality even if the cover is low (cf. \citealt{jakobsson2009relationships})
 
 Therefore it would be optimal for rare flowers to stand in clusters of flowers if the cover is low to get sufficient pollination. If the cover is high the spatial distribution plays a minor role for the visit quality.  
-
+%vgl Hanoteux?
 %see Feldmann 2008
 
 \subsubsection*{Frequency dependent sum of visits to the flower community}
@@ -57,3 +59,5 @@ Necessary to validate further results of the ABM would be a supplementary study 
 
 - Species Richness is not important (thrown out in the model selection). Why? 
 Interesting would be a similarity index how different the other flowers are and what insects they attract, not how many. Or simpson index talking the abundence into account. 
+
+- 
