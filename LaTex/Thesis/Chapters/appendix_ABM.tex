@@ -40,7 +40,7 @@
 	\label{tab:anova}
 \end{table}
 
-\begin{figure} [!h] %LME
+\begin{figure} [!th] %LME
 	\centering
 	\includegraphics[width=14cm]{Images/LME}
 	\caption{Per-flower visitation rates of the five focal species over different frequencies. Each point represents one observation of 15 minutes. The y-axis is plotted on a log scale due to the divergence in attractiveness of the focal species. The linear mixed effect model with Subplot nested in Plot as random factor show a sigmoidal frequency dependence for all species but \textit{Lathyrus pratensis}. Floral cover and species richness were dropped as explanatory variables in the model selection process. R$^{2}$ was calculated with the "r.squaredGLMM"-function of the MuMIn-Package \citep{MuMIn}}
@@ -50,14 +50,14 @@
 %%%%%%%methods model%%%%%%%%%%%%%%%%%%%
 \clearpage
 
-\begin{figure} [!h] % screenshots
+\begin{figure} [!ht] % screenshots
 	\centering
 	\includegraphics[width=15cm]{Images/cluster}
 	\caption{ Exemplary model environment setups with increasing floral cover and degree of clustering. The cover expresses the percentage of patches containing a flower ($\Sigma_{patches}$ = 10 000). The cluster number equals the average amount of flowers per cluster. Flowers are randomly assigned to the clusters to achieve a more natural, uneven distribution. }
 	\label{fig:cluster}
 \end{figure}
 
-\begin{figure} [!h] %flowchart
+\begin{figure} [!ht] %flowchart
 	\centering
 	\includegraphics[width=15cm]{Images/flowchart-model}
 	\caption{Flowchart describing the behavior rules for the bee-agents within the agent-based model. Every bee-agent can either search for a preferred flower or visit one. While searching, a bee-agent can remember the location of the last four visited flowers to avoid double-encountering. If there is no flower in sight after 5 seconds of correlated random walk (CRW), the probability that it will encounter the next available flower despite its type increases by 10\% per additional time step. When a bee-agent visits a flower it takes all reward within a reward-dependent handling time and compares the amount with its memory. If the reward is low, the agent is more likely to visit the other flower type next time. The maximum of visits within a successful pollination is possible is determined by the pollen carryover rate.}
@@ -109,7 +109,7 @@
 	\label{fig:POC}
 \end{figure}
 
-\begin{figure} [!h] %results:SUM
+\begin{figure} [!ht] %results:SUM
 	\centering
 	\includegraphics[width=17cm]{Images/SUM}
 	\caption{Summed visits to both species show a frequency dependence for low cluster values. Depending on the floral cover it is quadratic or a fourth-degree polynomial relationship. Maximum of visits (maximal efficiency) is achieved for very unequal or very equal frequencies. If one species is rare, the sum of visits drop because some bee-agents forage inefficiently on the rare species, having long flight and searching times. Clustering reduces the frequency dependence but also decreases the absolute number of visits and increases the variance (grey error bars).}

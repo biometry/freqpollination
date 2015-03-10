@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Ayala and Campbell, 1974]{ayala1974frequency}
+Ayala, F.~J. and Campbell, C.~A. (1974).
+\newblock Frequency-dependent selection.
+\newblock {\em Annual review of Ecology and systematics}, pages 115--138.
+
 \bibitem[Barton, 2014]{MuMIn}
 Barton, K. (2014).
 \newblock {\em MuMIn: Multi-Model Inference}.
@@ -92,12 +97,6 @@ Eckhart, V., Rushing, N., Hart, G., and Hansen, J. (2006).
   and pollinator interactions.
 \newblock {\em Oikos}, 112(2):412--421.
 
-\bibitem[Elliott and Irwin, 2009]{elliott2009effects}
-Elliott, S.~E. and Irwin, R.~E. (2009).
-\newblock Effects of flowering plant density on pollinator visitation, pollen
-  receipt, and seed production in delphinium barbeyi (ranunculaceae).
-\newblock {\em American Journal of Botany}, 96(5):912--919.
-
 \bibitem[Epperson and Clegg, 1987]{epperson1987frequency}
 Epperson, B.~K. and Clegg, M.~T. (1987).
 \newblock Frequency-dependent variation for outcrossing rate among flower-color
@@ -115,6 +114,12 @@ Faruq, S., McOwan, P.~W., and Chittka, L. (2013).
 \newblock The biological significance of color constancy: An agent-based model
   with bees foraging from flowers under varied illumination.
 \newblock {\em Journal of vision}, 13(10):10.
+
+\bibitem[Geslin et~al., 2014]{geslin2014effect}
+Geslin, B., Baude, M., Mallard, F., and Dajoz, I. (2014).
+\newblock Effect of local spatial plant distribution and conspecific density on
+  bumble bee foraging behaviour.
+\newblock {\em Ecological Entomology}, 39(3):334--342.
 
 \bibitem[Gigord et~al., 2001]{gigord2001negative}
 Gigord, L.~D., Macnair, M.~R., and Smithson, A. (2001).
@@ -271,12 +276,6 @@ Pyke, G. and Cartar, R. (1992).
 \newblock {\em R: A Language and Environment for Statistical Computing}.
 \newblock R Foundation for Statistical Computing, Vienna, Austria.
 
-\bibitem[Rands and Whitney, 2010]{rands2010effects}
-Rands, S.~A. and Whitney, H.~M. (2010).
-\newblock Effects of pollinator density-dependent preferences on field margin
-  visitations in the midst of agricultural monocultures: A modelling approach.
-\newblock {\em Ecological Modelling}, 221(9):1310--1316.
-
 \bibitem[Rathcke, 1983]{rathcke1983competition}
 Rathcke, B. (1983).
 \newblock Competition and facilitation among plants for pollination.
@@ -326,12 +325,6 @@ Song, Z. and Feldman, M.~W. (2014).
 \newblock {\em Proceedings of the Royal Society B: Biological Sciences},
   281(1776):20132437.
 
-\bibitem[Stout et~al., 1998]{stout1998influence}
-Stout, J.~C., Allen, J.~A., and Goulson, D. (1998).
-\newblock The influence of relative plant density and floral morphological
-  complexity on the behaviour of bumblebees.
-\newblock {\em Oecologia}, 117(4):543--550.
-
 \bibitem[Thiele et~al., 2012]{thiele2014r}
 Thiele, J.~C., Kurth, W., and Grimm, V. (2012).
 \newblock Rnetlogo: An r package for running and exploring individual-based
@@ -370,6 +363,13 @@ Wilensky, U. (1999).
 \newblock Netlogo.
 \newblock {\em Center for Connected Learning and Computer-Based Modeling,
   Northwestern University. Evanston, IL.}
+
+\bibitem[Wright and Dobzhansky, 1946]{wright1946genetics}
+Wright, S. and Dobzhansky, T. (1946).
+\newblock Genetics of natural populations. xii. experimental reproduction of
+  some of the changes caused by natural selection in certain populations of
+  drosophila pseudoobscura.
+\newblock {\em Genetics}, 31(2):125.
 
 \bibitem[Zuur et~al., 2007]{zuur2007analysing}
 Zuur, A., Ieno, E.~N., and Smith, G.~M. (2007).

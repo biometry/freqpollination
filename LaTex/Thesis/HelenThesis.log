@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.8)  10 MAR 2015 12:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.8)  10 MAR 2015 14:58
 entering extended mode
 **HelenThesis.tex
 
@@ -1325,15 +1325,6 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 4.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 4.
-
-
-Package natbib Warning: Citation `ayala1974frequency' on page 2 undefined on in
-put line 6.
-
-
-Package natbib Warning: Citation `wright1946genetics' on page 2 undefined on in
-put line 6.
-
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 17.
 
@@ -1343,17 +1334,17 @@ Overfull \hbox (1.27025pt too wide) in paragraph at lines 19--20
  []
 
 [2]
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
@@ -1402,18 +1393,9 @@ Missing character: There is no ´ in font LinLibertineT-tlf-ts1!
 ssion.tex [12] [13])
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/concl
 usion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 
-     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+ []
 
 ) [14]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\HelenThesis.bb
@@ -1422,34 +1404,27 @@ l [15] [16] [17]) [18]
 dix_ABM.tex
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/it' will be
 (Font)              scaled to size 10.0pt on input line 29.
- <Images/LME.png, id=485, 485.4135pt x 447.1104pt>
+ <Images/LME.png, id=498, 485.4135pt x 447.1104pt>
 File: Images/LME.png Graphic file (type png)
 
 <use Images/LME.png>
 Package pdftex.def Info: Images/LME.png used on input line 45.
 (pdftex.def)             Requested size: 398.33858pt x 366.90579pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[19] [20 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Image
-s/LME.png>] <Images/cluster.png, id=501, 1077.7866pt x 813.2784pt>
+ [19] [20 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Imag
+es/LME.png>]
+<Images/cluster.png, id=514, 1077.7866pt x 813.2784pt>
 File: Images/cluster.png Graphic file (type png)
 
 <use Images/cluster.png>
 Package pdftex.def Info: Images/cluster.png used on input line 55.
 (pdftex.def)             Requested size: 426.79134pt x 322.04187pt.
 
-<Images/flowchart-model.jpg, id=502, 623.4492pt x 534.3162pt>
+<Images/flowchart-model.jpg, id=515, 623.4492pt x 534.3162pt>
 File: Images/flowchart-model.jpg Graphic file (type jpg)
 
 <use Images/flowchart-model.jpg>
 Package pdftex.def Info: Images/flowchart-model.jpg used on input line 62.
 (pdftex.def)             Requested size: 426.79134pt x 365.7761pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 10.0pt on input line 75.
 
@@ -1462,7 +1437,7 @@ Overfull \hbox (13.49133pt too wide) in paragraph at lines 70--93
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/cluste
 r.png>] [22 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Im
 ages/flowchart-model.jpg>]
-<Images/PFV.png, id=514, 591.6504pt x 327.8649pt>
+<Images/PFV.png, id=527, 591.6504pt x 327.8649pt>
 File: Images/PFV.png Graphic file (type png)
  <use Images/PFV.png>
 Package pdftex.def Info: Images/PFV.png used on input line 100.
@@ -1472,7 +1447,7 @@ Overfull \hbox (25.89198pt too wide) in paragraph at lines 100--101
  [][] 
  []
 
-<Images/POC.png, id=515, 602.7318pt x 546.6021pt>
+<Images/POC.png, id=528, 602.7318pt x 546.6021pt>
 File: Images/POC.png Graphic file (type png)
  <use Images/POC.png>
 Package pdftex.def Info: Images/POC.png used on input line 107.
@@ -1482,7 +1457,7 @@ Overfull \hbox (25.89198pt too wide) in paragraph at lines 107--108
  [][] 
  []
 
-<Images/SUM.png, id=520, 589.4823pt x 187.4202pt>
+<Images/SUM.png, id=533, 589.4823pt x 187.4202pt>
 File: Images/SUM.png Graphic file (type png)
  <use Images/SUM.png>
 Package pdftex.def Info: Images/SUM.png used on input line 114.
@@ -1492,15 +1467,12 @@ Overfull \hbox (25.89198pt too wide) in paragraph at lines 114--115
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 ) [23
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/PFV.pn
 g>]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/sup.t
-ex <Images/plot-design.png, id=526, 415.5525pt x 367.1316pt>
+ex <Images/plot-design.png, id=539, 415.5525pt x 367.1316pt>
 File: Images/plot-design.png Graphic file (type png)
 
 <use Images/plot-design.png>
@@ -1510,7 +1482,7 @@ Package pdftex.def Info: Images/plot-design.png used on input line 27.
 C.png>] [25 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Im
 ages/SUM.png> <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/
 Images/plot-design.png>]
-<Images/pairs-plot.png, id=541, 782.925pt x 686.565pt>
+<Images/pairs-plot.png, id=554, 782.925pt x 686.565pt>
 File: Images/pairs-plot.png Graphic file (type png)
 
 <use Images/pairs-plot.png>
@@ -1518,7 +1490,7 @@ Package pdftex.def Info: Images/pairs-plot.png used on input line 38.
 (pdftex.def)             Requested size: 455.24408pt x 399.21368pt.
  [26 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/pa
 irs-plot.png>]
-<Images/residuals.png, id=551, 557.9244pt x 285.9483pt>
+<Images/residuals.png, id=564, 557.9244pt x 285.9483pt>
 File: Images/residuals.png Graphic file (type png)
 
 <use Images/residuals.png>
@@ -1541,7 +1513,7 @@ Overfull \hbox (55.58614pt too wide) in paragraph at lines 122--178
  [][][][] 
  []
 
-<Images/nonfreq.png, id=594, 598.3956pt x 329.5512pt>
+<Images/nonfreq.png, id=607, 598.3956pt x 329.5512pt>
 File: Images/nonfreq.png Graphic file (type png)
  <use Images/nonfreq.png>
 Package pdftex.def Info: Images/nonfreq.png used on input line 187.
@@ -1550,7 +1522,7 @@ Missing character: There is no ´ in font LinLibertineT-tlf-ts1!
 Missing character: There is no ´ in font LinLibertineT-tlf-ts1!
 
 [28 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/non
-freq.png>] [29] <Images/SA_SUM.png, id=608, 531.9072pt x 491.436pt>
+freq.png>] [29] <Images/SA_SUM.png, id=621, 531.9072pt x 491.436pt>
 File: Images/SA_SUM.png Graphic file (type png)
 
 <use Images/SA_SUM.png>
@@ -1560,7 +1532,7 @@ Package pdftex.def Info: Images/SA_SUM.png used on input line 196.
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_SUM
 .png>]
-<Images/SA_reward.png, id=615, 560.0925pt x 398.4486pt>
+<Images/SA_reward.png, id=628, 560.0925pt x 398.4486pt>
 File: Images/SA_reward.png Graphic file (type png)
 
 <use Images/SA_reward.png>
@@ -1570,7 +1542,7 @@ Package pdftex.def Info: Images/SA_reward.png used on input line 205.
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_rew
 ard.png>]
-<Images/SA_view.png, id=621, 548.0475pt x 398.2077pt>
+<Images/SA_view.png, id=634, 548.0475pt x 398.2077pt>
 File: Images/SA_view.png Graphic file (type png)
  <use Images/SA_view.png>
 Package pdftex.def Info: Images/SA_view.png used on input line 215.
@@ -1579,7 +1551,7 @@ Package pdftex.def Info: Images/SA_view.png used on input line 215.
 [32
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_vie
-w.png>] <Images/SA_flight.png, id=627, 557.6835pt x 398.2077pt>
+w.png>] <Images/SA_flight.png, id=640, 557.6835pt x 398.2077pt>
 File: Images/SA_flight.png Graphic file (type png)
 
 <use Images/SA_flight.png>
@@ -1589,7 +1561,7 @@ Package pdftex.def Info: Images/SA_flight.png used on input line 225.
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_fli
 ght.png>]
-<Images/SA_bees.png, id=633, 548.0475pt x 398.2077pt>
+<Images/SA_bees.png, id=646, 548.0475pt x 398.2077pt>
 File: Images/SA_bees.png Graphic file (type png)
  <use Images/SA_bees.png>
 Package pdftex.def Info: Images/SA_bees.png used on input line 234.
@@ -1608,9 +1580,6 @@ File: lstlang2.sty 2014/09/06 1.5e listings language file
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
 File: lstlang3.sty 2014/09/06 1.5e listings language file
 ))
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
 
@@ -1623,13 +1592,13 @@ Package rerunfilecheck Info: File `HelenThesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 196.
  ) 
 Here is how much of TeX's memory you used:
- 21814 strings out of 493921
- 416127 string characters out of 3144867
- 488558 words of memory out of 3000000
- 24667 multiletter control sequences out of 15000+200000
+ 21812 strings out of 493921
+ 416087 string characters out of 3144867
+ 488510 words of memory out of 3000000
+ 24665 multiletter control sequences out of 15000+200000
  38612 words of font info for 72 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 53i,16n,92p,10405b,957s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,16n,92p,10405b,959s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_tltjc6.enc}
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_zajy4r.enc}{C
 :/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_xogrpz.enc}{C:/
@@ -1652,9 +1621,9 @@ x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on HelenThesis.pdf (35 pages, 4521911 bytes).
+Output written on HelenThesis.pdf (35 pages, 4525222 bytes).
 PDF statistics:
- 733 PDF objects out of 1000 (max. 8388607)
+ 746 PDF objects out of 1000 (max. 8388607)
  166 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
