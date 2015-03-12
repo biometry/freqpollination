@@ -1,12 +1,11 @@
 \section{Introduction}
 
-
-\subsection*{Frequency-dependence}
-
 Frequency-dependence (FD) of survival or reproduction is defined as relative fitness of a species as a function of its frequency in the community \citep{ayala1974frequency,wright1946genetics}.
 According to ecological theory, frequency dependency could have far-ranging consequences for species coexistence and the maintenance of diversity. 
-Negative frequency dependence occurs if the fitness of a phenotype increases if it is rare and is thought to increase diversity. In the case of plant-pollinator-interactions, negative FD describes the preference of pollinators for the rare flower types which can result in a stable polymorphic equilibrium and an increase in floral diversity. Positive frequency dependence on the other hand describes in an increased fitness for common phenotype. Hence, a higher pollination success for common flower types which tends to reduce diversity in modeling studies (\citealt{may1974stability}, but see \citealt{bever1999dynamics}, \citealt{molofsky2002novel}).
- For animal-pollinated plant species, optimal foraging theory predicts that under most circumstances pollinators should favor common flower types over rarer ones \citep{kunin1996pollinator}. While the positive effect of density dependence for pollination success is well studied (e.g. \citealt{essenberg2012explaining,bernhardt2008effects,kunin1993sex,morris2010benefit}, frequency dependence has rarely been tested.
+Negative frequency dependence occurs if the fitness of a phenotype increases if it is rare and is thought to increase diversity. In the case of plant-pollinator-interactions, negative FD describes the preference of pollinators for the rare flower types which can result in a stable polymorphic equilibrium and an increase in floral diversity. Positive frequency dependence on the other hand defines an increased fitness for the common phenotype. Hence, a higher pollination success for common flower types which tends to reduce diversity in modeling studies (\citealt{may1974stability}, but see \citealt{bever1999dynamics}, \citealt{molofsky2002novel}).
+For animal-pollinated plant species, optimal foraging theory predicts that under most circumstances pollinators should favor common flower types over rarer ones \citep{kunin1996pollinator}. 
+ 
+ While the positive effect of density dependence for pollination success is well studied (e.g. \citealt{essenberg2012explaining,bernhardt2008effects,kunin1993sex,morris2010benefit}, frequency dependence has rarely been tested.
 
 \subsection*{Literature}
 
@@ -14,11 +13,13 @@ Previous studies of frequency-dependent pollination cover laboratory, field and 
 
 In the review by \cite{smithson2001pollinator}, 11 of 13 lab experiments using artificial flowers on a "bee-board" showed significant results for frequency dependence. 10 of those were done with rewarding flowers and resulted in positive frequency dependence\citep{smithson1996frequency,smithson1997density}). The only experiment resulting in negative frequency dependence was done with non-rewarding flowers \citep{smithson1997negative}. 
 
-The few field experiments on frequency dependence are either wholly or partly manipulative and concentrate on color morphisms. \cite{epperson1987frequency} found the rare white morph of \textit{Ipomoea purpurea} to be undervisited (but not the colored morphs) and \cite{gigord2001negative} proved negative frequency-dependent selection in the rewardless orchid \textit{Dactylorhiza sambucina}, both supporting the lab experiments. However, \cite{Eckhart2006frequency} was the first to prove negative frequency dependence for a rewarding species (\textit{C. xantiana ssp. xantiana}) and other studies had no significant results (eg. \citealt{jones1996pollinator, mogford1978pollination}). Experiments on natural flower communities lack completely to our knowledge. 
+The few field experiments on frequency dependence are either wholly or partly manipulative and concentrate on color morphisms. \cite{epperson1987frequency} found the rare white morph of \textit{Ipomoea purpurea} to be undervisited (but not the colored morphs) and \cite{gigord2001negative} proved negative frequency-dependent selection in the rewardless orchid \textit{Dactylorhiza sambucina}, both supporting the lab experiments. However, \cite{Eckhart2006frequency} was the first to prove negative frequency dependence for a rewarding species (\textit{C. xantiana ssp. xantiana}). Other studies had no significant results (eg. \citealt{jones1996pollinator, mogford1978pollination}). Experiments on natural flower communities lack completely to our knowledge. 
 
-While foraging models are comparatively common, few investigate frequency dependence. The game-theoretic model by \cite{kunin1996pollinator} suggests pollinators should favor common flower types over rarer ones when resources availability is high. The similar mathematical model of \cite{song2014adaptive} also concentrates on the pollinator perspective by applying rules of optimal foraging strategy and observe under which conditions the pollinators are able to maximize their net energy intake. The only spatial explicit model focusing on frequency dependent pollination is \cite{hanoteaux2013effects} who addressed the survival rates of less attractive species over multiple generations. 
+While foraging models are comparatively common, few investigate frequency dependence. The game-theoretic model by \cite{kunin1996pollinator} suggests pollinators should favor common flower types over rarer ones when resources availability is high. The similar mathematical model of \cite{song2014adaptive} also concentrates on the pollinator perspective by applying rules of optimal foraging strategy and observe under which conditions the pollinators are able to maximize their net energy intake. Spatial explicit models grew in number over the last years addressing a range of foraging topics \citep{dornhaus2006benefits,bukovac2013bees,faruq2013biological}. Frequency dependent pollination is only subject to the model by \cite{hanoteaux2013effects} who tested survival strategies for less attractive species over multiple generations. 
 
-\subsection*{Gap in knowledge/ Problem}
+%\citet{dornhaus2006benefits} looked at the benefits of a recruitment system and colony sizes. \citet{faruq2013biological} compared the foraging success while applying different flower colors by varying the wavelengths over time. \citet{bukovac2013bees} simulated the difference between the parallel visual scan of honey bees and the serial visual scan of bumble bees to for the ability to avoid distractions during foraging. 
+
+\subsection*{Gap in knowledge}
 
 Previous research on FD is scarce and inconsistent between lab, field and simulation data.
 All field experiments were partly or fully manipulated studies on color morphs. \cite{Eckhart2006frequency} was the first to study a rewarding species and to include natural frequencies. Still, rewarding flowers are underrepresented and studies of natural flower communities lack completely.  Furthermore, direct comparison of model and field data to cross-validate findings were only done for related questions such as density effects \citep{essenberg2012explaining} and the learning abilities of bees \citep{dyer2014bee} but never for FD.  
@@ -27,26 +28,26 @@ Next to the yet not fully proven existence of FD are its influencing factors whi
 
 Floral cover is known to influence the foraging behavior of pollinators (eg. \citealt{kunin1993sex,essenberg2012explaining}). However, a possible interaction with  frequency dependence was not considered in most cases. Exceptions were \cite{smithson1997density} who observed visitation rates for densities between 5 an 10\% in their lab experiment without any significant result and \cite{kunin1996pollinator} and \cite{song2014adaptive} who included density as factor in their mathematical model. Field experiments generally lack cover analysis. 
 
-The influence of spatial structure and distribution of flowers is not well studies (but:habitat fragmentation) although flowers typically exist in patchy distributions of various sizes. Usually, the proportion of flowers visited by bees decline with increasing cluster size, probably due to limited memory structure and the avoidance of previously visited flowers \citep{goulson2000pollinators}. \cite{geslin2014effect} also found the foraging behavior of bumble bees (\textit{Bombus terrestris}) affected by the spatial distribution of two co-flowering species in a controlled lab experiment. The only study about spatial distribution of flowers in the context of frequency dependence was done by \cite{hanoteaux2013effects}. Their spatially explicit model included four levels of flower agglomeration which significantly influenced the survival rate of the less attractive species (best survival rates: high cluster for low frequencies, low cluster for high frequencies). 
+In contrast to habitat fragmentation, the influence of spatial structure and distribution of flowers is not well studied. But flowers typically exist in patchy distributions of various sizes. Usually, the proportion of flowers visited by pollinators decline with increasing cluster size, probably due to limited memory structure and the avoidance of previously visited flowers \citep{goulson2000pollinators}. \cite{geslin2014effect} found the foraging behavior of bumble bees (\textit{Bombus terrestris}) affected by the spatial distribution of two co-flowering species in a controlled lab experiment. Again, the only study about spatial distribution of flowers in the context of frequency dependence was done by \cite{hanoteaux2013effects}. Within their model four levels of flower agglomeration significantly influenced the survival rate of the less attractive species (best survival rates: high cluster for low frequencies, low cluster for high frequencies). 
 
 % quantity and quality: Pollen must be from the right plant. Problem for scarce plants. 
 %On the other hand, foraging models usually take a pollinator position, maximizing their intake \cite{kunin1996pollinator,faruq2013biological,song2014adaptive}.
 
 \subsection*{My approach/Questions}
-In this thesis I want to address the following questions: 
 
+Given the general low quantity of studies concerning frequency dependent pollination and their inconsistent results I want to address the following questions this thesis:
 \begin{enumerate}
-	\item Does frequency dependence selection of pollinators also exist for rewarding species in natural floral communities? \\
-	\item	What kind of a frequency-dependent relationship can be found?\\
-	\item	What are important factors influencing frequency dependence?\\
+	\item Does frequency dependent pollinator foraging exist for rewarding species in natural floral communities?
+	\item	What kind of a frequency dependent relationship can be found?
+	\item	What are important factors influencing frequency dependence?
 \end{enumerate}
-
-I observed the per-flower visitation rates to five different flowering plant species within natural grassland plant communities on the area of the Jena Experiment. Observations were made over a range of natural frequencies, floral cover and species richness. To explore the important factors influencing frequency dependence I developed a spatially explicit agent-based model (ABM). The autonomous agents respond with set foraging behavior rules to changing frequency, cover and clustering values for two rewarding co-flowering plant species sharing pollination services. Subsequently, the results of the model were compared to field data to understand underlying rules for FD. 
-
-
+I collected data on per-flower visitation rates of five different flowering rewarding plant species. Observations were made over a range of natural frequencies in their grassland plant communities on the area of the Jena Experiment. To explore the important factors influencing frequency dependence I developed a spatially explicit agent-based model of two rewarding co-flowering plant species sharing pollination services. Agent-Based Models ("ABM", also known as Individual-Based Models "IBM") are a valuable tool for assessing interactions in dynamic networks like financial markets, game theory, spread of diseases or, like this case, ecosystems \citep{deangelis2005individual}. The model contains multiple agents which behave independently after given behavior rules and are able to interact with the environment and each other. Agent-based models are especially suitable for analyzing behavior shifts with changing environmental conditions like frequency, floral cover and cluster size.
+Subsequently, the results of the model were compared to field data to understand influencing factors for FD. 
 
 
-%
+%The combination of an ABM with experimental data is a rare but promising approach. Fist to apply this method in foraging models was \citet{dyer2014bee}. They trained honey bees in a lab experiment to fine color discrimination to check for their flexibility to change when the reward changes between flower types. Afterwards, \citet{dyer2014bee} confirmed the findings with a ABM. 
+
+
 %NOTES:
 %
 %+FDP

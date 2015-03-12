@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.8)  10 MAR 2015 14:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.8)  12 MAR 2015 17:41
 entering extended mode
 **HelenThesis.tex
 
@@ -1273,7 +1273,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \c__siunitx_mathsf_int=\count195
 \c__siunitx_mathtt_int=\count196
-<Images/uni-logo.png, id=43, 139.9629pt x 165.2574pt>
+<Images/uni-logo.png, id=39, 139.9629pt x 165.2574pt>
 File: Images/uni-logo.png Graphic file (type png)
 
 <use Images/uni-logo.png>
@@ -1322,251 +1322,204 @@ duction.tex
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 1.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 4.
+(Font)              scaled to size 12.0pt on input line 10.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 4.
+(Font)              scaled to size 12.0pt on input line 10.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 17.
+(Font)              scaled to size 10.0pt on input line 16.
 
-Overfull \hbox (1.27025pt too wide) in paragraph at lines 19--20
+Overfull \hbox (1.27025pt too wide) in paragraph at lines 18--19
 []\OT1/LinuxLibertineT-TLF/m/n/10 While for-ag-ing mod-els are com-par-a-tively
  com-mon, few in-ves-ti-gate fre-quency de-pen-dence. The game-theoretic
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-) [3]
+[2]) [3]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/metho
 ds_jena.tex
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 12.
+(Font)              scaled to size 7.0pt on input line 11.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 12.
+(Font)              scaled to size 5.0pt on input line 11.
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--36
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
 
  []
 
 [4]) [5]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/resul
-ts_jena.tex) [6]
+ts_jena.tex
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 13.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 13.
+ <Images/LME.png, id=219, 485.4135pt x 447.1104pt>
+File: Images/LME.png Graphic file (type png)
+
+<use Images/LME.png>
+Package pdftex.def Info: Images/LME.png used on input line 37.
+(pdftex.def)             Requested size: 398.33858pt x 366.90579pt.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/it' will be
+(Font)              scaled to size 10.0pt on input line 47.
+) [6]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/metho
-ds_model.tex [7]
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+ds_model.tex [7 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesi
+s/Images/LME.png>] <Images/cluster.png, id=267, 1077.7866pt x 813.2784pt>
+File: Images/cluster.png Graphic file (type png)
+
+<use Images/cluster.png>
+Package pdftex.def Info: Images/cluster.png used on input line 24.
+(pdftex.def)             Requested size: 398.33858pt x 300.57323pt.
+
+<Images/flowchart-model.jpg, id=287, 623.4492pt x 534.3162pt>
+File: Images/flowchart-model.jpg Graphic file (type jpg)
+
+<use Images/flowchart-model.jpg>
+Package pdftex.def Info: Images/flowchart-model.jpg used on input line 39.
+(pdftex.def)             Requested size: 398.33858pt x 341.39047pt.
+ [8]
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-) [8] [9]
+[9 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/clus
+ter.png>] [10 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/
+Images/flowchart-model.jpg>]
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 75.
+
+Overfull \hbox (3.38448pt too wide) in paragraph at lines 70--93
+ [][] 
+ []
+
+) [11]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/resul
-ts_model.tex
-Missing character: There is no ´ in font LinLibertineT-tlf-ts1!
- [10]) [11]
+ts_model.tex <Images/PFV.png, id=390, 591.6504pt x 327.8649pt>
+File: Images/PFV.png Graphic file (type png)
+
+<use Images/PFV.png>
+Package pdftex.def Info: Images/PFV.png used on input line 9.
+(pdftex.def)             Requested size: 426.79134pt x 236.51279pt.
+ <Images/POC.png, id=395, 602.7318pt x 546.6021pt>
+File: Images/POC.png Graphic file (type png)
+
+<use Images/POC.png>
+Package pdftex.def Info: Images/POC.png used on input line 24.
+(pdftex.def)             Requested size: 426.79134pt x 387.04764pt.
+ [12 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/PF
+V.png>] <Images/SUM.png, id=413, 589.4823pt x 187.4202pt>
+File: Images/SUM.png Graphic file (type png)
+
+<use Images/SUM.png>
+Package pdftex.def Info: Images/SUM.png used on input line 35.
+(pdftex.def)             Requested size: 426.79134pt x 135.69456pt.
+ [13 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/PO
+C.png>]) [14 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/I
+mages/SUM.png>]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/discu
-ssion.tex [12] [13])
+ssion.tex
+Missing character: There is no ´ in font LinLibertineT-tlf-ts1!
+ [15]) [16]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/concl
 usion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-) [14]
+) [17]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\HelenThesis.bb
-l [15] [16] [17]) [18]
-(C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/appen
-dix_ABM.tex
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/it' will be
-(Font)              scaled to size 10.0pt on input line 29.
- <Images/LME.png, id=498, 485.4135pt x 447.1104pt>
-File: Images/LME.png Graphic file (type png)
-
-<use Images/LME.png>
-Package pdftex.def Info: Images/LME.png used on input line 45.
-(pdftex.def)             Requested size: 398.33858pt x 366.90579pt.
- [19] [20 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Imag
-es/LME.png>]
-<Images/cluster.png, id=514, 1077.7866pt x 813.2784pt>
-File: Images/cluster.png Graphic file (type png)
-
-<use Images/cluster.png>
-Package pdftex.def Info: Images/cluster.png used on input line 55.
-(pdftex.def)             Requested size: 426.79134pt x 322.04187pt.
-
-<Images/flowchart-model.jpg, id=515, 623.4492pt x 534.3162pt>
-File: Images/flowchart-model.jpg Graphic file (type jpg)
-
-<use Images/flowchart-model.jpg>
-Package pdftex.def Info: Images/flowchart-model.jpg used on input line 62.
-(pdftex.def)             Requested size: 426.79134pt x 365.7761pt.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 75.
-
-Overfull \hbox (13.49133pt too wide) in paragraph at lines 70--93
- [][] 
- []
-
-[21
-
- <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/cluste
-r.png>] [22 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Im
-ages/flowchart-model.jpg>]
-<Images/PFV.png, id=527, 591.6504pt x 327.8649pt>
-File: Images/PFV.png Graphic file (type png)
- <use Images/PFV.png>
-Package pdftex.def Info: Images/PFV.png used on input line 100.
-(pdftex.def)             Requested size: 483.69684pt x 268.05049pt.
-
-Overfull \hbox (25.89198pt too wide) in paragraph at lines 100--101
- [][] 
- []
-
-<Images/POC.png, id=528, 602.7318pt x 546.6021pt>
-File: Images/POC.png Graphic file (type png)
- <use Images/POC.png>
-Package pdftex.def Info: Images/POC.png used on input line 107.
-(pdftex.def)             Requested size: 483.69684pt x 438.65845pt.
-
-Overfull \hbox (25.89198pt too wide) in paragraph at lines 107--108
- [][] 
- []
-
-<Images/SUM.png, id=533, 589.4823pt x 187.4202pt>
-File: Images/SUM.png Graphic file (type png)
- <use Images/SUM.png>
-Package pdftex.def Info: Images/SUM.png used on input line 114.
-(pdftex.def)             Requested size: 483.69684pt x 153.7885pt.
-
-Overfull \hbox (25.89198pt too wide) in paragraph at lines 114--115
- [][] 
- []
-
-) [23
-
- <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/PFV.pn
-g>]
+l [18] [19] [20]) [21]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/sup.t
-ex <Images/plot-design.png, id=539, 415.5525pt x 367.1316pt>
+ex <Images/plot-design.png, id=522, 415.5525pt x 367.1316pt>
 File: Images/plot-design.png Graphic file (type png)
 
 <use Images/plot-design.png>
 Package pdftex.def Info: Images/plot-design.png used on input line 27.
 (pdftex.def)             Requested size: 256.0748pt x 226.24675pt.
- [24 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/PO
-C.png>] [25 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Im
-ages/SUM.png> <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/
-Images/plot-design.png>]
-<Images/pairs-plot.png, id=554, 782.925pt x 686.565pt>
+ [22 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/pl
+ot-design.png>]
+<Images/pairs-plot.png, id=530, 782.925pt x 686.565pt>
 File: Images/pairs-plot.png Graphic file (type png)
 
 <use Images/pairs-plot.png>
 Package pdftex.def Info: Images/pairs-plot.png used on input line 38.
 (pdftex.def)             Requested size: 455.24408pt x 399.21368pt.
- [26 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/pa
-irs-plot.png>]
-<Images/residuals.png, id=564, 557.9244pt x 285.9483pt>
+ [23 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/pa
+irs-plot.png>] [24]
+<Images/residuals.png, id=545, 557.9244pt x 285.9483pt>
 File: Images/residuals.png Graphic file (type png)
 
 <use Images/residuals.png>
-Package pdftex.def Info: Images/residuals.png used on input line 71.
+Package pdftex.def Info: Images/residuals.png used on input line 70.
 (pdftex.def)             Requested size: 426.79134pt x 218.74536pt.
- [27
+ [25
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/residu
 als.png>]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 119.
+(Font)              scaled to size 8.0pt on input line 118.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 124.
+(Font)              scaled to size 8.0pt on input line 123.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 127.
+(Font)              scaled to size 8.0pt on input line 126.
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 132.
+(Font)              scaled to size 8.0pt on input line 131.
 
-Overfull \hbox (55.58614pt too wide) in paragraph at lines 122--178
+Overfull \hbox (55.58614pt too wide) in paragraph at lines 121--177
  [][][][] 
  []
 
-<Images/nonfreq.png, id=607, 598.3956pt x 329.5512pt>
+<Images/nonfreq.png, id=588, 598.3956pt x 329.5512pt>
 File: Images/nonfreq.png Graphic file (type png)
  <use Images/nonfreq.png>
-Package pdftex.def Info: Images/nonfreq.png used on input line 187.
+Package pdftex.def Info: Images/nonfreq.png used on input line 186.
 (pdftex.def)             Requested size: 398.33858pt x 219.38008pt.
-Missing character: There is no ´ in font LinLibertineT-tlf-ts1!
-Missing character: There is no ´ in font LinLibertineT-tlf-ts1!
 
-[28 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/non
-freq.png>] [29] <Images/SA_SUM.png, id=621, 531.9072pt x 491.436pt>
+[26 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/non
+freq.png>] [27] <Images/SA_SUM.png, id=601, 531.9072pt x 491.436pt>
 File: Images/SA_SUM.png Graphic file (type png)
 
 <use Images/SA_SUM.png>
-Package pdftex.def Info: Images/SA_SUM.png used on input line 196.
+Package pdftex.def Info: Images/SA_SUM.png used on input line 195.
 (pdftex.def)             Requested size: 398.33858pt x 368.05118pt.
- [30
+ [28
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_SUM
 .png>]
-<Images/SA_reward.png, id=628, 560.0925pt x 398.4486pt>
+<Images/SA_reward.png, id=607, 560.0925pt x 398.4486pt>
 File: Images/SA_reward.png Graphic file (type png)
 
 <use Images/SA_reward.png>
-Package pdftex.def Info: Images/SA_reward.png used on input line 205.
+Package pdftex.def Info: Images/SA_reward.png used on input line 204.
 (pdftex.def)             Requested size: 398.33858pt x 283.38686pt.
- [31
+ [29
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_rew
 ard.png>]
-<Images/SA_view.png, id=634, 548.0475pt x 398.2077pt>
+<Images/SA_view.png, id=613, 548.0475pt x 398.2077pt>
 File: Images/SA_view.png Graphic file (type png)
  <use Images/SA_view.png>
-Package pdftex.def Info: Images/SA_view.png used on input line 215.
+Package pdftex.def Info: Images/SA_view.png used on input line 214.
 (pdftex.def)             Requested size: 398.33858pt x 289.43752pt.
 
-[32
+[30
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_vie
-w.png>] <Images/SA_flight.png, id=640, 557.6835pt x 398.2077pt>
+w.png>] <Images/SA_flight.png, id=620, 557.6835pt x 398.2077pt>
 File: Images/SA_flight.png Graphic file (type png)
 
 <use Images/SA_flight.png>
-Package pdftex.def Info: Images/SA_flight.png used on input line 225.
+Package pdftex.def Info: Images/SA_flight.png used on input line 224.
 (pdftex.def)             Requested size: 398.33858pt x 284.43684pt.
- [33
+ [31
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_fli
 ght.png>]
-<Images/SA_bees.png, id=646, 548.0475pt x 398.2077pt>
+<Images/SA_bees.png, id=626, 548.0475pt x 398.2077pt>
 File: Images/SA_bees.png Graphic file (type png)
  <use Images/SA_bees.png>
-Package pdftex.def Info: Images/SA_bees.png used on input line 234.
+Package pdftex.def Info: Images/SA_bees.png used on input line 233.
 (pdftex.def)             Requested size: 398.33858pt x 289.43752pt.
-) [34
+) [32
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_bee
 s.png>]
@@ -1580,23 +1533,23 @@ File: lstlang2.sty 2014/09/06 1.5e listings language file
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang3.sty"
 File: lstlang3.sty 2014/09/06 1.5e listings language file
 ))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
 
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\HelenThesis.au
 x)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
 Package rerunfilecheck Info: File `HelenThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 74BF98D3EBAB0DCA311AD99A952AFF8B;535.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 196.
+(rerunfilecheck)             Checksum: 92F7FCC557383AB63F29A0235C67728D;478.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
  ) 
 Here is how much of TeX's memory you used:
- 21812 strings out of 493921
- 416087 string characters out of 3144867
- 488510 words of memory out of 3000000
- 24665 multiletter control sequences out of 15000+200000
- 38612 words of font info for 72 fonts, out of 3000000 for 9000
+ 21810 strings out of 493921
+ 415877 string characters out of 3144867
+ 488616 words of memory out of 3000000
+ 24669 multiletter control sequences out of 15000+200000
+ 40170 words of font info for 78 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  53i,16n,92p,10405b,959s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_tltjc6.enc}
@@ -1610,20 +1563,22 @@ gram Files (x86)/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTB.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTBI.pf
 b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT
 I.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Fil
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (
 x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on HelenThesis.pdf (35 pages, 4525222 bytes).
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on HelenThesis.pdf (33 pages, 4534919 bytes).
 PDF statistics:
- 746 PDF objects out of 1000 (max. 8388607)
- 166 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 731 PDF objects out of 1000 (max. 8388607)
+ 157 named destinations out of 1000 (max. 500000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
