@@ -572,7 +572,7 @@ Difference in �scout speed� and �flight speed�},
 
   Comment                  = {ideal free distribution, optimal foraging, review, lot of info, Search patterns in a patchy
 environment, many references},
-  File                     = {goulson1999foraging.pdf:Literatur\\goulson1999foraging.pdf:PDF},
+  File                     = {goulson1999foraging.pdf:goulson1999foraging.pdf:PDF},
   Keywords                 = {foraging, constancy, references, basic},
   Publisher                = {Elsevier}
 }
@@ -676,7 +676,7 @@ environment, many references},
   Publisher                = {The Royal Society}
 }
 
-@Article{Hanoteaux2013effects,
+@Article{hanoteaux2013effects,
   Title                    = {Effects of spatial patterns on the pollination success of a less attractive species},
   Author                   = {Hanoteaux, Sven and Tielb{\"o}rger, Katja and Seifan, Merav},
   Journal                  = {Oikos},
@@ -692,7 +692,7 @@ environment, many references},
 
 @Article{hill1997spontaneous,
   Title                    = {Spontaneous flower constancy and learning in honey bees as a function of colour},
-  Author                   = {HILL, PEGGY SM and WELLS, PATRICK H and WELLS, HARRINGTON},
+  Author                   = {Hill, Peggy SM and Wells, Patrick H and Wells, Harrington},
   Journal                  = {Animal Behaviour},
   Year                     = {1997},
   Number                   = {3},
@@ -1334,6 +1334,19 @@ environment, many references},
   Volume                   = {103},
 
   Publisher                = {Annals Botany Co}
+}
+
+@Article{vazquez2005interaction,
+  Title                    = {Interaction frequency as a surrogate for the total effect of animal mutualists on plants},
+  Author                   = {V{\'a}zquez, Diego P and Morris, William F and Jordano, Pedro},
+  Journal                  = {Ecology Letters},
+  Year                     = {2005},
+  Number                   = {10},
+  Pages                    = {1088--1094},
+  Volume                   = {8},
+
+  File                     = {vazquez2005interaction.pdf:vazquez2005interaction.pdf:PDF},
+  Publisher                = {Wiley Online Library}
 }
 
 @Article{valdovinos2013adaptive,

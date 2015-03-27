@@ -12,8 +12,8 @@
 		\midrule
 		Ger   & \textit{Geranium pratense} & Wiesen-Storchschnabel & Geraniales & Geraniaceae & Purple \\
 		Lat   & \textit{Lathyrus pratensis} & Wiesen-Platterbse & Fabales & Fabaceae & Yellow \\
-		Lot   & \textit{Lotus corniculatus} & Gewöhnliche Hornklee & Fabales & Fabaceae & Yellow \\
-		Ono   & \textit{Onobrychis viciifolia} & Saat-Esparsette & Fabales & Fabaceae & pink+white \\
+		Lot   & \textit{Lotus corniculatus} & Gewöhnlicher Hornklee & Fabales & Fabaceae & Yellow \\
+		Ono   & \textit{Onobrychis viciifolia} & Saat-Esparsette & Fabales & Fabaceae & Pink+White \\
 		TP    & \textit{Trifolium pratense} & Wiesen-Klee & Fabales & Fabaceae & Purple \\
 		\bottomrule
 	\end{tabular}%
@@ -25,7 +25,7 @@
 \begin{figure} [H] %plot-design
 \centering
 \includegraphics[width=9cm]{Images/plot-design}
- \caption{The distribution of subplots within the old invasion plots.}
+ \caption{The distribution of patches within the old invasion plots.}
  \label{fig:plot-design}
 \end{figure}
 
@@ -44,7 +44,7 @@
 
 \begin{table}[!htbp] 
   \centering
-  \caption{Variance inflation factors (VIF) for the full set of variables. Values are calculated by the "corvif"-function from R-package AED. All values are well below three indicating no collinearity (see \citet{zuur2007analysing}).}
+  \caption{Variance inflation factors (VIF) for the full set of variables. Values are calculated by the "corvif"-function from R-package AED. All values are well below three indicating no collinearity (see \citealt{zuur2007analysing}).}
     \begin{tabular}{ll}
     \toprule
     \textbf{Variable} & \textbf{GVIF}\\
@@ -54,9 +54,9 @@
     Frequency 	  	    &  1.63\\
     Floral Cover   		 &  1.46\\
     Species Richness     &  1.45\\
-    Frequency (Subplot) 	    &  1.84\\
-    Floral Cover (Subplot)		  &  1.37\\
-    Species Richness (Subplot)    &  1.48\\
+    Frequency (Patch) 	    &  1.84\\
+    Floral Cover (Patch)		  &  1.37\\
+    Species Richness (Patch)    &  1.48\\
     \bottomrule
     \end{tabular}%
 \label{tab:VIF}
@@ -110,11 +110,11 @@
 	\label{tab:summary} 
 \end{table}
 
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\newgeometry{margin=1cm}
+\thispagestyle{empty}
 
-
-\begin{sidewaystable}[!htbp] %Parameter Values
+\begin{sidewaystable}[!h] %Parameter Values
 	\footnotesize
 	\centering
 	\caption{The full set of parameters and default values used in the model. }
@@ -163,7 +163,7 @@
 		
 		pollen carry-over rate & \begin{tabular}{@{}l@{}} Number of heterospecific visits within \\ a successful pollination is possible \end{tabular} & flowers-own & integer & 1, 2, 4, 6, 8, 16  & \citealt{benadi2012population} \\
 		
-		flower-memory & A list of flower-locations  & bees-own & string &    4   & see \citealt{goulson1999foraging} for review) \\
+		flower-memory & A list of flower-locations  & bees-own & string &    4   & see \citealt{goulson1999foraging} for review \\
 		
 		reward-memory & A list of the last gained rewards & bees-own & string &    4   &  \\
 		
@@ -175,16 +175,16 @@
 	\end{tabular}%
 	\label{tab:parametervalues}%
 \end{sidewaystable}%
+\restoregeometry
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-
+\clearpage
 
 \begin{figure} [!h]
 	\centering
 	\includegraphics[width=14cm]{Images/nonfreq}
-	\caption{Frequency independent influence of floral cover and cluster size on the sum of all visits to both species together. A) Cover strongly influences the number of visits as it reduces the flight and search time and shows a saturated relationship for all cluster values. This matches the Holling's type II functional response. B) The degree of clustering influences the sum of visits in a hump-shaped function. The maximum (depending on the cover) lays between 5 and 10 flowers per cluster. A small aggregation of flowers reduces search times but keeps the next patch within visible distance. The bigger the cluster, the more difficult for the bee-agent to find the next one.}
+	\caption{Frequency independent influence of floral cover and cluster size on the sum of all visits to both species together. A) Cover strongly influences the number of visits as it reduces the flight and search time and shows a saturated relationship for all cluster values. This matches the Holling's type II functional response. B) The degree of clustering influences the sum of visits in a hump-shaped function. The maximum lays between 5 and 10 flowers per cluster  (depending on the cover). A small aggregation of flowers reduces search times but keeps the next patch within visible distance. The bigger the cluster, the more difficult for the bee-agent to find the next one.}
 	\label{fig:nonfreq}
 \end{figure}
 
@@ -193,7 +193,7 @@
 \begin{figure} [h!]
 	\centering
 	\includegraphics[width=14cm]{Images/SA_SUM}
-	\caption{The influence of reward replenishment, vision, search limit and number of bee-agents on the sum of visits within a 1000 time-step simulation run. A) An unnatural high reward replenishment rate has a small negative influence on the visits. If the flowers are refilled within 10 time steps B) Bee-agents with a far field of view can detect flowers faster, move in a direct way towards them and be therefore more efficient. However, the curve is saturated at a view of 20 patches. C) An increase in search time limit decreases the sum of visits and spread the variance. Bees-agents will keep searching for rare flowers instead of switching to the common species. D) As assumed, more bees lead to more visits.} 
+	\caption{The influence of reward replenishment, vision, search limit and number of bee-agents on the sum of visits within a 1000 time-step simulation run. A) An unnatural high reward replenishment rate (if the flowers are refilled within 10 time steps) has a small negative influence on the visits.  B) Bee-agents with a far field of view can detect flowers faster, move in a direct way towards them and be therefore more efficient. However, the curve is saturated at a view of 20 patches. C) An increase in search time limit decreases the sum of visits and spread the variance. Bees-agents will keep searching for rare flowers instead of switching to the common species. D) As assumed, more bees lead to more visits.} 
 	\label{fig:SA_SUM}
 \end{figure}
 
@@ -202,7 +202,7 @@
 \begin{figure} [!h] %
 	\centering
 	\includegraphics[width=14cm]{Images/SA_reward}
-	\caption{Outcome of the model if the reward replenishment function is changed to 0, 0.004, 0.001 and 0.1 Joules per time step. Only the unnatural high reward function (complete regrowth after 10 seconds) has an influence on the frequency dependence: the bee-agents have no more reason to change preference due to bad reward. This favors the more common species as shown in the opposite curving for no-cluster environments. A lower replenishment rate has no effect.} 
+	\caption{Outcome of the model if the reward replenishment function is changed to 0, 0.004, 0.001 and 0.1 Joules per time step. Only the unnatural high reward function (complete regrowth after 10 seconds) has an influence on the frequency dependence: The bee-agents have no more reason to change preference due to bad reward. This favors the more common species as shown in the opposite curving for no-cluster environments. A lower replenishment rate has no effect.} 
 	\label{fig:SA_reward}
 \end{figure}
 
@@ -233,6 +233,21 @@
 	\includegraphics[width=14cm]{Images/SA_bees}
 	\caption{Results of the model for 5, 10, 20 and 50 bee-agents on the meadow. The proportion of visits does not change, only the absolute numbers. Therefore has the pollinator density no influence on the frequency dependence.}
 	\label{fig:SA_bees}
+\end{figure}
+
+
+\begin{figure} [!h]
+	\centering
+	\includegraphics[width=15cm]{Images/PFVgross}
+	\caption{Enlarged version of Figure ~\ref{fig:PFV}. The per-flower visitation rate shows a frequency dependence with a cubic relationship. The same data is plotted relative to per-flower visitation of the other species to visualize the relative fitness and intensity of frequency dependence (e-h).}
+	\label{fig:PFVgross}
+\end{figure}
+
+\begin{figure} [!h]
+	\centering
+	\includegraphics[width=10cm]{Images/Outlier}
+	\caption{Results of the model for an average of 100 flowers per cluster. The per-flower visitation of species A was divided through the per-flower visitation of species B to observe the relative fitness. Due to a statistical outlier in the main analysis (Fig.~\ref{fig:PFV}h), the model was run again with 50 runs per parameter combination. Points are the mean of all runs with grey error bars.}
+	\label{fig:outlier}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

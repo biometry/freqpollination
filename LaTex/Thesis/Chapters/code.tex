@@ -1,9 +1,10 @@
 \label{ch:code}
 
+\section*{Code}
 
 \lstset{ %
 	language=R,                     % the language of the code
-	basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+	basicstyle=\scriptsize,       % the size of the fonts that are used for the code
 	numbers=left,                   % where to put the line-numbers
 	numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
 	stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
@@ -31,8 +32,8 @@
 	deletekeywords={SUB, SEQ, MEAN},
 } 
 
-
-%\lstinputlisting[language=R]{./SA.R}
+\subsection*{Jena Analysis}
+\lstinputlisting[language=R]{./jena.R}
 
 
 \lstdefinelanguage{NetLogo}{
@@ -40,7 +41,7 @@
 	extendedchars=true,
 	breaklines=true,
 	breakatwhitespace=true,
-	basicstyle=\footnotesize,
+	basicstyle=\scriptsize,
 	columns=fullflexible,
 	tabsize=4,
 	keywordstyle=[1]\color[rgb]{0.25,0.5,0.35},%\color[rgb]{0.4,0.8,0.2}\bfseries,
@@ -58,4 +59,6 @@
 	keywordstyle=[4]{\color{black}},
     }
 
-%\lstinputlisting[language=NetLogo]{./bee_final.txt}
+\clearpage
+\subsection*{NetLogo Model}
+\lstinputlisting[language=NetLogo]{./bee_final.txt}

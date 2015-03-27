@@ -170,8 +170,8 @@ Hanoteaux, S., Tielb{\"o}rger, K., and Seifan, M. (2013).
   attractive species.
 \newblock {\em Oikos}, 122(6):867--880.
 
-\bibitem[HILL et~al., 1997]{hill1997spontaneous}
-HILL, P.~S., WELLS, P.~H., and WELLS, H. (1997).
+\bibitem[Hill et~al., 1997]{hill1997spontaneous}
+Hill, P.~S., Wells, P.~H., and Wells, H. (1997).
 \newblock Spontaneous flower constancy and learning in honey bees as a function
   of colour.
 \newblock {\em Animal Behaviour}, 54(3):615--627.
@@ -224,6 +224,12 @@ Kunin, W.~E. (1997).
   foraging and plant reproductive success in experimental arrays of brassica
   kaber.
 \newblock {\em Journal of Ecology}, pages 225--234.
+
+\bibitem[Levin, 1972]{levin1972low}
+Levin, D.~A. (1972).
+\newblock Low frequency disadvantage in the exploitation of pollinators by
+  corolla variants in phlox.
+\newblock {\em American Naturalist}, pages 453--460.
 
 \bibitem[May, 1974]{may1974stability}
 May, R. (1974).
@@ -306,14 +312,14 @@ Smithson, A. and Macnair, M. (1996).
   (l.)(hymenoptera: Apidae).
 \newblock {\em Journal of Evolutionary Biology}, 9(5):571--588.
 
-\bibitem[Smithson and Macnair, 1997]{smithson1997density}
-Smithson, A. and Macnair, M.~R. (1997).
+\bibitem[Smithson and MacNair, 1997a]{smithson1997density}
+Smithson, A. and MacNair, M. (1997a).
 \newblock Density-dependent and frequency-dependent selection by bumblebees
   bombus terrestris (l.)(hymenoptera: Apidae).
 \newblock {\em Biological Journal of the Linnean Society}, 60(3):401--417.
 
-\bibitem[Smithson and MacNair, 1997]{smithson1997negative}
-Smithson, A. and MacNair, M.~R. (1997).
+\bibitem[Smithson and MacNair, 1997b]{smithson1997negative}
+Smithson, A. and MacNair, M. (1997b).
 \newblock Negative frequency-dependent selection by pollinators on artificial
   flowers without rewards.
 \newblock {\em Evolution}, pages 715--723.
@@ -335,6 +341,12 @@ Thiele, J.~C., Kurth, W., and Grimm, V. (2012).
 Thomson, J.~D. (1981).
 \newblock Field measures of flower constancy in bumblebees.
 \newblock {\em American Midland Naturalist}, pages 377--380.
+
+\bibitem[V{\'a}zquez et~al., 2005]{vazquez2005interaction}
+V{\'a}zquez, D.~P., Morris, W.~F., and Jordano, P. (2005).
+\newblock Interaction frequency as a surrogate for the total effect of animal
+  mutualists on plants.
+\newblock {\em Ecology Letters}, 8(10):1088--1094.
 
 \bibitem[Viswanathan et~al., 2008]{viswanathan2008levy}
 Viswanathan, G., Raposo, E., and Da~Luz, M. (2008).
