@@ -89,8 +89,7 @@ to setup
  ; create the bee-agents
  
   create-bees number-bees 
-  [ set shape "bee" ;Agents with an actual bee-shape :)
-    ; set shape "circle" set color 9.9 ; Agents with a simple circle, faster in calculations
+  [ set shape agent-appearance set color 126
     setxy random-xcor random-ycor 
     set reward-memory (list)
     set flower-memory (list)
@@ -299,7 +298,7 @@ flower-cover
 flower-cover
 0
 100
-20
+10
 5
 1
 NIL
@@ -348,7 +347,7 @@ frequency
 frequency
 0
 100
-25
+20
 1
 1
 NIL
@@ -421,7 +420,7 @@ cluster-degree
 cluster-degree
 1
 100
-5
+10
 1
 1
 NIL
@@ -585,15 +584,25 @@ PENS
 "1" 1.0 0 -955883 true "" "plot pollination-success 1 / flower-number1"
 "2" 1.0 0 -13345367 true "" "plot pollination-success 2 / flower-number2"
 
+CHOOSER
+200
+246
+371
+291
+agent-appearance
+agent-appearance
+"circle" "bee"
+1
+
 @#$#@#$#@
 ## WHAT IS IT?
 
-Agent-based Model of bees foraging on a meadow with two co-flowering plant species competing over pollinating service. The model was developed on empirical findings for foraging rules and pollinator behavior.
+Agent-based model of bees foraging on a meadow with two co-flowering plant species competing over pollinating service. The model was developed on empirical findings for foraging rules and pollinator behavior.
 Its aim is to show the change of visitation rate and pollination success for each species with changing floral cover, frequency and degree of clustering. 
 
 
-This model was created for the Master Thesis of Helen Czioksa
-submitted to the Faculty of Environment & Natural Resources
+This model was created for the Master Thesis of Helen Czioska
+Submitted to the Faculty of Environment & Natural Resources
 at the Albert-Ludwigs-University Freiburg
 
 
@@ -601,36 +610,30 @@ at the Albert-Ludwigs-University Freiburg
 
 ### Assumptions
 
-In the model, all pollinators are identical and the two flower types only differ in their initial species identity. Reward regrowth, handling times to extract the reward and its attractiveness towards the pollinators is identical for both species. Corolla color is only assigned for better visualization and is not important for the model or the pollinators, respectively.The pollinators behave under the theory of flower constancy which is empirically tested and proven for various pollinators (e.g. Hill et al. 1997 for hones bees, Chittka et al. 1997 for bumble bees). Flower constancy is the tendency of a pollinator to keep visiting the same flower species instead switching to more rewarding or closer species (e.g. Chittka et al. 1999). In the ABM, all pollinators forage exclusively on the currently preferred species until the species is either not rewarding any more or the search for a next flower is unsuccessful. 
+In the model, all pollinators are identical and the two flower types only differ in their initial species identity. Reward regrowth, handling times to extract the reward and its attractiveness towards the pollinators is identical for both species. Corolla color is only assigned for better visualization and is not important for the model or the pollinators, respectively. The pollinators behave under the theory of flower constancy which is empirically tested and proven for various pollinators (e.g. Hill et al. 1997 for honey bees, Chittka et al. 1997 for bumble bees). Flower constancy is the tendency of a pollinator to keep visiting the same flower species instead switching to more rewarding or closer species (e.g. Chittka et al. 1999). In the ABM, all pollinators forage exclusively on the currently preferred species until the species is either not rewarding any more or the search for a next flower is unsuccessful. 
 
 ### Model Environment
 
-In the model, the "meadow" has 100x100grid cells with horizontally and vertically wrapping to avoid edge effects. Every grid cell can either contain a single flower of one of the two species or grass. The flowers of those two species are randomly distributed over the meadow. Every flower contains 1 Joule of floral reward in the beginning of each simulation run. The pollinators ("bee-agents") are also randomly distributed over the modeling environment, no hive is assigned (no central place foragers). Bee-agents start without a fixed preference for a flower type but just pick the closest one when the simulation starts. The energetic costs and the limit of gained rewards of the pollinators are ignored. Furthermore, they do not communicate and always empty a flower completely. 
+In the model, the "meadow" has 100x100grid cells with horizontally and vertically wrapping to avoid edge effects. Every grid cell can either contain a single flower of one of the two species or grass. The flowers of those two species are randomly distributed over the meadow. Every flower contains 1 Joule of floral reward in the beginning of each simulation run. The pollinators ("bee-agents") are also randomly distributed over the modeling environment; no hive is assigned (no central place foragers). Bee-agents start without a fixed preference for a flower type but just pick the closest one when the simulation starts. The energetic costs and the limit of gained rewards of the pollinators are ignored. Furthermore, they do not communicate and always empty a flower completely. 
 
-### Behaviour Rules
-
+### Behavior Rules
 As mentioned in the assumptions, the behavior of the bee-agents is strongly influences by the theory of flower constancy (e.g. Goulson 1999). Bee-agents are always in favor of one of the two flowering species and forage exclusively on this species. The preference can change due to lack of searching success and a series of low rewards of the preferred flower. Pollinators avoid recently visited flowers. Every bee-agent is equipped with a memory to remember the location of the last four already visited flowers. The bee-agent can either search for a flower or visit one. If there is any preferred and unvisited flower in sight, the searching bee-agent moves on direct way towards the flower, otherwise it continues searching. 
 Every bee-agent can detect flowers from a distance of 0.7m with an equivalent of 6 grid cells. The vision is reduced to a 180° cone-shaped field to the front of the agent. Pollinators tend to keep their direction while foraging. In the model, I used a correlated random walk (CRW) to achieve a relatively natural movement. If the bee-agent searches for 5 seconds (= 5 ticks) without finding any preferred and unvisited flower, the likelihood of changing its preference increases by 10\% with every additional tick.
-
 When a bee-agent encounters a preferred and unvisited flower it takes up all its reward. The maximal reward a flower can contain is 1 Joule and refills each tick by a linear function ("reward-function"). The handling time involves three components: a time proportional to the amount of taken reward, a reward-independent constant and a skill factor (Kunin and Iwasa 1996). In my model, a bee-agent requires 4 seconds to extract one Joule of reward plus a reward-independent handling time of 0.5 seconds. When the bee-agent just changed its flower preference it gets a 3 second penalty for inexperience (Roubik1992 in Kunin and Iwasa 1996).
-
-The reward taken is stored in the agent-own reward-memory. Every agent can remember the last four receives rewards. When visiting a flower, the bee-agent compares this memory with the current reward quantity. If the reward is less than half the average in the memory, the likelihood to abandon flower constancy and visit another species next increases by 10\%. If the reward is exceptionally good (double of there remembered average), the change probability is set to zero  (Chittka et al. 1997).
-
+The reward taken is stored in the agent-own reward-memory. Every agent can remember the last four receives rewards. When visiting a flower, the bee-agent compares this memory with the current reward quantity. If the reward is less than half the average in the memory, the likelihood to abandon flower constancy and visit another species next increases by 10\%. If the reward is exceptionally good (double of their remembered average), the change probability is set to zero (Chittka et al. 1997).
 After reward-collection is completed, the bee-agent updates its flower-memory and its reward-memory and continues foraging. Each visit and successful pollination is recorded for later analysis. 
 
 ## HOW TO USE IT
-
 The use of the model is fairly simple. "Setup" produces a meadow with the desired number of flowers, clusters and bees. Every tick represents a second. You can observe bees foraging on the flowers and report the visitation rate and the number of successfull pollinations for each species.
 
 ## THINGS TO TRY
-
 Interesting simulation options include the range of all sliders in the user interface tab. The parameters are divided into two groups: Behavioral variables and meadow variables. The default values of behavioral variables are empirically based and should be changed with care. The meadow variables can be set to any desired value. 
 
 ## EXTENDING THE MODEL
 
-An interesting development area is the implementation of a meta level with several meadows differing in their variables neighboring each other. Bee-agents could swith between those patches on a given cost. 
+An interesting development area is the implementation of a meta level with several meadows differing in their variables neighboring each other. Bee-agents could switch between those patches on a given cost. 
+Another approach would be the integration of more flower species, maybe even with a difference in attractiveness or reward function.
 
-Another approach would be the integration of more flower species, maybe even with a difference in attractiveness or reward function. 
 
 
 ## CREDITS AND REFERENCES
@@ -644,7 +647,6 @@ Goulson, D. (1999). Foraging strategies of insects for gathering nectar and poll
 HILL, P. S., WELLS, P. H., and WELLS, H. (1997). Spontaneous fower constancy and learning in honey beesas a function of colour. Animal Behaviour, 54(3):615–627.
 
 Kunin, W. and Iwasa, Y. (1996). Pollinator foraging strategies in mixed foral arrays: density effects and foral constancy. eoretical population biology, 49(2):232–263.
-
 
 @#$#@#$#@
 default
