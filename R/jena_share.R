@@ -1,10 +1,17 @@
 jenaNA <- jena[!is.na(jena$Spec_visit_share),]
 
-tf <- formula(Spec_visit_share~freqshare+I(freqshare)^2+I(freqshare)^3+ Spec+freqshare:Spec+I(freqshare)^2:Spec+I(freqshare)^3:Spec)
+tf <- formula(Spec_visit_share~freqshare+
+                I(freqshare)^2+
+                I(freqshare)^3+ 
+                Spec+
+                freqshare:Spec+
+                I(freqshare)^2:Spec+
+                I(freqshare)^3:Spec)
 
 glmALL <- glm(tf,data=jenaNA)
+options(na.action="na.fail")
 testdd <- dredge(glmALL)
-testdd [1:10] #freq and spec, no interactions
+testdd [1:5] #freq and spec, no interactions
 options(na.action="na.omit")
 
 glm.final <- glm(Spec_visit_share~freqshare+Spec,data=jenaNA)
@@ -19,7 +26,7 @@ summary(glm.final)
 #   SpecTP      -0.33760    0.04655  -7.252 2.49e-12 ***
 
 
-test2 <- glm (Spec_visit_share~freqshare, data=jena)
+test2 <- glm (Spec_visit_share~freqshare, data=jenaNA)
 color <- c("darkviolet","orange", "red", "magenta", "deepskyblue4")
 sub <- list(jena.ger, jena.lat, jena.lot,jena.ono, jena.tp)
 par(mfrow=c(1,1))

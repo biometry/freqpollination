@@ -18,7 +18,7 @@ NLCommand ("set cluster-degree 1")
 NLCommand ("set pollen-reach 1")
 
 #Parametervalues to test:
-freq.seq <- c(rep(c(c(0,1,3),seq(5,95,5), c(97,99,100)), each=10))
+freq.seq <- c(rep(c(c(0,1,3),seq(5,100,5)), each=10))
 cover.seq <- c(5,10,20,30,50)
 bees.seq <- c(10)
 cluster.seq <- c(1,2,5,10,20,50,75,100)
@@ -64,7 +64,7 @@ NLdata<- cbind(all,NLdata)
 NLdata$invfreq <- 100 - NLdata$freq
 write.csv(NLdata,"/home/helen/XXX.csv", row.names=F)
 
-pt1 <- proc.time()
-pt1[3] / nrow(all)
+pt1 <- proc.time() #how much time in total
+pt1[3] / nrow(all) #how much time per simulation run
 
 NLQuit()
