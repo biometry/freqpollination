@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.8)  27 MAR 2015 15:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.8)  31 MAR 2015 15:41
 entering extended mode
 **HelenThesis.tex
 
@@ -1465,14 +1465,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
-[15])
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 41--119
+
+ []
+
+[16]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/concl
 usion.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 3--122
 
  []
 
-[16] [17]
+[17]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\HelenThesis.bb
 l [18] [19] [20]) [21]
 (C:\Users\hczioska\Documents\GitHub\freqpollination\LaTex\Thesis\Chapters/sup.t
@@ -1481,7 +1491,7 @@ Overfull \hbox (12.48502pt too wide) in paragraph at lines 9--21
  [][][][] 
  []
 
-<Images/plot-design.png, id=528, 415.5525pt x 367.1316pt>
+<Images/plot-design.png, id=530, 415.5525pt x 367.1316pt>
 File: Images/plot-design.png Graphic file (type png)
 
 <use Images/plot-design.png>
@@ -1489,7 +1499,7 @@ Package pdftex.def Info: Images/plot-design.png used on input line 27.
 (pdftex.def)             Requested size: 256.0748pt x 226.24675pt.
  [22 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/pl
 ot-design.png>]
-<Images/pairs-plot.png, id=536, 782.925pt x 686.565pt>
+<Images/pairs-plot.png, id=538, 782.925pt x 686.565pt>
 File: Images/pairs-plot.png Graphic file (type png)
 
 <use Images/pairs-plot.png>
@@ -1501,7 +1511,7 @@ Overfull \hbox (14.22635pt too wide) in paragraph at lines 38--39
  []
 
 [23 <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/pai
-rs-plot.png>] <Images/residuals.png, id=546, 557.9244pt x 285.9483pt>
+rs-plot.png>] <Images/residuals.png, id=548, 557.9244pt x 285.9483pt>
 File: Images/residuals.png Graphic file (type png)
 
 <use Images/residuals.png>
@@ -1555,7 +1565,7 @@ LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25] <Images/nonfreq.png, id=598, 598.3956pt x 329.5512pt>
+[25] <Images/nonfreq.png, id=600, 598.3956pt x 329.5512pt>
 File: Images/nonfreq.png Graphic file (type png)
 
 <use Images/nonfreq.png>
@@ -1568,7 +1578,7 @@ Package pdftex.def Info: Images/nonfreq.png used on input line 186.
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/nonfre
 q.png>]
-<Images/SA_SUM.png, id=604, 531.9072pt x 491.436pt>
+<Images/SA_SUM.png, id=606, 531.9072pt x 491.436pt>
 File: Images/SA_SUM.png Graphic file (type png)
  <use Images/SA_SUM.png>
 Package pdftex.def Info: Images/SA_SUM.png used on input line 195.
@@ -1577,7 +1587,7 @@ Package pdftex.def Info: Images/SA_SUM.png used on input line 195.
 [27
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_SUM
-.png>] <Images/SA_reward.png, id=610, 559.8516pt x 398.4486pt>
+.png>] <Images/SA_reward.png, id=612, 559.8516pt x 398.4486pt>
 File: Images/SA_reward.png Graphic file (type png)
 
 <use Images/SA_reward.png>
@@ -1587,7 +1597,7 @@ Package pdftex.def Info: Images/SA_reward.png used on input line 204.
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_rew
 ard.png>]
-<Images/SA_view.png, id=616, 546.843pt x 397.9668pt>
+<Images/SA_view.png, id=618, 546.843pt x 397.9668pt>
 File: Images/SA_view.png Graphic file (type png)
  <use Images/SA_view.png>
 Package pdftex.def Info: Images/SA_view.png used on input line 214.
@@ -1596,7 +1606,7 @@ Package pdftex.def Info: Images/SA_view.png used on input line 214.
 [29
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_vie
-w.png>] <Images/SA_flight.png, id=622, 557.9244pt x 397.9668pt>
+w.png>] <Images/SA_flight.png, id=624, 557.9244pt x 397.9668pt>
 File: Images/SA_flight.png Graphic file (type png)
 
 <use Images/SA_flight.png>
@@ -1606,13 +1616,13 @@ Package pdftex.def Info: Images/SA_flight.png used on input line 224.
 
  <C:/Users/hczioska/Documents/GitHub/freqpollination/LaTex/Thesis/Images/SA_fli
 ght.png>]
-<Images/SA_bees.png, id=629, 546.3612pt x 397.9668pt>
+<Images/SA_bees.png, id=631, 546.3612pt x 397.9668pt>
 File: Images/SA_bees.png Graphic file (type png)
  <use Images/SA_bees.png>
 Package pdftex.def Info: Images/SA_bees.png used on input line 233.
 (pdftex.def)             Requested size: 398.33858pt x 290.15506pt.
 
-<Images/PFVgross.png, id=630, 597.6729pt x 845.19765pt>
+<Images/PFVgross.png, id=632, 597.6729pt x 845.19765pt>
 File: Images/PFVgross.png Graphic file (type png)
 
 <use Images/PFVgross.png>
@@ -1622,7 +1632,7 @@ Package pdftex.def Info: Images/PFVgross.png used on input line 241.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Images/Outlier.png, id=633, 551.661pt x 533.1117pt>
+<Images/Outlier.png, id=635, 551.661pt x 533.1117pt>
 File: Images/Outlier.png Graphic file (type png)
  <use Images/Outlier.png>
 Package pdftex.def Info: Images/Outlier.png used on input line 248.
@@ -1740,9 +1750,9 @@ x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on HelenThesis.pdf (45 pages, 4101779 bytes).
+Output written on HelenThesis.pdf (45 pages, 4102642 bytes).
 PDF statistics:
- 1549 PDF objects out of 1728 (max. 8388607)
+ 1551 PDF objects out of 1728 (max. 8388607)
  794 named destinations out of 1000 (max. 500000)
  163 words of extra memory for PDF output out of 10000 (max. 10000000)
 
